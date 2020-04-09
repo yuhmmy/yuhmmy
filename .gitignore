@@ -12,3 +12,6 @@ settings.production.json
 
 # Build node_modules locally.
 node_modules/
+
+# Ignore config file
+config/settings.production.json
