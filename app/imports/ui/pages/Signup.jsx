@@ -17,19 +17,26 @@ class Signup extends React.Component {
   /** Update the form controls each time the user interacts with them. */
   handleChange = (e, { name, value }) => {
     this.setState({ [name]: value });
-  }
+  };
 
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
-    const { email, password } = this.state;
-    Accounts.createUser({ email, username: email, password }, (err) => {
+    const { email, password, firstName, lastName } = this.state;
+    Accounts.createUser(
+        {
+          email,
+          username: email,
+          password,
+          profile: {firstName, lastName}
+        },
+        (err) => {
       if (err) {
         this.setState({ error: err.reason });
       } else {
         this.setState({ error: '', redirectToReferer: true });
       }
     });
-  }
+  };
 
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
@@ -47,6 +54,22 @@ class Signup extends React.Component {
             </Header>
             <Form onSubmit={this.submit}>
               <Segment stacked>
+                <Form.Group widths='equal'>
+                  <Form.Input
+                      fluid
+                      label="First Name"
+                      name="firstName"
+                      placeholder="First"
+                      onChange={this.handleChange}
+                  />
+                  <Form.Input
+                      fluid
+                      label="Last Name"
+                      name="lastName"
+                      placeholder="Last"
+                      onChange={this.handleChange}
+                  />
+                </Form.Group>
                 <Form.Input
                   label="Email"
                   icon="user"
