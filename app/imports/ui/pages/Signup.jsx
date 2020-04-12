@@ -38,6 +38,12 @@ class Signup extends React.Component {
     });
   };
 
+  cancel = () => {
+    this.setState({error: '', redirectToReferer: true });
+  };
+
+
+
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
     const { from } = this.props.location.state || { from: { pathname: '/add' } };
@@ -82,7 +88,8 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
+                <Form.Button type="submit" fluid content="Create Account"/>
+                <Form.Button type="cancel" fluid content="Cancel" onClick={() =>this.cancel()}/>
               </Segment>
             </Form>
             <Message>
