@@ -38,6 +38,12 @@ class Signup extends React.Component {
     });
   };
 
+  cancel = () => {
+    this.setState({error: '', redirectToReferer: true });
+  };
+
+
+
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
     const { from } = this.props.location.state || { from: { pathname: '/add' } };
@@ -49,38 +55,32 @@ class Signup extends React.Component {
       <Container>
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
-            <Header as="h2" textAlign="center">
-              Register your account
-            </Header>
             <Form onSubmit={this.submit}>
               <Segment stacked>
+                <Header as="h2" textAlign="center">
+                  Registration
+                </Header>
+                <Form.Input
+                  name="email"
+                  type="email"
+                  placeholder="E-mail address"
+                  onChange={this.handleChange}
+                />
                 <Form.Group widths='equal'>
                   <Form.Input
                       fluid
-                      label="First Name"
                       name="firstName"
                       placeholder="First"
                       onChange={this.handleChange}
                   />
                   <Form.Input
                       fluid
-                      label="Last Name"
                       name="lastName"
                       placeholder="Last"
                       onChange={this.handleChange}
                   />
                 </Form.Group>
                 <Form.Input
-                  label="Email"
-                  icon="user"
-                  iconPosition="left"
-                  name="email"
-                  type="email"
-                  placeholder="E-mail address"
-                  onChange={this.handleChange}
-                />
-                <Form.Input
-                  label="Password"
                   icon="lock"
                   iconPosition="left"
                   name="password"
@@ -88,7 +88,8 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button content="Submit"/>
+                <Form.Button type="submit" fluid content="Create Account"/>
+                <Form.Button type="cancel" fluid content="Cancel" onClick={() =>this.cancel()}/>
               </Segment>
             </Form>
             <Message>
