@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Container, Form, Grid, Header, Message, Button } from 'semantic-ui-react';
 
 /**
  * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
@@ -43,37 +43,39 @@ export default class Signin extends React.Component {
     // Otherwise return the Login form.
     return (
       <Container>
-        <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-          <Grid.Column>
-            <Header as="h2" textAlign="center">
-              Login to your account
-            </Header>
-            <Form onSubmit={this.submit}>
-              <Segment stacked>
-                <Form.Input
-                  label="Email"
-                  icon="user"
-                  iconPosition="left"
-                  name="email"
-                  type="email"
-                  placeholder="E-mail address"
-                  onChange={this.handleChange}
-                />
-                <Form.Input
-                  label="Password"
-                  icon="lock"
-                  iconPosition="left"
-                  name="password"
-                  placeholder="Password"
-                  type="password"
-                  onChange={this.handleChange}
-                />
-                <Form.Button content="Submit"/>
-              </Segment>
+        <Grid verticalAlign="middle" textAlign="center" centered columns={2}>
+          <Grid.Column className="login" style={{ marginTop: 30, marginBottom: 30, padding: 75 }}>
+            <div className="spacing">
+              <Header inverted as="h2" textAlign="center">
+                Login
+              </Header>
+            </div>
+            <Form inverted onSubmit={this.submit} className="spacing">
+              <Form.Input
+                label="Email"
+                icon="user"
+                iconPosition="left"
+                name="email"
+                type="email"
+                placeholder="E-mail address"
+                onChange={this.handleChange}
+              />
+              <Form.Input
+                label="Password"
+                icon="lock"
+                iconPosition="left"
+                name="password"
+                placeholder="Password"
+                type="password"
+                onChange={this.handleChange}
+              />
             </Form>
-            <Message>
-              <Link to="/signup">Click here to Register</Link>
-            </Message>
+            <Grid centered style={{ marginTop: 15, marginBottom: 15 }}>
+              <Link to="/signup">
+                <Button color="grey">Register</Button>
+              </Link>
+              <Button color="teal">Login</Button>
+            </Grid>
             {this.state.error === '' ? (
               ''
             ) : (
