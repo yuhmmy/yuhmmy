@@ -1,5 +1,5 @@
 .NavBar {
-  background-color: ;
+  background-color: #222831;
 }
 
 .yUHmmy-landing-background {
@@ -8,5 +8,14 @@
 }
 
 body {
-  color: black;
+  color: #393E46 !important;
+}
+
+.login {
+  background-color: #222831;
+  border-radius: 10px;
+}
+
+.spacing {
+  padding-bottom: 40px;
 }
