@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Container, Form, Grid, Header, Message, Segment, Button } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
-import './Signup.css'
+import '../../stylesheets/Signup.css';
 
 /**
  * Signup component is similar to signin component, but we create a new user instead.
@@ -57,7 +57,7 @@ class Signup extends React.Component {
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
             <Form onSubmit={this.submit} className="textBox">
-              <Segment stacked className="segment">
+              <Segment stacked padding="very" className="segment">
                 <Header as="h2" textAlign="center" className="headerColor">
                   Registration
                 </Header>
@@ -90,11 +90,15 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button type="submit" fluid content="Create Account" className="primaryButton"/>
-                <Form.Button type="cancel" className="secondaryButtonColor" fluid content="Cancel" onClick={() =>this.cancel()}/>
+                <div className="spacing">
+                  <Button type="submit" fluid activeClassName="active" content="Create Account" id="primaryButton"/>
+                </div>
+                <div className="spacing">
+                  <Button id="secondaryButton" activeClassName="active" type="cancel" className="secondaryButtonColor" fluid content="Cancel" onClick={() =>this.cancel()}/>
+                </div>
               </Segment>
             </Form>
-            <Message>
+            <Message id="loginBanner">
               Already have an account? Login <Link to="/signin">here</Link>
             </Message>
             {this.state.error === '' ? (
