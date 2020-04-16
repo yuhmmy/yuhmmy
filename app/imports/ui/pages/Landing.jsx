@@ -50,37 +50,37 @@ class Call extends React.Component {
 class Info extends React.Component {
   render() {
     return (
-      <Grid container className='landing-info' verticalAlign="middle" textAlign='center' columns={3}>
-        <Grid.Column textAlign='center'>
-          <Icon size='huge' name='search' inverted />
-          <Header inverted as='h2' textAlign='center'>
-            Food Search
-          </Header>
-          <p style={{ color: '#999' }}>
-            Looking for somewhere to eat on campus? Easily search for the type of food that you are looking for!
-          </p>
-        </Grid.Column>
-        <Grid.Column textAlign='center'>
-          <Icon size='huge' name='food' inverted/>
-          <Header as='h2' textAlign='center' color='blue'>
+      <div className="landing-info">
+        <Grid container verticalAlign="middle" textAlign='center' columns={3}>
+          <Grid.Column textAlign='center'>
+            <Icon size='huge' name='search' inverted />
+            <Header inverted as='h2' textAlign='center'>
+              Food Search
             </Header>
-          <Header inverted as='h2' textAlign='center'>
-            Easy Ordering
-          </Header>
-          <p style={{ color: '#999' }}>
-            No time between your classes? No Worries! Order beforehand & your food will *magically* appear at your table!
-          </p>
-        </Grid.Column>
-        <Grid.Column textAlign='center'>
-          <Icon size='huge' name='money' inverted />
-          <Header inverted as='h2' textAlign='center'>
-            Virtual Payment
-          </Header>
-          <p style={{ color: '#999' }}>
-            Quickly pay and tip on-app to practice social distancing between wait staff and customers.
-          </p>
-        </Grid.Column>
-      </Grid>
+            <p style={{ color: '#999' }}>
+              Looking for somewhere to eat on campus? Easily search for the type of food that you are looking for!
+            </p>
+          </Grid.Column>
+          <Grid.Column textAlign='center'>
+            <Icon size='huge' name='food' inverted/>
+            <Header inverted as='h2' textAlign='center'>
+              Easy Ordering
+            </Header>
+            <p style={{ color: '#999' }}>
+              No time between your classes? Order beforehand & your food will *magically* appear at your table!
+            </p>
+          </Grid.Column>
+          <Grid.Column textAlign='center'>
+            <Icon size='huge' name='money' inverted />
+            <Header inverted as='h2' textAlign='center'>
+              Virtual Payment
+            </Header>
+            <p style={{ color: '#999' }}>
+              Quickly pay and tip on-app to practice social distancing between wait staff and customers.
+            </p>
+          </Grid.Column>
+        </Grid>
+      </div>
     );
   }
 }
