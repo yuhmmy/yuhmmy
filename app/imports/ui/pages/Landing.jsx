@@ -1,19 +1,11 @@
 // eslint-disable-next-line max-classes-per-file
 import React from 'react';
-import { Header, Image, Grid, Button, Icon, Container } from 'semantic-ui-react';
+import { Header, Image, Grid, Button, Icon } from 'semantic-ui-react';
 import { Fade } from 'react-slideshow-image';
 import { Link } from 'react-router-dom';
 
-const switchPic = {
-  duration: 2000,
-  transitionDuration: 50,
-};
-
-const imageStyle = { width: '300px' };
-
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
-  
   render() {
     return (
       <div>
@@ -27,7 +19,6 @@ class Landing extends React.Component {
 
 class Call extends React.Component {
   render() {
-    const buttonStyle = { width: '260px', height: '51px' };
     return (
       <Grid className="landing" verticalAlign="middle" textAlign='center' columns={2}>
         <Grid.Column>
@@ -91,9 +82,7 @@ class Images extends React.Component {
       duration: 2000,
       transitionDuration: 50,
     };
-    
     const imageStyle = { width: '300px' };
-
     return (
       <div className='landing-images'>
         <Grid container stackable centered columns={1}>
@@ -119,20 +108,6 @@ class Images extends React.Component {
           </div>
         </Fade>
       </div>
-    );
-  }
-}
-
-class Feedback extends React.Component {
-  render() {
-    return (
-        <div className='Feedback'>
-          <Grid container stackable centered columns={1}>
-            <Grid.Column textAlign='center'>
-              <Header as='h2' color='blue'>Never wait for your food order again!<br/></Header>
-            </Grid.Column>
-          </Grid>
-        </div>
     );
   }
 }
