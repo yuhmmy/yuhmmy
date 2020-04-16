@@ -1,0 +1,47 @@
+#bodyid .headerColor {
+  color: white;
+  padding-bottom: 30px;
+}
+#bodyid .background {
+  background-color: #393E46;
+}
+
+#bodyid .segment {
+  padding: 50px 40px 300px;
+  background-color: #222831 ;
+}
+
+#bodyid .textBox {
+  background-color: #040404 ;
+  color: #FEFEFE ;
+}
+
+#primaryButton {
+  background-color: #119da4 ;
+  color: #FEFEFE ;
+}
+
+#secondaryButton {
+  background-color: #222831 ;
+  border: 2px solid #0c7489;
+  color: #FEFEFE ;
+}
+
+#primaryButton:hover {
+  background-color: #119d93 ;
+  color: #F0F0F0;
+}
+
+#secondaryButton:hover {
+  background-color: #233831 ;
+}
+
+.spacing {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#loginBanner {
+  background-color: #222831 ;
+  color: #FEFEFE ;
+}

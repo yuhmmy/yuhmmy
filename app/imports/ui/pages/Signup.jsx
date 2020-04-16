@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
+import { Container, Form, Grid, Header, Message, Segment, Button } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
+import '../../stylesheets/Signup.css';
 
 /**
  * Signup component is similar to signin component, but we create a new user instead.
@@ -52,12 +53,12 @@ class Signup extends React.Component {
       return <Redirect to={from}/>;
     }
     return (
-      <Container>
+      <Container id="bodyid">
         <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
           <Grid.Column>
-            <Form onSubmit={this.submit}>
-              <Segment stacked>
-                <Header as="h2" textAlign="center">
+            <Form onSubmit={this.submit} className="textBox">
+              <Segment stacked padding="very" className="segment">
+                <Header as="h2" textAlign="center" className="headerColor">
                   Registration
                 </Header>
                 <Form.Input
@@ -65,6 +66,7 @@ class Signup extends React.Component {
                   type="email"
                   placeholder="E-mail address"
                   onChange={this.handleChange}
+                  className="textBox"
                 />
                 <Form.Group widths='equal'>
                   <Form.Input
@@ -88,11 +90,15 @@ class Signup extends React.Component {
                   type="password"
                   onChange={this.handleChange}
                 />
-                <Form.Button type="submit" fluid content="Create Account"/>
-                <Form.Button type="cancel" fluid content="Cancel" onClick={() =>this.cancel()}/>
+                <div className="spacing">
+                  <Button type="submit" fluid content="Create Account" id="primaryButton"/>
+                </div>
+                <div>
+                  <Button id="secondaryButton" type="cancel" className="secondaryButtonColor" fluid content="Cancel" onClick={() =>this.cancel()}/>
+                </div>
               </Segment>
             </Form>
-            <Message>
+            <Message id="loginBanner">
               Already have an account? Login <Link to="/signin">here</Link>
             </Message>
             {this.state.error === '' ? (
