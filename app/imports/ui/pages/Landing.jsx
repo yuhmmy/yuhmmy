@@ -2,7 +2,7 @@
 import React from 'react';
 import { Header, Image, Grid, Button, Icon, Container } from 'semantic-ui-react';
 import { Fade } from 'react-slideshow-image';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const switchPic = {
   duration: 2000,
@@ -20,8 +20,6 @@ class Landing extends React.Component {
         <Call />
         <Info/>
         <Images/>
-        {/* <hr/>
-        <Feedback/> */}
       </div>
     );
   }
@@ -35,12 +33,14 @@ class Call extends React.Component {
         <Grid.Column>
           <Header inverted as="h1">Food ordering, simplified.</Header>
           <p style={{ color: '#999' }}>Never wait in line for your food order again!</p>
-          <Button>
-            Sign up
-          </Button>
+          <Link to="/signup">
+            <Button>
+              Sign up
+            </Button>
+          </Link>
         </Grid.Column>
         <Grid.Column>
-          <Image small src="images/donut_love.svg" />
+          <Image src="images/donut_love.svg" />
         </Grid.Column>
       </Grid>
     );
