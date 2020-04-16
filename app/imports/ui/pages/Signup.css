@@ -1,0 +1,29 @@
+.headerColor {
+  color: white !important;
+}
+.background {
+  background-color: #393E46 !important;
+}
+
+.segment {
+  background-color: #222831 !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 300px !important;
+}
+
+#bodyid .textBox {
+  background-color: #040404 !important;
+  color: #FEFEFE !important;
+}
+
+.ui.button {
+  background-color: #119da4 !important;
+  color: #FEFEFE !important;
+}
+
+.secondaryButtonColor {
+  outline-color: #0c7489 !important;
+
+
+}
