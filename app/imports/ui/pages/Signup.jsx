@@ -28,7 +28,7 @@ class Signup extends React.Component {
           email,
           username: email,
           password,
-          profile: {firstName, lastName}
+          profile: { firstName, lastName },
         },
         (err) => {
       if (err) {
@@ -36,13 +36,13 @@ class Signup extends React.Component {
       } else {
         this.setState({ error: '', redirectToReferer: true });
       }
-    });
+    },
+);
   };
 
   cancel = () => {
-    this.setState({error: '', redirectToReferer: true });
+    this.setState({ error: '', redirectToReferer: true });
   };
-
 
 
   /** Display the signup form. Redirect to add page after successful registration and login. */
@@ -94,7 +94,14 @@ class Signup extends React.Component {
                   <Button type="submit" fluid content="Create Account" id="primaryButton"/>
                 </div>
                 <div>
-                  <Button id="secondaryButton" type="cancel" className="secondaryButtonColor" fluid content="Cancel" onClick={() =>this.cancel()}/>
+                  <Button
+                      id="secondaryButton"
+                      type="cancel"
+                      className="secondaryButtonColor"
+                      fluid
+                      content="Cancel"
+                      onClick={() => this.cancel()}
+                  />
                 </div>
               </Segment>
             </Form>
