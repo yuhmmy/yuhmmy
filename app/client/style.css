@@ -1,0 +1,27 @@
+.NavBar {
+  background-color: #222831;
+}
+
+.yUHmmy-landing-background {
+  background: url('images/back-color.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  color: #393E46 !important;
+}
+
+.login {
+  background-color: #222831;
+  border-radius: 10px;
+}
+
+.spacing {
+  padding-bottom: 40px;
+}
+
+.footer {
+  background-color: #222831;
+  padding: 15px;
+  color: white;
+}
