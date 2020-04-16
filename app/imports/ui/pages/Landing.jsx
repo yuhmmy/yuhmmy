@@ -98,7 +98,7 @@ class Images extends React.Component {
       <div className='landing-images'>
         <Grid container stackable centered columns={1}>
           <Grid.Column textAlign='center'>
-            <Header color="teal" as='h2' textAlign='center'>
+            <Header inverted as='h2' textAlign='center'>
               Not sure where to eat? Try one of these:
             </Header>
           </Grid.Column>
