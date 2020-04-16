@@ -1,4 +1,8 @@
 .yUHmmy-landing-background {
-  background: url('images/jamba.png') no-repeat center center;
+  background: url('images/back-color.png') no-repeat center center fixed;
   background-size: cover;
+}
+
+body {
+  color: black;
 }
