@@ -1,5 +1,6 @@
 #bodyid .headerColor {
   color: white;
+  padding-bottom: 30px;
 }
 #bodyid .background {
   background-color: #393E46;
@@ -37,6 +38,7 @@
 
 .spacing {
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 #loginBanner {

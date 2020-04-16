@@ -91,10 +91,10 @@ class Signup extends React.Component {
                   onChange={this.handleChange}
                 />
                 <div className="spacing">
-                  <Button type="submit" fluid activeClassName="active" content="Create Account" id="primaryButton"/>
+                  <Button type="submit" fluid content="Create Account" id="primaryButton"/>
                 </div>
-                <div className="spacing">
-                  <Button id="secondaryButton" activeClassName="active" type="cancel" className="secondaryButtonColor" fluid content="Cancel" onClick={() =>this.cancel()}/>
+                <div>
+                  <Button id="secondaryButton" type="cancel" className="secondaryButtonColor" fluid content="Cancel" onClick={() =>this.cancel()}/>
                 </div>
               </Segment>
             </Form>
