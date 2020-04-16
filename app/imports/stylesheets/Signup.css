@@ -26,8 +26,13 @@
   color: #FEFEFE ;
 }
 
-.active {
-  color: #F0F0F0 ;
+#primaryButton:hover {
+  background-color: #119d93 ;
+  color: #F0F0F0;
+}
+
+#secondaryButton:hover {
+  background-color: #233831 ;
 }
 
 .spacing {
