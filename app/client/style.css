@@ -2,9 +2,18 @@
   background-color: #222831;
 }
 
-.yUHmmy-landing-background {
-  background: url('images/back-color.png') no-repeat center center fixed;
-  background-size: cover;
+.landing {
+  padding: 30px;
+  background-color: #222;
+}
+
+.landing-info {
+  padding: 60px 0px;
+  background-color: #222;
+}
+
+.landing-images {
+  padding: 40px;
 }
 
 body {
