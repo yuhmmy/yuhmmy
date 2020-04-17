@@ -34,3 +34,26 @@ body {
   padding: 15px;
   color: white;
 }
+
+.order {
+  margin: 20px;
+  color: white
+}
+
+.order-menu-item {
+  background-color: #393E46;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.order-menu {
+  background-color: #222831;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.order-checkout {
+  background-color: #222831;
+  border-radius: 10px;
+  padding: 20px;
+}
