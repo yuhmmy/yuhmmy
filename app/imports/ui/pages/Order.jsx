@@ -11,7 +11,7 @@ class Order extends React.Component {
               <Header as="h2" inverted>
                 Ala Carte
               </Header>
-              <div class="order-menu-item">
+              <div className="order-menu-item">
                 <div>
                   <span style={{ float: 'left' }}>
                     <Image src='https://react.semantic-ui.com/images/wireframe/square-image.png' avatar />
