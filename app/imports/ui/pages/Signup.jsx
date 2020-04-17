@@ -31,19 +31,18 @@ class Signup extends React.Component {
           profile: { firstName, lastName },
         },
         (err) => {
-      if (err) {
-        this.setState({ error: err.reason });
-      } else {
-        this.setState({ error: '', redirectToReferer: true });
-      }
-    },
-);
+          if (err) {
+            this.setState({ error: err.reason });
+          } else {
+            this.setState({ error: '', redirectToReferer: true });
+          }
+        },
+    );
   };
 
   cancel = () => {
     this.setState({ error: '', redirectToReferer: true });
   };
-
 
   /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
@@ -53,73 +52,73 @@ class Signup extends React.Component {
       return <Redirect to={from}/>;
     }
     return (
-      <Container id="bodyid">
-        <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
-          <Grid.Column>
-            <Form onSubmit={this.submit} className="textBox">
-              <Segment stacked padding="very" className="segment">
-                <Header as="h2" textAlign="center" className="headerColor">
-                  Registration
-                </Header>
-                <Form.Input
-                  name="email"
-                  type="email"
-                  placeholder="E-mail address"
-                  onChange={this.handleChange}
-                  className="textBox"
-                />
-                <Form.Group widths='equal'>
+        <Container id="bodyid">
+          <Grid textAlign="center" verticalAlign="middle" centered columns={2}>
+            <Grid.Column>
+              <Form onSubmit={this.submit} className="textBox">
+                <Segment stacked padding="very" className="segment">
+                  <Header as="h2" textAlign="center" className="headerColor">
+                    Registration
+                  </Header>
                   <Form.Input
-                      fluid
-                      name="firstName"
-                      placeholder="First"
+                      name="email"
+                      type="email"
+                      placeholder="E-mail address"
+                      onChange={this.handleChange}
+                      className="textBox"
+                  />
+                  <Form.Group widths='equal'>
+                    <Form.Input
+                        fluid
+                        name="firstName"
+                        placeholder="First"
+                        onChange={this.handleChange}
+                    />
+                    <Form.Input
+                        fluid
+                        name="lastName"
+                        placeholder="Last"
+                        onChange={this.handleChange}
+                    />
+                  </Form.Group>
+                  <Form.Input
+                      icon="lock"
+                      iconPosition="left"
+                      name="password"
+                      placeholder="Password"
+                      type="password"
                       onChange={this.handleChange}
                   />
-                  <Form.Input
-                      fluid
-                      name="lastName"
-                      placeholder="Last"
-                      onChange={this.handleChange}
+                  <div className="spacing">
+                    <Button type="submit" fluid content="Create Account" id="primaryButton"/>
+                  </div>
+                  <div>
+                    <Button
+                        id="secondaryButton"
+                        type="cancel"
+                        className="secondaryButtonColor"
+                        fluid
+                        content="Cancel"
+                        onClick={() => this.cancel()}
+                    />
+                  </div>
+                </Segment>
+              </Form>
+              <Message id="loginBanner">
+                Already have an account? Login <Link to="/signin">here</Link>
+              </Message>
+              {this.state.error === '' ? (
+                  ''
+              ) : (
+                  <Message
+                      error
+                      header="Registration was not successful"
+                      content={this.state.error}
                   />
-                </Form.Group>
-                <Form.Input
-                  icon="lock"
-                  iconPosition="left"
-                  name="password"
-                  placeholder="Password"
-                  type="password"
-                  onChange={this.handleChange}
-                />
-                <div className="spacing">
-                  <Button type="submit" fluid content="Create Account" id="primaryButton"/>
-                </div>
-                <div>
-                  <Button
-                      id="secondaryButton"
-                      type="cancel"
-                      className="secondaryButtonColor"
-                      fluid
-                      content="Cancel"
-                      onClick={() => this.cancel()}
-                  />
-                </div>
-              </Segment>
-            </Form>
-            <Message id="loginBanner">
-              Already have an account? Login <Link to="/signin">here</Link>
-            </Message>
-            {this.state.error === '' ? (
-              ''
-            ) : (
-              <Message
-                error
-                header="Registration was not successful"
-                content={this.state.error}
-              />
-            )}
-          </Grid.Column>
-        </Grid>
-      </Container>
+              )}
+            </Grid.Column>
+          </Grid>
+        </Container>
     );
   }
 }

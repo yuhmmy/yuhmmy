@@ -11,7 +11,7 @@ const MenuSchema = new SimpleSchema({
   price: Number,
   description: String,
   ingredients: String,
-  }, { tracker: Tracker });
+}, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
 Menu.attachSchema(MenuSchema);
