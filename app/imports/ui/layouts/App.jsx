@@ -17,7 +17,6 @@ import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import Order from '../pages/Order';
 import RestaurantOrder from '../pages/RestaurantOrder';
-
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
   render() {
@@ -44,7 +43,6 @@ class App extends React.Component {
     );
   }
 }
-
 /**
  * ProtectedRoute (see React Router v4 sample)
  * Checks for Meteor login before routing to the requested page, otherwise goes to signin page.

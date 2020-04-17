@@ -4,8 +4,6 @@ import { Grid, Header, Button, List, Image } from 'semantic-ui-react';
 class Order extends React.Component {
   render() {
     return (
-
-      
       <div className="order">
         <Grid>
           <Grid.Column width={11}>
