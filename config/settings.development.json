@@ -4,12 +4,6 @@
     { "email": "john@foo.com", "password": "changeme", "firstName": "John", "lastName": "Foo"  }
   ],
 
-  "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
-  ],
   "defaultMenu": [
     { "itemName": "Water", "price": 0.00, "description": "Iced cold glass of water", "ingredients": "Water" },
     { "itemName": "All Natural Iced Tea", "price": 6.00, "description": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar", "ingredients": "Water, Lemon Juice, Blacktea, Sugar"}
