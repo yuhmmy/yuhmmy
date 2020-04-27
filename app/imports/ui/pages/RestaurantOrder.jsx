@@ -1,22 +1,20 @@
 import React from 'react';
 import { Grid, Header, Button, List, Image, Card } from 'semantic-ui-react';
-import {}
-
+import { Restaurants } from '../../api/restaurant/Restaurant';
+import { Orders } from '/imports/ui/components/Orders'
 class RestaurantOrder extends React.Component {
   render() {
     return (
       <div className="order">
         <Grid>
+
           <Grid.Column width={11}>
             <div className="order-menu">
               <Header as="h2" inverted>Kitchen Queue</Header>
               <div className="order-menu-item">
                 <div>
-                  <span style={{ float: 'left' }}>
-                    <Image src='https://react.semantic-ui.com/images/wireframe/square-image.png' avatar />
-                  </span>
                   <Card.Group>
-                    {this.props.orders.map((order, index) => <Order key={index} order={order}/>)}
+                    {this.props.Kitchen.map((Kitchen, index) => <Orders key={index} Kitchen={Kitchen}/>)}
                   </Card.Group>
                 </div>
                 <br />
@@ -27,44 +25,28 @@ class RestaurantOrder extends React.Component {
 
           <Grid.Column width={11}>
             <div className="order-menu">
-              <Header as="h2" inverted>
-                Bar Queue
-              </Header>
+              <Header as="h2" inverted>Bar Queue</Header>
               <div className="order-menu-item">
                 <div>
-                  <span style={{ float: 'left' }}>
-                    <Image src='https://react.semantic-ui.com/images/wireframe/square-image.png' avatar />
-                  </span>
-                  <div style={{ fontWeight: 'bold' }}>
-                    Chicken Fingers
-                  </div>
-                  <div style={{ fontSize: '12px', color: 'rgb(153, 153, 153)' }}>
-                    13.99
-                  </div>
+                  <Card.Group>
+                    {this.props.Bar.map((Bar, index) => <Orders key={index} Bar={Bar}/>)}
+                  </Card.Group>
+
                 </div>
                 <br />
-                <div>
-                  A Japanese twist on a british classic. Chicken fried with yuzu infused flour.
-                </div>
               </div>
             </div>
           </Grid.Column>
+
+
           <Grid.Column width={11}>
             <div className="order-menu">
-              <Header as="h2" inverted>
-                Wait Queue
-              </Header>
+              <Header as="h2" inverted>Wait Queue</Header>
               <div className="order-menu-item">
                 <div>
-                  <span style={{ float: 'left' }}>
-                    <Image src='https://react.semantic-ui.com/images/wireframe/square-image.png' avatar />
-                  </span>
-                  <div style={{ fontWeight: 'bold' }}>
-                    Chicken Fingers
-                  </div>
-                  <div style={{ fontSize: '12px', color: 'rgb(153, 153, 153)' }}>
-                    13.99
-                  </div>
+                  <Card.Group>
+                    {this.props.Wait.map((Wait, index) => <Orders key={index} Wait = {Wait}/>)}
+                  </Card.Group>
                 </div>
                 <br />
                 <div>
@@ -78,10 +60,13 @@ class RestaurantOrder extends React.Component {
     );
   }
 }
-RestaurantOrder.propTypes = {
-  contacts: PropTypes.array.isRequired,
-  ready: PropTypes.bool.isRequired,
-}
 
-
-export default Order;
+export default withTracker(() => {
+  const subscription = Meteor.subscribe(Restaurants)
+    return{
+      Kitchen: Restaurants.find({}).fetch(),
+      Bar: Restaurants.find({}).fetch(),
+      Wait: Restaurants.find({}).fetch(),
+      ready: subscription.ready(),
+    };
+})(RestaurantOrder);
