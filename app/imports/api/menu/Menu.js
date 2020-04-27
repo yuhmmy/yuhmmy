@@ -11,13 +11,14 @@ const MenuSchema = new SimpleSchema({
   price: Number,
   image: String,
   description: String,
-  ingredients: {type: Array, required: false},
+  ingredients: { type: Array, required: false },
     'ingredients.$': String,
   restaurantId: String,
   meatId: {type: SimpleSchema.Integer, required: false},
   allergyId: {type: SimpleSchema.Integer, required: false},
   ethnicityId: {type: SimpleSchema.Integer, required: false},
   isDrink: SimpleSchema.Integer,
+
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

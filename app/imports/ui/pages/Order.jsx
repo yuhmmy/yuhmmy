@@ -1,7 +1,23 @@
 import React from 'react';
-import { Grid, Header, Button, List, Image } from 'semantic-ui-react';
+import { Meteor } from 'meteor/meteor';
+import { withTracker } from 'meteor/react-meteor-data';
+import { Grid, Header, Button, List } from 'semantic-ui-react';
+
+import { Menu } from '../../api/menu/Menu';
+
+import MenuCard from '../components/MenuCard';
+import CheckoutItem from '../components/CheckoutItem';
 
 class Order extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      menuItems: [],
+      orderItems: [],
+    };
+  }
+
   render() {
     return (
       <div className="order">
@@ -11,23 +27,42 @@ class Order extends React.Component {
               <Header as="h2" inverted>
                 Ala Carte
               </Header>
-              <div className="order-menu-item">
-                <div>
-                  <span style={{ float: 'left' }}>
-                    <Image src='https://react.semantic-ui.com/images/wireframe/square-image.png' avatar />
-                  </span>
-                  <div style={{ fontWeight: 'bold' }}>
-                    Chicken Fingers
-                  </div>
-                  <div style={{ fontSize: '12px', color: 'rgb(153, 153, 153)' }}>
-                    13.99
-                  </div>
-                </div>
-                <br />
-                <div>
-                  A Japanese twist on a british classic. Chicken fried with yuzu infused flour.
-                </div>
-              </div>
+              <Grid columns={3}>
+                <Grid.Row>
+                  <Grid.Column>
+                    <MenuCard
+                      image="https://react.semantic-ui.com/images/wireframe/square-image.png"
+                      name="Chicken Fingers"
+                      price={13.99}
+                      description="A Japanese twist on a british classic. Chicken fried with yuzu infused flour."
+                    />
+                  </Grid.Column>
+                  <Grid.Column>
+                    <MenuCard
+                      image="https://react.semantic-ui.com/images/wireframe/square-image.png"
+                      name="Chicken Fingers"
+                      price={13.99}
+                      description="A Japanese twist on a british classic. Chicken fried with yuzu infused flour."
+                    />
+                  </Grid.Column>
+                  <Grid.Column>
+                    <MenuCard
+                      image="https://react.semantic-ui.com/images/wireframe/square-image.png"
+                      name="Chicken Fingers"
+                      price={13.99}
+                      description="A Japanese twist on a british classic. Chicken fried with yuzu infused flour."
+                    />
+                  </Grid.Column>
+                  <Grid.Column>
+                    <MenuCard
+                      image="https://react.semantic-ui.com/images/wireframe/square-image.png"
+                      name="Chicken Fingers"
+                      price={13.99}
+                      description="A Japanese twist on a british classic. Chicken fried with yuzu infused flour."
+                    />
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
             </div>
           </Grid.Column>
           <Grid.Column width={5}>
@@ -37,26 +72,18 @@ class Order extends React.Component {
               </Header>
               <List>
                 <List.Item>
-                  <span style={{ color: '#119DA4', fontWeight: 'bold', marginRight: 3 }}>
-                    1
-                  </span>
-                  <span style={{ color: '#DCDCDC', paddingRight: 3 }}>
-                    Chicken Fingers
-                  </span>
-                  <span style={{ color: '#DCDCDC', marginRight: 3 }}>
-                    13.99
-                  </span>
+                  <CheckoutItem
+                    quantity={1}
+                    name="Chicken Fingers"
+                    price={13.99}
+                  />
                 </List.Item>
                 <List.Item>
-                  <span style={{ color: '#119DA4', fontWeight: 'bold', marginRight: 3 }}>
-                    2
-                  </span>
-                  <span style={{ color: '#DCDCDC', paddingRight: 3 }}>
-                    Shoyu Ramen
-                  </span>
-                  <span style={{ color: '#DCDCDC', marginRight: 3 }}>
-                    15.99
-                  </span>
+                  <CheckoutItem
+                    quantity={1}
+                    name="Chicken Fingers"
+                    price={13.99}
+                  />
                 </List.Item>
               </List>
               <br />
@@ -80,4 +107,11 @@ class Order extends React.Component {
   }
 }
 
-export default Order;
+export default withTracker(() => {
+  const subscription = Meteor.subscribe('Menu');
+
+  return {
+    doc: Menu.find({}).fetch(),
+    ready: subscription.ready(),
+  };
+})(Order);

@@ -1,7 +1,21 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "firstName": "Admin", "lastName": "Foo" },
-    { "email": "john@foo.com", "password": "changeme", "firstName": "John", "lastName": "Foo"  }
+    { "email": "admin@foo.com",
+      "password": "changeme",
+      "firstName": "Admin",
+      "lastName": "Foo",
+      "gender": "M",
+      "pref": { "ethnicity": [1,2], "meat": 1 },
+      "age": 42
+    },
+    { "email": "john@foo.com",
+      "password": "changeme",
+      "firstName": "John",
+      "lastName": "Foo",
+      "gender": "M",
+      "pref": { "ethnicity": [3], "meat": 1 },
+      "age": 15
+    }
   ],
 
   "defaultMenu": [
