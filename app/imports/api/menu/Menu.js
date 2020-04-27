@@ -11,7 +11,11 @@ const MenuSchema = new SimpleSchema({
   price: Number,
   description: String,
   ingredients: String,
-  type: String, 
+  type: {
+    type:String, 
+    allowedValues: ['Kitchen', 'Bar'],
+    defaultValue: 'kitchen',
+  }, 
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
