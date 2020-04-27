@@ -1,5 +1,4 @@
 import { Meteor } from 'meteor/meteor';
-//import { Stuffs } from '../../api/stuff/Stuff.js';
 import { Menu } from '../../api/menu/Menu';
 import { Meat } from '../../api/menu/Meat';
 import { Ethnicity } from '../../api/menu/Ethnicity';
@@ -32,9 +31,9 @@ function addEthnicity(data) {
 if (
     Menu.find().count() === 0 &&
     Restaurants.find().count() === 0 &&
-    Meat.find().count() === 0  &&
-    Ethnicity.find().count() === 0 
-   ) {
+    Meat.find().count() === 0 &&
+    Ethnicity.find().count() === 0
+) {
   // Initialize restaurants first
   if (Meteor.settings.defaultRestaurant) {
     console.log('creating default restaurants');
