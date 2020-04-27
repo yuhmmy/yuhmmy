@@ -14,9 +14,11 @@ const MenuSchema = new SimpleSchema({
   ingredients: { type: Array, required: false },
     'ingredients.$': String,
   restaurantId: String,
-  meatId: { type: SimpleSchema.Integer, required: false },
-  allergyId: { type: SimpleSchema.Integer, required: false },
-  ethnicityId: { type: SimpleSchema.Integer, required: false },
+  meatId: {type: SimpleSchema.Integer, required: false},
+  allergyId: {type: SimpleSchema.Integer, required: false},
+  ethnicityId: {type: SimpleSchema.Integer, required: false},
+  isDrink: SimpleSchema.Integer,
+
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

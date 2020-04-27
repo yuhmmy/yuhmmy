@@ -26,7 +26,8 @@
       "ingredients": ["Water"],
       "meatId": 1,
       "ethnicityId": 1,
-      "restaurantId": "1"
+      "restaurantId": "1",
+      "isDrink": 1
     },
     { "itemName": "All Natural Iced Tea",
       "price": 6.00,
@@ -35,7 +36,8 @@
       "ingredients": ["Water", "Lemon Juice", "Blacktea", "Sugar"],
       "meatId": 1,
       "ethnicityId": 1,
-      "restaurantId": "1"
+      "restaurantId": "1",
+      "isDrink": 1
     }
   ],
 
