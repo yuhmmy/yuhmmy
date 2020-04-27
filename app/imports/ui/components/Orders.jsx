@@ -13,14 +13,15 @@ class Orders extends React.Component {
             <Card.Meta>{this.props.order.table}</Card.Meta>
             <Card.Description>
               Quantity: {this.props.order.quantity}
+              Table: {this.props.order.tableNumber}
+              Preference: {this.props.order.preference}
             </Card.Description>
-            {this.props.order.preference}
+            
           </Card.Content>
         </Card>
     );
   }
 }
-
 /** Require a document to be passed to this component. */
 Orders.propTypes = {
   order: PropTypes.object.isRequired,
