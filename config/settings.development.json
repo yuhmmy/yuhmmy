@@ -9,7 +9,7 @@
       "price": 0.00,
       "description": "Iced cold glass of water",
       "image": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
-      "ingredients": "Water",
+      "ingredients": ["Water"],
       "meatId": 1,
       "ethnicityId": 1,
       "restaurantId": "1"
@@ -18,7 +18,7 @@
       "price": 6.00,
       "description": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar",
       "image": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
-      "ingredients": "Water, Lemon Juice, Blacktea, Sugar",
+      "ingredients": ["Water", "Lemon Juice", "Blacktea", "Sugar"],
       "meatId": 1,
       "ethnicityId": 1,
       "restaurantId": "1"
@@ -63,7 +63,12 @@
     {
       "_id": "1",
       "restaurantName": "McDonalds",
-      "restaurantAddress": "1234 Kaimuki Plaza, Hon, HI 96817",
+      "restaurantAddress": {
+        "street": "1234 Kaimuki Plaza",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96817"
+      },
       "restaurantImage": "https://google.com",
       "restaurantDesc": "Fast-food restaurant",
       "restaurantOwner": "john@foo.com"
