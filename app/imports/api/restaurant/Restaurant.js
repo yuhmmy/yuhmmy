@@ -6,7 +6,7 @@ import { Tracker } from 'meteor/tracker';
 const Restaurants = new Mongo.Collection('Restaurants');
 
 /** Define a schema to specify the structure of each document in the collection. */
-const RestaurantSchema = new SimpleSchema({ 
+const RestaurantSchema = new SimpleSchema({
   restaurantName: String,
   restaurantAddress: Object,
     'restaurantAddress.street': String,

@@ -1,4 +1,8 @@
 import { Meteor } from 'meteor/meteor';
+import { Menu } from '../../api/menu/Menu';
+import { Meat } from '../../api/menu/Meat';
+import { Ethnicity } from '../../api/menu/Ethnicity';
+import { Restaurants } from '../../api/restaurant/Restaurant';
 
 Meteor.publish('Restaurants', function publish() {
     return Restaurants.find();
