@@ -7,8 +7,8 @@ const Ethnicity = new Mongo.Collection('Ethnicity');
 
 /** Master table of ethnicities, tied to Menu table. */
 const EthnicitySchema = new SimpleSchema({
-  id: SimpleSchema.Integer,
-  description: String,
+  ethnicityId: SimpleSchema.Integer,
+  ethnicityDesc: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

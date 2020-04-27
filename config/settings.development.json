@@ -5,7 +5,68 @@
   ],
 
   "defaultMenu": [
-    { "itemName": "Water", "price": 0.00, "description": "Iced cold glass of water", "ingredients": "Water" },
-    { "itemName": "All Natural Iced Tea", "price": 6.00, "description": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar", "ingredients": "Water, Lemon Juice, Blacktea, Sugar"}
+    { "itemName": "Water",
+      "price": 0.00,
+      "description": "Iced cold glass of water",
+      "image": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
+      "ingredients": "Water",
+      "meatId": 1,
+      "ethnicityId": 1,
+      "restaurantId": "1"
+    },
+    { "itemName": "All Natural Iced Tea",
+      "price": 6.00,
+      "description": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar",
+      "image": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
+      "ingredients": "Water, Lemon Juice, Blacktea, Sugar",
+      "meatId": 1,
+      "ethnicityId": 1,
+      "restaurantId": "1"
+    }
+  ],
+
+  "defaultEthnicity": [
+    {
+      "ethnicityId": 1,
+      "ethnicityDesc": "Chinese"
+    },
+    {
+      "ethnicityId": 2,
+      "ethnicityDesc": "Korean"
+    },
+    {
+      "ethnicityId": 1,
+      "ethnicityDesc": "Thai"
+    }
+  ],
+
+  "defaultMeat": [
+    {
+      "meatId": 1,
+      "meatDesc": "Vegan"
+    },
+    {
+      "meatId": 2,
+      "meatDesc": "Vegetarian"
+    },
+    {
+      "meatId": 3,
+      "meatDesc": "Pescetarian"
+    },
+    {
+      "meatId": 4,
+      "meatDesc": "Meat & veggies"
+    }
+  ],
+
+  "defaultRestaurant": [
+    {
+      "_id": "1",
+      "restaurantName": "McDonalds",
+      "restaurantAddress": "1234 Kaimuki Plaza, Hon, HI 96817",
+      "restaurantImage": "https://google.com",
+      "restaurantDesc": "Fast-food restaurant",
+      "restaurantOwner": "john@foo.com"
+    }
   ]
 }

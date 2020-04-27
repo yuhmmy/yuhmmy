@@ -7,8 +7,8 @@ const Meat = new Mongo.Collection('Meat');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const MeatSchema = new SimpleSchema({
-  id: SimpleSchema.Integer,
-  description: String,
+  meatId: SimpleSchema.Integer,
+  meatDesc: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
