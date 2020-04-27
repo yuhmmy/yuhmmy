@@ -12,11 +12,10 @@ class Orders extends React.Component {
             <Card.Header>{this.props} {this.props.contact.itemName}</Card.Header>
             <Card.Meta>{this.props.order.table}</Card.Meta>
             <Card.Description>
-              Quantity: {this.props.order.quantity}
-              Table: {this.props.order.tableNumber}
-              Preference: {this.props.order.preference}
+              Quantity: {this.props.quantity}
+              Preference: {this.props.preference}
+              Table: {this.props.table}
             </Card.Description>
-            
           </Card.Content>
         </Card>
     );
@@ -24,8 +23,10 @@ class Orders extends React.Component {
 }
 /** Require a document to be passed to this component. */
 Orders.propTypes = {
-  order: PropTypes.object.isRequired,
+  name: PropTypes.string,
+  quantity: PropTypes.number,
+  table: PropTypes.number,
+  preference: PropTypes.string,
 };
 
-/** Wrap this component in withRouter since we use the <Link> React Router element. */
-export default withRouter(Orders);
+export default Orders;
