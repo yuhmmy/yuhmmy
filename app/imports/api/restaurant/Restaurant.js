@@ -9,14 +9,14 @@ const Restaurants = new Mongo.Collection('Restaurants');
 const RestaurantSchema = new SimpleSchema({
   restaurantName: String,
   restaurantAddress: Object,
-    'restaurantAddress.street': String,
-    'restaurantAddress.city': String,
-    'restaurantAddress.state': String,
-    'restaurantAddress.zipCode': String,
+  'restaurantAddress.street': String,
+  'restaurantAddress.city': String,
+  'restaurantAddress.state': String,
+  'restaurantAddress.zipCode': String,
   restaurantImage: String,
   restaurantDesc: String,
   restaurantOwner: String,
-  }, { tracker: Tracker });
+}, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
 Restaurants.attachSchema(RestaurantSchema);
