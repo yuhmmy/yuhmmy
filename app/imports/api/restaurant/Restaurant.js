@@ -16,19 +16,6 @@ const RestaurantSchema = new SimpleSchema({
   restaurantImage: String,
   restaurantDesc: String,
   restaurantOwner: String,
-  restaurantOrders: { type: Object, required: false },
-    'restaurantOrders.kitchenQueue': Array,
-      'restaurantOrders.kitchenQueue.$': Object,
-        'restaurantOrders.kitchenQueue.$.kitchenName': String,
-        'restaurantOrders.kitchenQueue.$.preference': String,
-    'restaurantOrders.drinkQueue': Array,
-      'restaurantOrders.drinkQueue.$': Object,
-        'restaurantOrders.drinkQueue.$.drinkName': String,
-        'restaurantOrders.drinkQueue.$.preference': String,
-    'restaurantOrders.waitQueue': Array,
-      'restaurantOrders.waitQueue.$': Object,
-        'restaurantOrders.waitQueue.$.waitName': String,
-        'restaurantOrders.waitQueue.$.preference': String,
   }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
