@@ -27,6 +27,37 @@ class NavBar extends React.Component {
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
               <Menu.Item as={NavLink} activeClassName="active" exact to="/restaurantorder"
                          key='admin'>Orders</Menu.Item>
+              < Menu.Item as = { NavLink } activeClassName = "active" exact to="/order" key='Order'>Menu</Menu.Item>,
+            <Menu.Item
+            as={NavLink}
+            activeClassName="active"
+            exact
+            to="/RestaurantOrder"
+            key='order'
+            >
+            Orders
+            </Menu.Item>,
+            <Menu.Item as={NavLink} activeClassName="active" exact to="/search" key='search'>Search</Menu.Item>,
+            ]
+            ) : ''}
+          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
+              [
+                <Menu.Item
+                    as={NavLink}
+                    activeClassName="active"
+                    exact to="/restaurantorder"
+                    key='admin'
+                >
+                  Orders
+                </Menu.Item>,
+                <Menu.Item as={NavLink} activeClassName="active" exact to="/Order" key='Order'>Menu</Menu.Item>,
+                <Menu.Item as={NavLink} activeClassName="active" exact to="/RestaurantOrder"
+                           key='order'>Orders</Menu.Item>,
+                <Menu.Item as={NavLink} activeClassName="active" exact to="/AddRestaurant"
+                           key='AddRestaurant'>Add Your Restaurant</Menu.Item>,
+                <Menu.Item as={NavLink} activeClassName="active" exact to="/RestaurantSearch"
+                           key='RestaurantSearch'>Search</Menu.Item>,
+              ]
           ) : ''}
           <Menu.Item position="right">
             {this.props.currentUser === '' ? (

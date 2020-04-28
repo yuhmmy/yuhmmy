@@ -1,117 +1,72 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
-import { Grid, Header, Button, List } from 'semantic-ui-react';
+import { Container, Grid, Header } from 'semantic-ui-react';
 
-import { Menu } from '../../api/menu/Menu';
+import { Orders } from '../../api/order/Order';
+import { SubOrders } from '../../api/order/SubOrder';
 
-import MenuCard from '../components/MenuCard';
-import CheckoutItem from '../components/CheckoutItem';
+import OrderItem from '../components/OrderItem';
 
+/**
+ * Signin page overrides the form’s submit event and call Meteor’s loginWithPassword().
+ * Authentication errors modify the component’s state to be displayed
+ */
 class Order extends React.Component {
-  constructor() {
-    super();
-
-    this.state = {
-      menuItems: [],
-      orderItems: [],
-    };
-  }
-
+  /** Render the signin form. */
   render() {
+    // Otherwise return the Login form.
     return (
-      <div className="order">
-        <Grid>
-          <Grid.Column width={11}>
-            <div className="order-menu">
-              <Header as="h2" inverted>
-                Ala Carte
-              </Header>
-              <Grid columns={3}>
-                <Grid.Row>
-                  <Grid.Column>
-                    <MenuCard
-                      image="https://react.semantic-ui.com/images/wireframe/square-image.png"
-                      name="Chicken Fingers"
-                      price={13.99}
-                      description="A Japanese twist on a british classic. Chicken fried with yuzu infused flour."
-                    />
-                  </Grid.Column>
-                  <Grid.Column>
-                    <MenuCard
-                      image="https://react.semantic-ui.com/images/wireframe/square-image.png"
-                      name="Chicken Fingers"
-                      price={13.99}
-                      description="A Japanese twist on a british classic. Chicken fried with yuzu infused flour."
-                    />
-                  </Grid.Column>
-                  <Grid.Column>
-                    <MenuCard
-                      image="https://react.semantic-ui.com/images/wireframe/square-image.png"
-                      name="Chicken Fingers"
-                      price={13.99}
-                      description="A Japanese twist on a british classic. Chicken fried with yuzu infused flour."
-                    />
-                  </Grid.Column>
-                  <Grid.Column>
-                    <MenuCard
-                      image="https://react.semantic-ui.com/images/wireframe/square-image.png"
-                      name="Chicken Fingers"
-                      price={13.99}
-                      description="A Japanese twist on a british classic. Chicken fried with yuzu infused flour."
-                    />
-                  </Grid.Column>
-                </Grid.Row>
-              </Grid>
-            </div>
-          </Grid.Column>
-          <Grid.Column width={5}>
-            <div className="order-checkout">
-              <Header as="h2" inverted>
-                Your Order
-              </Header>
-              <List>
-                <List.Item>
-                  <CheckoutItem
-                    quantity={1}
-                    name="Chicken Fingers"
-                    price={13.99}
-                  />
-                </List.Item>
-                <List.Item>
-                  <CheckoutItem
-                    quantity={1}
-                    name="Chicken Fingers"
-                    price={13.99}
-                  />
-                </List.Item>
-              </List>
-              <br />
-              <Grid textAlign="left">
-                <Header inverted as="h3">
-                  Total
-                </Header>
-                <span>
-                  20.00
+      <Container>
+        <Grid verticalAlign="middle" centered columns={2}>
+          <Grid.Column className="login" style={{ marginTop: 30, marginBottom: 30, padding: 75 }}>
+            <div className="spacing">
+              <Header inverted as="h2">
+                Order
+                &nbsp;&nbsp;
+                <span className="secondary-text">
+                  #{this.props.ready ? this.props.order._id : ''}
                 </span>
-              </Grid>
+              </Header>
+              <table>
+                <tbody>
+                  {
+                    this.props.subOrders.map(order => (
+                      <OrderItem
+                        order={this.props.order._id}
+                        subOrder={order}
+                        restaurant={this.props.order.orderRestaurantId}
+                        key={order._id}
+                      />
+                    ))
+                  }
+                </tbody>
+              </table>
             </div>
-            <br />
-            <Button size="massive" color="teal" fluid>
-              Checkout
-            </Button>
           </Grid.Column>
         </Grid>
-      </div>
+      </Container>
     );
   }
 }
 
-export default withTracker(() => {
-  const subscription = Meteor.subscribe('Menu');
+/** Ensure that the React Router location object is available in case we need to redirect. */
+Order.propTypes = {
+  order: PropTypes.object,
+  subOrders: PropTypes.array,
+  location: PropTypes.object,
+  ready: PropTypes.bool,
+};
+
+export default withTracker(({ match }) => {
+  const _id = match.params._id;
+  const subscription = Meteor.subscribe('Orders');
+  const subscription2 = Meteor.subscribe('SubOrders');
 
   return {
-    doc: Menu.find({}).fetch(),
-    ready: subscription.ready(),
+    order: Orders.findOne(_id),
+    subOrders: SubOrders.find({ orderId: _id }).fetch(),
+    ready: subscription.ready() && subscription2.ready(),
   };
 })(Order);
