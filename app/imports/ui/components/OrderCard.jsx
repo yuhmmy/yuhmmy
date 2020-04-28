@@ -19,16 +19,16 @@ class OrderCard extends React.Component {
     );
   }
 }
+
+OrderCard.propTypes = {
+  orderId: prop 
+}
 /** Require a document to be passed to this component. */
-
 export default withTracker(({ match }) => {
-  const dishId = match.params.
-})
-Orders.propTypes = {
-  name: PropTypes.string,
-  quantity: PropTypes.number,
-  table: PropTypes.number,
-  preference: PropTypes.string,
-};
-
-export default OrderCard;
+  const orderId = order._Id
+  const subscription = Meteor.subscribe(SubOrder)
+    return{
+      orders: Suborders.findOne(orderId),
+      ready: subscription.ready(), 
+    };
+})(RestaurantOrder);

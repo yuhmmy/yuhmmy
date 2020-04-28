@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Header, Button, List, Image, Card } from 'semantic-ui-react';
 import { Orders } from '../../api/restaurant/Order';
 import { OrderCard } from '/imports/ui/components/OrderCard'
+import { Restaurants } from '../../api/restaurant/Restaurant';
 class RestaurantOrder extends React.Component {
   render() {
     return (
@@ -26,10 +27,12 @@ class RestaurantOrder extends React.Component {
   }
 }
 export default withTracker(({ match }) => {
-  const orderId = match.params._id;
+  const restaurantId = match.params._id;
   const subscription = Meteor.subscribe(Restaurants)
+  const subcription2 = Meteor.subscribe(Orders)
     return{
-      orders: Orders.findOne(orderId).fetch(),
-      ready: subscription.ready(),
+      orders: Orders.find(restaurantId).fetch(),
+      restaurant: Restaurants.findOne(restaurantId),
+      ready: subscription.ready() && subscription2.ready(), 
     };
 })(RestaurantOrder);
