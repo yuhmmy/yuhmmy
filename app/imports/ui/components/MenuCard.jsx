@@ -3,6 +3,15 @@ import PropTypes from 'prop-types';
 import { Image, Icon } from 'semantic-ui-react';
 
 class MenuCard extends React.Component {
+  addItem() {
+    this.props.addItem({
+      _id: this.props.item._id,
+      name: this.props.name,
+      price: this.props.price,
+      quantity: 1,
+    });
+  }
+
   render() {
     return (
       <div className="order-menu-item">
@@ -15,11 +24,11 @@ class MenuCard extends React.Component {
               {this.props.name}
             </div>
             <div className="secondary-text">
-              {this.props.price}
+              ${this.props.price}
             </div>
           </div>
           <div className="flex-auto">
-            <Icon style={{ float: 'right' }} name="plus" />
+            <Icon className="cursor-pointer" onClick={() => this.addItem()} style={{ float: 'right' }} name="plus" />
           </div>
         </div>
         <br />
@@ -32,6 +41,8 @@ class MenuCard extends React.Component {
 }
 
 MenuCard.propTypes = {
+  addItem: PropTypes.func,
+  item: PropTypes.object,
   image: PropTypes.string,
   name: PropTypes.string,
   price: PropTypes.number,
