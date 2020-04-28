@@ -18,6 +18,7 @@ const MenuSchema = new SimpleSchema({
   menuItemAllergyId: {type: SimpleSchema.Integer, required: false},
   menuItemEthnicityId: {type: SimpleSchema.Integer, required: false},
   menuItemIsDrink: SimpleSchema.Integer,
+
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
