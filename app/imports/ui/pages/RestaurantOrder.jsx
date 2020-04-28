@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Header, Button, List, Image } from 'semantic-ui-react';
+import { Grid, Header, Image } from 'semantic-ui-react';
 
 class Order extends React.Component {
   render() {
