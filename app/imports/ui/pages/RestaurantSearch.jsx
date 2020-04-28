@@ -15,17 +15,11 @@ class RestaurantSearch extends React.Component {
         <Input placeholder="Search" fluid size='huge' action={{ icon: 'search' }} />
         <br />
         <Button>I&apos;m feeling lucky!</Button>
-        <Grid columns={3}>
+        <br />
+        <br />
+        <br />
+        <Grid columns={3} padded>
           <Grid.Row>
-            <Grid.Column>
-              <RestaurantCard
-                id={'restaurant._id'}
-                image="https://react.semantic-ui.com/images/wireframe/square-image.png"
-                name={'restaurant.restaurantName'}
-                address={'restaurant.restaurantAddress'}
-                description={'restaurant.restaurantDesc'}
-              />
-            </Grid.Column>
             {
               this.props.restaurants.map((restaurant) => (
                 <Grid.Column key={restaurant._id}>
@@ -33,7 +27,7 @@ class RestaurantSearch extends React.Component {
                     id={restaurant._id}
                     image="https://react.semantic-ui.com/images/wireframe/square-image.png"
                     name={restaurant.restaurantName}
-                    address={restaurant.restaurantAddress}
+                    address={restaurant.restaurantAddress.city}
                     description={restaurant.restaurantDesc}
                   />
                 </Grid.Column>
