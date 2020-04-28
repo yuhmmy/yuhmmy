@@ -9,12 +9,10 @@ class OrderCard extends React.Component {
     return (
         <Card centered>
           <Card.Content>
-            <Card.Header>{this.props} {this.props.contact.itemName}</Card.Header>
+            <Card.Header>{this.props.name}</Card.Header>
             <Card.Meta>{this.props.order.table}</Card.Meta>
             <Card.Description>
               Quantity: {this.props.quantity}
-              Preference: {this.props.preference}
-              Table: {this.props.table}
             </Card.Description>
           </Card.Content>
         </Card>
@@ -22,6 +20,10 @@ class OrderCard extends React.Component {
   }
 }
 /** Require a document to be passed to this component. */
+
+export default withTracker(({ match }) => {
+  const dishId = match.params.
+})
 Orders.propTypes = {
   name: PropTypes.string,
   quantity: PropTypes.number,
