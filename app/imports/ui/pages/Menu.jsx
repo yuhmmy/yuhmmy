@@ -16,6 +16,7 @@ class Order extends React.Component {
 
     this.state = {
       orderItems: [],
+      total: 0,
     };
   }
 
@@ -25,14 +26,18 @@ class Order extends React.Component {
         ...state.orderItems,
         item,
       ],
+      total: state.total + item.price,
     }));
   }
 
-  removeItem(index) {
+  removeItem(index, price) {
     this.setState(state => ({
       orderItems: state.orderItems.filter((e, i) => i !== index),
+      total: state.total - price,
     }));
   }
+
+  submitOrder() {}
 
   render() {
     return (
@@ -69,18 +74,20 @@ class Order extends React.Component {
                 Your Order
               </Header>
               <table>
-                {
-                  this.state.orderItems.length > 0 ? this.state.orderItems.map((item, i) => (
-                    <CheckoutItem
-                      removeItem={(index) => this.removeItem(index)}
-                      quantity={1}
-                      name={item.name}
-                      price={item.price}
-                      index={i}
-                      key={i}
-                    />
-                  )) : 'No items in your order.'
-                }
+                <tbody>
+                  {
+                    this.state.orderItems.length > 0 ? this.state.orderItems.map((item, i) => (
+                      <CheckoutItem
+                        removeItem={(index, price) => this.removeItem(index, price)}
+                        quantity={1}
+                        name={item.name}
+                        price={item.price}
+                        index={i}
+                        key={i}
+                      />
+                    )) : 'No items in your order.'
+                  }
+                </tbody>
               </table>
               <br />
               <br />
@@ -89,12 +96,12 @@ class Order extends React.Component {
                   Total
                 </Header>
                 <span>
-                  20.00
+                  ${this.state.total}
                 </span>
               </Grid>
             </div>
             <br />
-            <Button size="massive" color="teal" fluid>
+            <Button onClick={() => submitOrder()} size="massive" color="teal" fluid>
               Checkout
             </Button>
           </Grid.Column>

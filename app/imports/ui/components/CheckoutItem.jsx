@@ -4,7 +4,7 @@ import { Icon } from 'semantic-ui-react';
 
 class CheckoutItem extends React.Component {
   removeItem() {
-    this.props.removeItem(this.props.index);
+    this.props.removeItem(this.props.index, this.props.price);
   }
 
   render() {
@@ -30,8 +30,8 @@ class CheckoutItem extends React.Component {
 CheckoutItem.propTypes = {
   removeItem: PropTypes.func,
   quantity: PropTypes.number,
-  name: PropTypes.name,
-  price: PropTypes.price,
+  name: PropTypes.string,
+  price: PropTypes.number,
   index: PropTypes.number,
 };
 
