@@ -24,10 +24,11 @@ class Order extends React.Component {
             <div className="spacing">
               <Header inverted as="h2">
                 Order
+                &nbsp;&nbsp;
+                <span className="secondary-text">
+                  #{this.props.ready ? this.props.order._id : ''}
+                </span>
               </Header>
-              <div className="secondary-text">
-                #{this.props.ready ? this.props.order._id : ''}
-              </div>
               <table>
                 <tbody>
                   {

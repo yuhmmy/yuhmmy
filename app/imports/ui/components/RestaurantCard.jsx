@@ -26,7 +26,7 @@ class RestaurantCard extends React.Component {
             {this.props.description}
           </div>
           <br />
-          <Link to={`/order/${this.props.id}`}>
+          <Link to={`/menu/${this.props.id}`}>
             <Button basic compact inverted size="mini">
               Order
             </Button>

@@ -60,6 +60,7 @@ class MenuPage extends React.Component {
     Object.keys(accumulate).forEach((key) => {
       SubOrders.insert({
         orderId,
+        menuItemId: key,
         subOrderQuantity: accumulate[key],
         subOrderIsFinished: false,
       });
