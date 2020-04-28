@@ -33,7 +33,7 @@ if (
     Restaurants.find().count() === 0 &&
     Meat.find().count() === 0 &&
     Ethnicity.find().count() === 0
-) {
+   ) {
   // Initialize restaurants first
   if (Meteor.settings.defaultRestaurant) {
     console.log('creating default restaurants');
