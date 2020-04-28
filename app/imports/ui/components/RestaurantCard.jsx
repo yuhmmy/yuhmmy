@@ -6,6 +6,7 @@ import { withRouter, Link } from 'react-router-dom';
 class RestaurantCard extends React.Component {
   render() {
     return (
+      <div>
         <div className="order-menu-item">
           <div className="flex justify-between">
             <div className="flex-auto">
