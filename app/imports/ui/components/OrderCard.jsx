@@ -27,13 +27,15 @@ OrderCard.propTypes = {
   orders: PropTypes.array,
 };
 /** Require a document to be passed to this component. */
-export default withTracker(({ match }) => {
-  const orderId = match.order._id;
-  const subscription = Meteor.subscribe('SubOrder');
-  const subscription2 = Meteor.subscribe('Menu');
-    return {
-      orders: SubOrders.findOne(orderId),
-      name: Menu.findOne(Orders.menuItemId),
-      ready: subscription.ready() && subscription2.ready(),
-    };
-})(OrderCard);
+// export default withTracker(({ match }) => {
+//   const orderId = match.order._id;
+//   const subscription = Meteor.subscribe('SubOrder');
+//   const subscription2 = Meteor.subscribe('Menu');
+//     return {
+//       orders: SubOrders.findOne(orderId),
+//       name: Menu.findOne(Orders.menuItemId),
+//       ready: subscription.ready() && subscription2.ready(),
+//     };
+// })(OrderCard);
+
+export default OrderCard;

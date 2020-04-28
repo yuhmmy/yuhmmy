@@ -4,7 +4,7 @@ import { Grid, Header, Card } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Orders } from '../../api/order/Order';
-import { OrderCard } from '/imports/ui/components/OrderCard';
+import OrderCard from '../components/OrderCard';
 import { Restaurants } from '../../api/restaurant/Restaurant';
 
 class RestaurantOrder extends React.Component {
@@ -18,7 +18,9 @@ class RestaurantOrder extends React.Component {
               <div className="order-menu-item">
                 <div>
                   <Card.Group>
-                    {this.props.orders.map((orders, index) => <OrderCard key={orders._id} orders={orders}/>)}
+                    {this.props.orders.map((orders, index) => (
+                      <OrderCard key={orders._id} orders={orders}/>
+                    ))}
                   </Card.Group>
                 </div>
                 <br />
