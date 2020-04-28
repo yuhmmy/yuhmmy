@@ -18,6 +18,7 @@ import Signout from '../pages/Signout';
 import Order from '../pages/Order';
 import RestaurantOrder from '../pages/RestaurantOrder';
 import RestaurantSearch from '../pages/RestaurantSearch';
+import RestaurantAdd from '../pages/RestaurantAdd';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -33,6 +34,7 @@ class App extends React.Component {
               <Route path="/order" component={Order}/>
               <Route path="/restaurantorder" component={RestaurantOrder}/>
               <Route path="/search" component={RestaurantSearch} />
+              <Route path="/restaurantadd" component={RestaurantAdd} />
               {/* <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
