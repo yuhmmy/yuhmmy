@@ -1,7 +1,11 @@
 import React from 'react';
-import { Card, Image, MenuItem } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
+import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
+import { Card } from 'semantic-ui-react';
+import { Menu } from '../../api/menu/Menu';
+import { SubOrders } from '../../api/order/SubOrder';
+import { Orders } from '../../api/order/Order';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class OrderCard extends React.Component {
@@ -18,15 +22,18 @@ class OrderCard extends React.Component {
     );
   }
 }
-
+OrderCard.propTypes = {
+  name: PropTypes.string,
+  orders: PropTypes.array,
+};
 /** Require a document to be passed to this component. */
 export default withTracker(({ match }) => {
-  const orderId = order._Id
-  const subscription = Meteor.subscribe(SubOrder)
-  const subscription2 = Meteor.subscribe(Menu)
-    return{
-      orders: Suborders.findOne(orderId),
-      name: Menu.findOne(orders.menuItemId),
-      ready: subscription.ready() && subscription2.ready(), 
+  const orderId = match.order._id;
+  const subscription = Meteor.subscribe('SubOrder');
+  const subscription2 = Meteor.subscribe('Menu');
+    return {
+      orders: SubOrders.findOne(orderId),
+      name: Menu.findOne(Orders.menuItemId),
+      ready: subscription.ready() && subscription2.ready(),
     };
 })(OrderCard);

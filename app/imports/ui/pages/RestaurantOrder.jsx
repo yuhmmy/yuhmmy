@@ -1,9 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Grid, Header, Card } from 'semantic-ui-react';
-import { Orders } from '../../api/order/Order';
-import { OrderCard } from '/imports/ui/components/OrderCard'
-import { Restaurants } from '../../api/restaurant/Restaurant';
+import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
+import { Orders } from '../../api/order/Order';
+import { OrderCard } from '/imports/ui/components/OrderCard';
+import { Restaurants } from '../../api/restaurant/Restaurant';
+
 class RestaurantOrder extends React.Component {
   render() {
     return (
@@ -15,7 +18,7 @@ class RestaurantOrder extends React.Component {
               <div className="order-menu-item">
                 <div>
                   <Card.Group>
-                    {this.props.orders.map((orders, index) => <OrderCard key={orders._id} orders={order}/>)}
+                    {this.props.orders.map((orders, index) => <OrderCard key={orders._id} orders={orders}/>)}
                   </Card.Group>
                 </div>
                 <br />
@@ -27,13 +30,17 @@ class RestaurantOrder extends React.Component {
     );
   }
 }
+RestaurantOrder.propTypes = {
+  orders: PropTypes.array,
+};
+
 export default withTracker(({ match }) => {
   const restaurantId = match.params._id;
-  const subscription = Meteor.subscribe(Restaurants)
-  const subcription2 = Meteor.subscribe(Orders)
-    return{
+  const subscription = Meteor.subscribe('Restaurants');
+  const subscription2 = Meteor.subscribe('Orders');
+    return {
       orders: Orders.find(restaurantId).fetch(),
       restaurant: Restaurants.findOne(restaurantId),
-      ready: subscription.ready() && subscription2.ready(), 
+      ready: subscription.ready() && subscription2.ready(),
     };
 })(RestaurantOrder);
