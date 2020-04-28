@@ -1,5 +1,4 @@
 import { Meteor } from 'meteor/meteor';
-//import { Stuffs } from '../../api/stuff/Stuff.js';
 import { Menu } from '../../api/menu/Menu';
 import { Meat } from '../../api/menu/Meat';
 import { Ethnicity } from '../../api/menu/Ethnicity';
@@ -9,7 +8,7 @@ import { Restaurants } from '../../api/restaurant/Restaurant';
 
 /** Initialize the database with a default menu doc */
 function addMenu(data) {
-  console.log(`  Adding: ${data.itemName}`);
+  console.log(`  Adding: ${data.menuItemName}`);
   Menu.insert(data);
 }
 
