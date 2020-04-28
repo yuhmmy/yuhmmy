@@ -8,6 +8,7 @@ const SubOrders = new Mongo.Collection('SubOrders');
 /** Define a schema to specify the structure of each document in the collection. */
 const SubOrdersSchema = new SimpleSchema({
   orderId: String,
+  menuItemId: String,
   subOrderQuantity: SimpleSchema.Integer,
   subOrderIsFinished: Boolean,
 }, { tracker: Tracker });
