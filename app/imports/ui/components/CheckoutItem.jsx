@@ -9,20 +9,20 @@ class CheckoutItem extends React.Component {
 
   render() {
     return (
-      <tr style={{ fontSize: 16 }}>
-        <td style={{ color: '#119DA4', fontWeight: 'bold', paddingRight: 20 }}>
-          {this.props.quantity}
-        </td>
-        <td style={{ color: '#DCDCDC', paddingRight: 30 }}>
-          {this.props.name}
-        </td>
-        <td style={{ color: '#DCDCDC', paddingRight: 20 }}>
-          ${this.props.price}
-        </td>
-        <td style={{ color: '#DCDCDC' }}>
-          <Icon className="cursor-pointer" onClick={() => this.removeItem()} name="trash" />
-        </td>
-      </tr>
+        <tr style={{ fontSize: 16 }}>
+          <td style={{ color: '#119DA4', fontWeight: 'bold', paddingRight: 20 }}>
+            {this.props.quantity}
+          </td>
+          <td style={{ color: '#DCDCDC', paddingRight: 30 }}>
+            {this.props.name}
+          </td>
+          <td style={{ color: '#DCDCDC', paddingRight: 20 }}>
+            ${this.props.price}
+          </td>
+          <td style={{ color: '#DCDCDC' }}>
+            <Icon className="cursor-pointer" onClick={() => this.removeItem()} name="trash"/>
+          </td>
+        </tr>
     );
   }
 }
