@@ -6,6 +6,7 @@ import { withRouter, Link } from 'react-router-dom';
 class RestaurantCard extends React.Component {
   render() {
     return (
+      <div>
         <div className="order-menu-item">
           <div className="flex justify-between">
             <div className="flex-auto">
@@ -25,12 +26,13 @@ class RestaurantCard extends React.Component {
             {this.props.description}
           </div>
           <br />
-          <Link to={`/order/${this.props.id}`}>
+          <Link to={`/menu/${this.props.id}`}>
             <Button basic compact inverted size="mini">
               Order
             </Button>
           </Link>
         </div>
+      </div>
     );
   }
 }

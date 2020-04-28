@@ -16,6 +16,7 @@ import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import Menu from '../pages/Menu';
+import Order from '../pages/Order';
 import RestaurantOrder from '../pages/RestaurantOrder';
 import RestaurantSearch from '../pages/RestaurantSearch';
 
@@ -31,7 +32,7 @@ class App extends React.Component {
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/menu/:_id" component={Menu}/>
-              <Route path="/order/:_id" component={Menu}/>
+              <Route path="/order/:_id" component={Order}/>
               <Route path="/restaurantorder" component={RestaurantOrder}/>
               <Route path="/search" component={RestaurantSearch} />
               <ProtectedRoute path="restaurantorder/:_id" component={RestaurantOrder}/>
