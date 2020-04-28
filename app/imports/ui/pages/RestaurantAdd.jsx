@@ -24,19 +24,6 @@ const formSchema = new SimpleSchema({
   restaurantImage: String,
   restaurantDesc: String,
   restaurantOwner: String,
-  restaurantOrders: { type: Object, required: false },
-  'restaurantOrders.kitchenQueue': Array,
-  'restaurantOrders.kitchenQueue.$': Object,
-  'restaurantOrders.kitchenQueue.$.kitchenName': String,
-  'restaurantOrders.kitchenQueue.$.preference': String,
-  'restaurantOrders.drinkQueue': Array,
-  'restaurantOrders.drinkQueue.$': Object,
-  'restaurantOrders.drinkQueue.$.drinkName': String,
-  'restaurantOrders.drinkQueue.$.preference': String,
-  'restaurantOrders.waitQueue': Array,
-  'restaurantOrders.waitQueue.$': Object,
-  'restaurantOrders.waitQueue.$.waitName': String,
-  'restaurantOrders.waitQueue.$.preference': String,
 });
 
 /** Renders the Page for adding a document. */
@@ -45,11 +32,11 @@ class RestaurantAdd extends React.Component {
   /** On submit, insert the data. */
   submit(data, formRef) {
     const {
-      restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner, restaurantOrders,
+      restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner
     } = data;
     // const owner = Meteor.user().username;
     Restaurants.insert({
-          restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner, restaurantOrders,
+          restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner
         },
         (error) => {
           if (error) {
@@ -85,14 +72,10 @@ class RestaurantAdd extends React.Component {
                              placeholder='RestaurantImage.jpg'/>
                 </Grid.Column>
               </Grid.Row>
-              <Grid.Row columns={3}>
+              <Grid.Row columns={2}>
                 <Grid.Column>
                   <TextField label='Restaurant Owner:' name='restaurantOwner'
                              placeholder='Your Restaurant Owner'/>
-                </Grid.Column>
-                <Grid.Column>
-                  <TextField label='Restaurant Orders:' name='restaurantOrders' required={false}
-                             placeholder='Your Restaurant Orders'/>
                 </Grid.Column>
                 <Grid.Column>
                   <LongTextField label='Restaurant Description:' name='restaurantDesc'
