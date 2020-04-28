@@ -29,7 +29,6 @@ const RestaurantSchema = new SimpleSchema({
       'restaurantOrders.waitQueue.$': Object,
         'restaurantOrders.waitQueue.$.waitName': String,
         'restaurantOrders.waitQueue.$.preference': String,
-
   }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Header, Button, List, Image, Card } from 'semantic-ui-react';
 import { Restaurants } from '../../api/restaurant/Restaurant';
-import { Orders } from '/imports/ui/components/Orders'
+import { OrderCard } from '/imports/ui/components/OrderCard'
 class RestaurantOrder extends React.Component {
   render() {
     return (
@@ -14,7 +14,7 @@ class RestaurantOrder extends React.Component {
               <div className="order-menu-item">
                 <div>
                   <Card.Group>
-                    {this.props.Kitchen.map((Kitchen, index) => <Orders key={index} Kitchen={Kitchen}/>)}
+                    {this.props.restaurants.restaurantOrders.kitchenQueue.map((kitchenQueue, index) => <OrderCard key={kitchenQueue._id} kitchenQueue={kitchenQueue}/>)}
                   </Card.Group>
                 </div>
                 <br />
@@ -29,9 +29,8 @@ class RestaurantOrder extends React.Component {
               <div className="order-menu-item">
                 <div>
                   <Card.Group>
-                    {this.props.Bar.map((Bar, index) => <Orders key={index} Bar={Bar}/>)}
+                    {this.props.restaurants.restaurantOrders.drinkQueue.map((drinkQueue, index) => <OrderCard key={kitchenque._id} barQueue={barQueue}/>)}
                   </Card.Group>
-
                 </div>
                 <br />
               </div>
@@ -61,12 +60,11 @@ class RestaurantOrder extends React.Component {
   }
 }
 
-export default withTracker(() => {
+export default withTracker(({ match }) => {
+  const restaurantId = match.params._id;
   const subscription = Meteor.subscribe(Restaurants)
     return{
-      Kitchen: Restaurants.find({}).fetch(),
-      Bar: Restaurants.find({}).fetch(),
-      Wait: Restaurants.find({}).fetch(),
+      restaurants: Restaurants.findOne(restaurantId).fetch(),
       ready: subscription.ready(),
     };
 })(RestaurantOrder);

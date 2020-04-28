@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
-class Orders extends React.Component {
+class OrderCard extends React.Component {
   render() {
     return (
         <Card centered>
@@ -29,4 +29,4 @@ Orders.propTypes = {
   preference: PropTypes.string,
 };
 
-export default Orders;
+export default OrderCard;
