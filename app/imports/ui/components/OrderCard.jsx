@@ -27,6 +27,7 @@ OrderCard.propTypes = {
 export default withTracker(({ match }) => {
   const orderId = order._Id
   const subscription = Meteor.subscribe(SubOrder)
+  const subscription = Meteor.subscribe()
     return{
       orders: Suborders.findOne(orderId),
       ready: subscription.ready(), 
