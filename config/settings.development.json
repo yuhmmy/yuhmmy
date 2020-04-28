@@ -5,25 +5,25 @@
   ],
 
   "defaultMenu": [
-    { "itemName": "Water",
-      "price": 0.00,
-      "description": "Iced cold glass of water",
-      "image": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
-      "ingredients": ["Water"],
-      "meatId": 1,
-      "ethnicityId": 1,
-      "restaurantId": "1",
-      "isDrink": 1
+    { "menuItemName": "Water",
+      "menuItemPrice": 0.00,
+      "menuItemDescription": "Iced cold glass of water",
+      "menuItemImage": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
+      "menuItemIngredients": ["Water"],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "1",
+      "menuItemIsDrink": 1
     },
-    { "itemName": "All Natural Iced Tea",
-      "price": 6.00,
-      "description": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar",
-      "image": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
-      "ingredients": ["Water", "Lemon Juice", "Blacktea", "Sugar"],
-      "meatId": 1,
-      "ethnicityId": 1,
-      "restaurantId": "1",
-      "isDrink": 1
+    { "menuItemName": "All Natural Iced Tea",
+      "menuItemPrice": 6.00,
+      "menuItemDescription": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar",
+      "menuItemImage": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
+      "menuItemIngredients": ["Water", "Lemon Juice", "Blacktea", "Sugar"],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "1",
+      "menuItemIsDrink": 1
     }
   ],
 
