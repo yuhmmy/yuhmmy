@@ -6,11 +6,13 @@ import { Grid, Header, Button } from 'semantic-ui-react';
 
 import { Menu } from '../../api/menu/Menu';
 import { Restaurants } from '../../api/restaurant/Restaurant';
+import { Orders } from '../../api/order/Order';
+import { SubOrders } from '../../api/order/SubOrder';
 
 import MenuCard from '../components/MenuCard';
 import CheckoutItem from '../components/CheckoutItem';
 
-class Order extends React.Component {
+class MenuPage extends React.Component {
   constructor() {
     super();
 
@@ -37,7 +39,34 @@ class Order extends React.Component {
     }));
   }
 
-  submitOrder() {}
+  submitOrder() {
+    const orderCustomerId = Meteor.userId();
+    const orderId = Orders.insert({
+      orderRestaurantId: this.props.restaurant._id,
+      orderCustomerId,
+      orderIsFinished: false,
+    });
+
+    const accumulate = {};
+
+    this.state.orderItems.forEach(item => {
+      if (!accumulate[item._id]) {
+        accumulate[item._id] = item.quantity;
+      } else {
+        accumulate[item._id] += item.quantity;
+      }
+    });
+
+    Object.keys(accumulate).forEach((key) => {
+      SubOrders.insert({
+        orderId,
+        subOrderQuantity: accumulate[key],
+        subOrderIsFinished: false,
+      });
+    });
+
+    this.props.history.push(`/order/${orderId}`);
+  }
 
   render() {
     return (
@@ -46,7 +75,7 @@ class Order extends React.Component {
           <Grid.Column width={11}>
             <div className="order-menu">
               <Header as="h2" inverted>
-                Ala Carte
+                {this.props.ready ? this.props.restaurant.restaurantName : ''} Menu
               </Header>
               <Grid columns={3}>
                 <Grid.Row>
@@ -101,7 +130,7 @@ class Order extends React.Component {
               </Grid>
             </div>
             <br />
-            <Button onClick={() => submitOrder()} size="massive" color="teal" fluid>
+            <Button onClick={() => this.submitOrder()} size="massive" color="teal" fluid>
               Checkout
             </Button>
           </Grid.Column>
@@ -111,18 +140,22 @@ class Order extends React.Component {
   }
 }
 
-Order.propTypes = {
+MenuPage.propTypes = {
+  history: PropTypes.object,
   restaurant: PropTypes.object,
   menu: PropTypes.array,
+  ready: PropTypes.bool,
 };
 
 export default withTracker(({ match }) => {
   const _id = match.params._id;
   const subscription = Meteor.subscribe('Menu');
+  const subscription2 = Meteor.subscribe('Restaurants');
+  const subscription3 = Meteor.subscribe('Orders');
 
   return {
-    restaurant: Restaurants.findOne({ _id }),
+    restaurant: Restaurants.findOne(_id),
     menu: Menu.find({ menuItemRestaurantId: _id }).fetch(),
-    ready: subscription.ready(),
+    ready: subscription.ready() && subscription2.ready() && subscription3.ready(),
   };
-})(Order);
+})(MenuPage);
