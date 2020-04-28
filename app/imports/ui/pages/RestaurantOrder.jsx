@@ -1,8 +1,9 @@
 import React from 'react';
-import { Grid, Header, Button, List, Image, Card } from 'semantic-ui-react';
-import { Orders } from '../../api/restaurant/Order';
+import { Grid, Header, Card } from 'semantic-ui-react';
+import { Orders } from '../../api/order/Order';
 import { OrderCard } from '/imports/ui/components/OrderCard'
 import { Restaurants } from '../../api/restaurant/Restaurant';
+import { withTracker } from 'meteor/react-meteor-data';
 class RestaurantOrder extends React.Component {
   render() {
     return (
