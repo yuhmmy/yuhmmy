@@ -4,14 +4,18 @@ import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import LongTextField from 'uniforms-semantic/LongTextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
+import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
 // import NumField from 'uniforms-semantic//NumField';
 // import HiddenField from 'uniforms-semantic/HiddenField';
 // import ErrorsField from 'uniforms-semantic/ErrorsField';
 import swal from 'sweetalert';
-// import { Meteor } from 'meteor/meteor';
+import { Meteor } from 'meteor/meteor';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import SimpleSchema from 'simpl-schema';
 import { Restaurants } from '../../api/restaurant/Restaurant';
+// import { Ethnicity } from '../../api/menu/Ethnicity';
+// import { Meat } from '../../api/menu/Meat';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
@@ -32,11 +36,11 @@ class RestaurantAdd extends React.Component {
   /** On submit, insert the data. */
   submit(data, formRef) {
     const {
-      restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner
+      restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner,
     } = data;
     // const owner = Meteor.user().username;
     Restaurants.insert({
-          restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner
+          restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner,
         },
         (error) => {
           if (error) {
@@ -90,4 +94,20 @@ class RestaurantAdd extends React.Component {
   }
 }
 
-export default RestaurantAdd;
+/** Require an array of Stuff documents in the props. */
+
+RestaurantAdd.propTypes = {
+  restaurants: PropTypes.array.isRequired,
+  ready: PropTypes.bool.isRequired,
+  location: PropTypes.object,
+};
+
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+export default withTracker(() => {
+  // Get access to Stuff documents.
+  const subscription = Meteor.subscribe('Restaurant');
+  return {
+    restaurants: Restaurants.find({}).fetch(),
+    ready: subscription.ready(),
+  };
+})(RestaurantAdd);
