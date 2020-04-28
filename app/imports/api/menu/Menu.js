@@ -11,12 +11,12 @@ const MenuSchema = new SimpleSchema({
   menuItemPrice: Number,
   menuItemImage: String,
   menuItemDescription: String,
-  menuItemIngredients: {type: Array, required: false},
+  menuItemIngredients: { type: Array, required: false },
     'menuItemIngredients.$': String,
   menuItemRestaurantId: String,
-  menuItemMeatId: {type: SimpleSchema.Integer, required: false},
-  menuItemAllergyId: {type: SimpleSchema.Integer, required: false},
-  menuItemEthnicityId: {type: SimpleSchema.Integer, required: false},
+  menuItemMeatId: { type: SimpleSchema.Integer, required: false },
+  menuItemAllergyId: { type: SimpleSchema.Integer, required: false },
+  menuItemEthnicityId: { type: SimpleSchema.Integer, required: false },
   menuItemIsDrink: SimpleSchema.Integer,
 
 }, { tracker: Tracker });
