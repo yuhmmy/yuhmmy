@@ -8,7 +8,7 @@ import { Restaurants } from '../../api/restaurant/Restaurant';
 
 /** Initialize the database with a default menu doc */
 function addMenu(data) {
-  console.log(`  Adding: ${data.itemName}`);
+  console.log(`  Adding: ${data.menuItemName}`);
   Menu.insert(data);
 }
 
