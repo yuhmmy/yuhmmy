@@ -31,7 +31,9 @@ class RestaurantOrder extends React.Component {
   }
 }
 RestaurantOrder.propTypes = {
-  orders: PropTypes.array,
+  orders: PropTypes.array.isRequired,
+  restaurants: PropTypes.array.isRequired,
+  ready: PropTypes.bool.isRequired,
 };
 
 export default withTracker(({ match }) => {
@@ -39,7 +41,7 @@ export default withTracker(({ match }) => {
   const subscription = Meteor.subscribe('Restaurants');
   const subscription2 = Meteor.subscribe('Orders');
     return {
-      orders: Orders.find(restaurantId).fetch(),
+      orders: Orders.find({ orderRestaurantId: restaurantId }).fetch(),
       restaurant: Restaurants.findOne(restaurantId),
       ready: subscription.ready() && subscription2.ready(),
     };
