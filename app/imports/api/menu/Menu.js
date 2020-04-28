@@ -7,17 +7,17 @@ const Menu = new Mongo.Collection('Menu');
 
 /** Define a schema to specify the structure of each document in the collection. */
 const MenuSchema = new SimpleSchema({
-  itemName: String,
-  price: Number,
-  image: String,
-  description: String,
-  ingredients: { type: Array, required: false },
-    'ingredients.$': String,
-  restaurantId: String,
-  meatId: {type: SimpleSchema.Integer, required: false},
-  allergyId: {type: SimpleSchema.Integer, required: false},
-  ethnicityId: {type: SimpleSchema.Integer, required: false},
-  isDrink: SimpleSchema.Integer,
+  menuItemName: String,
+  menuItemPrice: Number,
+  menuItemImage: String,
+  menuItemDescription: String,
+  menuItemIngredients: {type: Array, required: false},
+    'menuItemIngredients.$': String,
+  menuItemRestaurantId: String,
+  menuItemMeatId: {type: SimpleSchema.Integer, required: false},
+  menuItemAllergyId: {type: SimpleSchema.Integer, required: false},
+  menuItemEthnicityId: {type: SimpleSchema.Integer, required: false},
+  menuItemIsDrink: SimpleSchema.Integer,
 
 }, { tracker: Tracker });
 
