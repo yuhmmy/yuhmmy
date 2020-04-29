@@ -22,7 +22,7 @@ class NavBar extends React.Component {
                 as={NavLink}
                 activeClassName="active"
                 exact
-                to="/restaurantorder"
+                to="/restaurantorder/"
                 key='order'
               >
                 Orders
@@ -41,7 +41,7 @@ class NavBar extends React.Component {
                 Orders
               </Menu.Item>,
               <Menu.Item as={NavLink} activeClassName="active" exact to="/Order" key='Order'>Menu</Menu.Item>,
-              <Menu.Item as={NavLink} activeClassName="active" exact to="/restaurantorder:_id"
+              <Menu.Item as={NavLink} activeClassName="active" exact to="/restaurantorder/"
                           key='order'>Orders</Menu.Item>,
               <Menu.Item as={NavLink} activeClassName="active" exact to="/AddRestaurant"
                           key='AddRestaurant'>Add Your Restaurant</Menu.Item>,

@@ -13,9 +13,9 @@ class OrderCard extends React.Component {
     return (
         <Card centered>
           <Card.Content>
-            <Card.Header>{this.props.name}</Card.Header>
+            <Card.Header>{this.props.menu.menuItemName}</Card.Header>
             <Card.Description>
-              Quantity: {this.props.orders.subOrderQuantity}
+              Quantity: {this.props.subOrder.subOrderQuantity}
             </Card.Description>
           </Card.Content>
         </Card>
@@ -24,18 +24,20 @@ class OrderCard extends React.Component {
 }
 OrderCard.propTypes = {
   name: PropTypes.string,
-  orders: PropTypes.array,
+  order: PropTypes.object,
+  quantity: PropTypes.number,
+  orders: PropTypes.object,
+  menu: PropTypes.object,
+  subOrder: PropTypes.object, 
+  ready: PropTypes.bool,
 };
 /** Require a document to be passed to this component. */
-// export default withTracker(({ match }) => {
-//   const orderId = match.order._id;
-//   const subscription = Meteor.subscribe('SubOrder');
-//   const subscription2 = Meteor.subscribe('Menu');
-//     return {
-//       orders: SubOrders.findOne(orderId),
-//       name: Menu.findOne(Orders.menuItemId),
-//       ready: subscription.ready() && subscription2.ready(),
-//     };
-// })(OrderCard);
-
-export default OrderCard;
+ export default withTracker(() => {
+   const subscription = Meteor.subscribe('SubOrder');
+   const subscription2 = Meteor.subscribe('Menu');
+     return {
+       subOrder: SubOrders.findOne({ orderID: order._id }),
+       menu: Menu.findOne(subOrder.menuItemId),
+       ready: subscription.ready() && subscription2.ready(),
+     };
+ })(OrderCard);
