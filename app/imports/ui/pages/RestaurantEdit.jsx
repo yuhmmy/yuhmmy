@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
 import swal from 'sweetalert';
-import { AutoForm, ErrorsField, HiddenField, LongTextField, SubmitField, TextField } from 'uniforms-semantic';
+import { AutoForm, ErrorsField, LongTextField, SubmitField, TextField } from 'uniforms-semantic';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
@@ -30,16 +30,17 @@ class RestaurantEdit extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Edit Stuff</Header>
+            <Header as="h2" textAlign="center" color='blue'>Edit Restaurant</Header>
             <AutoForm schema={RestaurantSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
               <Segment>
-                <TextField label='Restaurant Name:' name='restaurantName'/>
-                <TextField label='Restaurant Address:' name='restaurantAddress'/>
-                <TextField label='Restaurant Image:' name='restaurantImage'/>
-                <LongTextField label='Restaurant Description:' name='restaurantDesc'/>
+                <TextField label='Restaurant Name:' name='restaurantName' placeholder='McDonald&apos;s'/>
+                <TextField label='Restaurant Address:' name='restaurantAddress'
+                           placeholder='2121 S King St, Honolulu, HI 96826'/>
+                <TextField label='Restaurant Image:' name='restaurantImage' placeholder='McD.jpg'/>
+                <LongTextField label='Restaurant Description:' name='restaurantDesc'
+                               placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
-                <HiddenField name='owner'/>
               </Segment>
             </AutoForm>
           </Grid.Column>

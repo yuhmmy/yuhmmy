@@ -47,7 +47,7 @@ class RestaurantAdd extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center" inverted>Add Your Restaurant</Header>
+            <Header as="h2" textAlign="center" color='blue'>Add Your Restaurant</Header>
             <AutoForm ref={ref => {
               fRef = ref;
             }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
