@@ -18,7 +18,7 @@ class MenuCard extends React.Component {
           <div className="flex justify-between">
             <div className="flex-auto">
             <span style={{ float: 'left', paddingRight: 5 }}>
-              <Image src={this.props.image} avatar />
+              <Image src={this.props.image} avatar/>
             </span>
               <div style={{ fontWeight: 'bold', lineHeight: 0.95 }}>
                 {this.props.name}
@@ -28,10 +28,10 @@ class MenuCard extends React.Component {
               </div>
             </div>
             <div className="flex-auto">
-              <Icon className="cursor-pointer" onClick={() => this.addItem()} style={{ float: 'right' }} name="plus" />
+              <Icon className="cursor-pointer" onClick={() => this.addItem()} style={{ float: 'right' }} name="plus"/>
             </div>
           </div>
-          <br />
+          <br/>
           <div>
             {this.props.description}
           </div>

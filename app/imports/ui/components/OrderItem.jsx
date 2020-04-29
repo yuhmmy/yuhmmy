@@ -10,28 +10,27 @@ class OrderItem extends React.Component {
   constructor() {
     super();
 
-    this.state = {
-
-    };
+    this.state = {};
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+  }
 
   render() {
     return (
-      <tr style={{ fontSize: 16 }}>
-        <td style={{ color: '#119DA4', fontWeight: 'bold', paddingRight: 20 }}>
-          {this.props.subOrder.subOrderQuantity}
-        </td>
-        <td style={{ color: '#DCDCDC', paddingRight: 30 }}>
-          {this.props.ready
-            ? this.props.menu.filter((items) => items._id === this.props.subOrder.menuItemId)[0].menuItemName
-            : ''}
-        </td>
-        <td style={{ color: '#DCDCDC' }}>
-          {this.props.subOrder.subOrderIsFinished ? <Icon name="check" /> : 'Making'}
-        </td>
-      </tr>
+        <tr style={{ fontSize: 16 }}>
+          <td style={{ color: '#119DA4', fontWeight: 'bold', paddingRight: 20 }}>
+            {this.props.subOrder.subOrderQuantity}
+          </td>
+          <td style={{ color: '#DCDCDC', paddingRight: 30 }}>
+            {this.props.ready
+                ? this.props.menu.filter((items) => items._id === this.props.subOrder.menuItemId)[0].menuItemName
+                : ''}
+          </td>
+          <td style={{ color: '#DCDCDC' }}>
+            {this.props.subOrder.subOrderIsFinished ? <Icon name="check"/> : 'Making'}
+          </td>
+        </tr>
     );
   }
 }
