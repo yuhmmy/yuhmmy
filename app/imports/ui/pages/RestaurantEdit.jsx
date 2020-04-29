@@ -33,12 +33,10 @@ class RestaurantEdit extends React.Component {
             <Header as="h2" textAlign="center">Edit Stuff</Header>
             <AutoForm schema={RestaurantSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
               <Segment>
-                <TextField label='Restaurant Name:' name='restaurantName' placeholder='McDonald&apos;s'/>
-                <TextField label='Restaurant Address:' name='restaurantAddress'
-                           placeholder='2121 S King St, Honolulu, HI 96826'/>
-                <TextField label='Restaurant Image:' name='restaurantImage' placeholder='McD.jpg'/>
-                <LongTextField label='Restaurant Description:' name='restaurantDesc'
-                               placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'/>
+                <TextField label='Restaurant Name:' name='restaurantName'/>
+                <TextField label='Restaurant Address:' name='restaurantAddress'/>
+                <TextField label='Restaurant Image:' name='restaurantImage'/>
+                <LongTextField label='Restaurant Description:' name='restaurantDesc'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
                 <HiddenField name='owner'/>
