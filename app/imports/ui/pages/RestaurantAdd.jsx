@@ -10,15 +10,11 @@ import { Restaurants } from '../../api/restaurant/Restaurant';
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
   restaurantName: String,
-  restaurantAddress: String,
-  /*
   restaurantAddress: Object,
   'restaurantAddress.street': String,
   'restaurantAddress.city': String,
   'restaurantAddress.state': String,
   'restaurantAddress.zipCode': String,
-   restaurantOwner: String,
-   */
   restaurantImage: String,
   restaurantDesc: String,
 });
@@ -30,6 +26,7 @@ class RestaurantAdd extends React.Component {
   submit(data, formRef) {
     const { restaurantName, restaurantAddress, restaurantImage, restaurantDesc } = data;
     const restaurantOwner = Meteor.user().username;
+
     Restaurants.insert({ restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner },
         (error) => {
           if (error) {
@@ -53,8 +50,26 @@ class RestaurantAdd extends React.Component {
             }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
               <Segment>
                 <TextField label='Restaurant Name:' name='restaurantName' placeholder='McDonald&apos;s'/>
-                <TextField label='Restaurant Address:' name='restaurantAddress'
-                           placeholder='2121 S King St, Honolulu, HI 96826'/>
+                <TextField
+                  label='Restaurant Street:'
+                  name='restaurantAddress.street'
+                  placeholder='Street'
+                />
+                <TextField
+                  label='Restaurant City:'
+                  name='restaurantAddress.city'
+                  placeholder='City'
+                />
+                <TextField 
+                  label='Restaurant State:'
+                  name='restaurantAddress.state'
+                  placeholder='State'
+                />
+                <TextField
+                  label='Restaurant City:'
+                  name='restaurantAddress.zipCode'
+                  placeholder='Zip Code'
+                />
                 <TextField label='Restaurant Image:' name='restaurantImage' placeholder='McD.jpg'/>
                 <LongTextField label='Restaurant Description:' name='restaurantDesc'
                                placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'/>
