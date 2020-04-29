@@ -112,8 +112,203 @@
         "state": "HI",
         "zipCode": "96817"
       },
+      "restaurantImage": "https://cdn.mos.cms.futurecdn.net/xDGQ9dbLmMpeEqhiWayMRB.jpg",
+      "restaurantDesc": "Fast-food restaurant",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "2",
+      "restaurantName": "Jamba Juice",
+      "restaurantAddress": {
+        "street": "UHM Campus Center 2nd Floor",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://www.cachevalleysavings.com/wp-content/uploads/2017/10/Jamba-Juice-Logo.jpg",
+      "restaurantDesc": "Smoothie Shop",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "3",
+      "restaurantName": "L&L Hawaiian Barbecue",
+      "restaurantAddress": {
+        "street": "UHM Paradise Palms",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://www.hawaiianbarbecue.com/wp-content/uploads/2019/08/LLHawaii-Logo_Badge-CMYK.jpg",
+      "restaurantDesc": "a Hawaiian-themed franchise, centered on the Hawaiian plate lunch",
+      "restaurantOwner": "3"
+    },
+    {
+      "_id": "4",
+      "restaurantName": "Kamitoku Ramen",
+      "restaurantAddress": {
+        "street": "UHM POST Parking Lot",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://www.frolichawaii.com/sites/default/files/articles/1612/unexpectedramen6.jpg",
+      "restaurantDesc": "Japanese Food Truck",
+      "restaurantOwner": "4"
+    },
+    {
+      "_id": "5",
+      "restaurantName": "Da Spot",
+      "restaurantAddress": {
+        "street": "UHM Saunders Hall",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://www.hbl.org/wp-content/uploads/2015/11/Da-Spot.png",
+      "restaurantDesc": "Health Foods & Juices",
+      "restaurantOwner": "5"
+    },
+    {
+      "_id": "6",
+      "restaurantName": "Govindas",
+      "restaurantAddress": {
+        "street": "UHM Sustainability Courtyard",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR4g91D32-cZ27jWpSXJ2uh9QTaSnZ6BLYWk_Zekby3-ZHHMX8L&usqp=CAU",
+      "restaurantDesc": "Organic Juices and Vegetarian Cuisine",
+      "restaurantOwner": "6"
+    },
+    {
+      "_id": "7",
+      "restaurantName": "Just Ice Hawai",
+      "restaurantAddress": {
+        "street": "Outside UHM Kuykendall Hall",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-justice.png",
+      "restaurantDesc": "Shave Ice Food Truck",
+      "restaurantOwner": "7"
+    },
+    {
+      "_id": "8",
+      "restaurantName": "BaLe",
+      "restaurantAddress": {
+        "street": "UHM Hemenway Hall",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://pbs.twimg.com/profile_images/2968787395/08a35843434126ef2778644111fbe752.jpeg",
+      "restaurantDesc": "Vietnamese Sandwiches and Bakery",
+      "restaurantOwner": "8"
+    },
+    {
+      "_id": "9",
+      "restaurantName": "Pizza Hut",
+      "restaurantAddress": {
+        "street": "UHM Campus Center First Floor",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://doyouremember.com/wp-content/uploads/2019/06/pizza-hut-logo-2019.png",
+      "restaurantDesc": "Italian Grab and Go Pizzas and Pastas",
+      "restaurantOwner": "9"
+    },
+    {
+      "_id": "10",
+      "restaurantName": "The Bean Counter",
+      "restaurantAddress": {
+        "street": "Shidler College of Business",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://bloximages.newyork1.vip.townnews.com/manoanow.org/content/tncms/assets/v3/editorial/d/a5/da551820-4058-11e9-b4af-832b67a1b670/5c803ef59078a.image.png?resize=1200%2C801",
+      "restaurantDesc": "Coffee Shop with Pastries",
+      "restaurantOwner": "10"
+    },
+    {
+      "_id": "11",
+      "restaurantName": "Hot Tacos",
+      "restaurantAddress": {
+        "street": "Outside Kennedy Theatre",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-hottaco.png",
+      "restaurantDesc": "Authentic Mexican food, prepped and cooked daily from scratch",
+      "restaurantOwner": "11"
+    },
+    {
+      "_id": "12",
+      "restaurantName": "McDonalds",
+      "restaurantAddress": {
+        "street": "1234 Kaimuki Plaza",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96817"
+      },
       "restaurantImage": "https://google.com",
       "restaurantDesc": "Fast-food restaurant",
+      "restaurantOwner": "12"
+    },
+    {
+      "_id": "13",
+      "restaurantName": "Ono Seafood",
+      "restaurantAddress": {
+        "street": "Krauss Hall",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-onoseaf.png",
+      "restaurantDesc": "Made to order poke by the pound & poke bowls",
+      "restaurantOwner": "13"
+    },
+    {
+      "_id": "14",
+      "restaurantName": "Banan",
+      "restaurantAddress": {
+        "street": "1810 University Ave",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://miro.medium.com/max/1244/1*8c5l1CYGkcbkWesE3K2exw.png",
+      "restaurantDesc": "Vegan Frozen Yogurt Shop with Papaya Boats",
+      "restaurantOwner": "14"
+    },
+    {
+      "_id": "15",
+      "restaurantName": "Sistah Truck",
+      "restaurantAddress": {
+        "street": "Outside of the UHM Korean Studies Building",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-sistaht.png",
+      "restaurantDesc": "Korean-inspired local cuisine food truck",
+      "restaurantOwner": "15"
+    },
+    {
+      "_id": "16",
+      "restaurantName": "Dunkin Donuts",
+      "restaurantAddress": {
+        "street": "Paradise Palms Cafe",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-dunkind.png",
+      "restaurantDesc": "Coffee, Sandwich, and Donut Shop",
       "restaurantOwner": "1"
     }
   ]

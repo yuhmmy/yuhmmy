@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Header, Container, Input, Button, Grid } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
-import { withTracker, Link } from 'meteor/react-meteor-data';
+import { withTracker } from 'meteor/react-meteor-data';
 
 import RestaurantCard from '../components/RestaurantCard';
 import { Restaurants } from '../../api/restaurant/Restaurant';
@@ -27,7 +27,7 @@ class RestaurantSearch extends React.Component {
                           id={restaurant._id}
                           image={restaurant.restaurantImage}
                           name={restaurant.restaurantName}
-                          address={restaurant.restaurantAddress.city}
+                          address={restaurant.restaurantAddress.street}
                           description={restaurant.restaurantDesc}
                       />
                     </Grid.Column>
