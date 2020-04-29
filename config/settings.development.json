@@ -47,6 +47,32 @@
       "menuItemIsDrink": 1
     },
     {
+      "menuItemName": "Orange Dream Machine",
+      "menuItemPrice": 0.00,
+      "menuItemDescription": "smoothie",
+      "menuItemImage": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "2",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Acai Bowl",
+      "menuItemPrice": 0.00,
+      "menuItemDescription": "food",
+      "menuItemImage": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "2",
+      "menuItemIsDrink": 1
+    },
+    {
       "menuItemName": "All Natural Iced Tea",
       "menuItemPrice": 6.00,
       "menuItemDescription": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar",
@@ -248,15 +274,15 @@
     },
     {
       "_id": "12",
-      "restaurantName": "McDonalds",
+      "restaurantName": "Holoholo Grill ",
       "restaurantAddress": {
-        "street": "1234 Kaimuki Plaza",
+        "street": "Paradise Palms Cafe",
         "city": "Honolulu",
         "state": "HI",
-        "zipCode": "96817"
+        "zipCode": "96822"
       },
-      "restaurantImage": "https://google.com",
-      "restaurantDesc": "Fast-food restaurant",
+      "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-holohol.png",
+      "restaurantDesc": "Healthy locally grown salads, sandwiches, poke bowls and  grab and go items at affordable prices",
       "restaurantOwner": "12"
     },
     {
