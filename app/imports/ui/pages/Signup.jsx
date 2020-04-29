@@ -1,4 +1,5 @@
 import React from 'react';
+import { Meteor } from 'meteor/meteor';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { Container, Form, Grid, Header, Message, Segment, Button } from 'semantic-ui-react';
@@ -23,12 +24,11 @@ class Signup extends React.Component {
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
     const { email, password, firstName, lastName } = this.state;
-    Accounts.createUser(
+    const id = Accounts.createUser(
         {
           email,
           username: email,
           password,
-          profile: { firstName, lastName },
         },
         (err) => {
           if (err) {
@@ -38,6 +38,19 @@ class Signup extends React.Component {
           }
         },
     );
+    // Update custom fields
+    Meteor.users.update(id, {
+        $set: {
+          // age: age,
+          // gender: gender,
+          // preferences: pref,
+          name: {
+            firstName: firstName,
+            lastName: lastName,
+          },
+        },
+      },
+    ); 
   };
 
   cancel = () => {

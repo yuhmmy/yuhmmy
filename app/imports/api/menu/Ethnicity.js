@@ -9,6 +9,7 @@ const Ethnicity = new Mongo.Collection('Ethnicity');
 const EthnicitySchema = new SimpleSchema({
   ethnicityId: SimpleSchema.Integer,
   ethnicityDesc: String,
+  ethnicityCardImage: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
