@@ -9,6 +9,7 @@ const Meat = new Mongo.Collection('Meat');
 const MeatSchema = new SimpleSchema({
   meatId: SimpleSchema.Integer,
   meatDesc: String,
+  meatCardImage: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

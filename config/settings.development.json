@@ -1,6 +1,7 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com",
+    { "_id": "1",
+      "email": "admin@foo.com",
       "password": "changeme",
       "firstName": "Admin",
       "lastName": "Foo",
@@ -8,7 +9,8 @@
       "pref": { "ethnicity": [1,2], "meat": 1 },
       "age": 42
     },
-    { "email": "john@foo.com",
+    { "_id": "2",
+      "email": "john@foo.com",
       "password": "changeme",
       "firstName": "John",
       "lastName": "Foo",
@@ -44,34 +46,41 @@
   "defaultEthnicity": [
     {
       "ethnicityId": 1,
-      "ethnicityDesc": "Chinese"
+      "ethnicityDesc": "Chinese",
+      "ethnicityCardImage": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/8/26/3/WU0802H_Orange-Chicken_s4x3.jpg.rend.hgtvcom.826.620.suffix/1440693433689.jpeg"
     },
     {
       "ethnicityId": 2,
-      "ethnicityDesc": "Korean"
+      "ethnicityDesc": "Korean",
+      "ethnicityCardImage": "https://www.maangchi.com/wp-content/uploads/2008/01/dolsotbibimbap-stove.jpg"
     },
     {
-      "ethnicityId": 1,
-      "ethnicityDesc": "Thai"
+      "ethnicityId": 3,
+      "ethnicityDesc": "Thai",
+      "ethnicityCardImage": "https://cdn.vox-cdn.com/thumbor/hhk6ECsLHiTMatINaVcVstR6Fys=/0x0:1020x680/1670x1253/filters:focal(429x259:591x421):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/65435920/immm_rice.0.jpg"
     }
   ],
 
   "defaultMeat": [
     {
       "meatId": 1,
-      "meatDesc": "Vegan"
+      "meatDesc": "Vegan",
+      "meatCardImage": "https://specials-images.forbesimg.com/imageserve/5d7fb0e718444200084d8f4f/960x0.jpg?fit=scale"
     },
     {
       "meatId": 2,
-      "meatDesc": "Vegetarian"
+      "meatDesc": "Vegetarian",
+      "meatCardImage": "https://specials-images.forbesimg.com/imageserve/5d7fb0e718444200084d8f4f/960x0.jpg?fit=scale"
     },
     {
       "meatId": 3,
-      "meatDesc": "Pescetarian"
+      "meatDesc": "Pescetarian",
+      "meatCardImage": "https://specials-images.forbesimg.com/imageserve/5d7fb0e718444200084d8f4f/960x0.jpg?fit=scale"
     },
     {
       "meatId": 4,
-      "meatDesc": "Meat & veggies"
+      "meatDesc": "Meat & veggies",
+      "meatCardImage": "https://specials-images.forbesimg.com/imageserve/5d7fb0e718444200084d8f4f/960x0.jpg?fit=scale"
     }
   ],
 
@@ -87,7 +96,7 @@
       },
       "restaurantImage": "https://google.com",
       "restaurantDesc": "Fast-food restaurant",
-      "restaurantOwner": "john@foo.com"
+      "restaurantOwner": "1"
     }
   ]
 }

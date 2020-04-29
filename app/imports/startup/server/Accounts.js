@@ -11,7 +11,6 @@ function createUser(email, password, firstName, lastName, gender, pref, age) {
     username: email,
     email: email,
     password: password,
-    profile: { firstName, lastName },
   });
 
   // add custom fields of gender and preferences
@@ -19,10 +18,13 @@ function createUser(email, password, firstName, lastName, gender, pref, age) {
       $set: {
         age: age,
         gender: gender,
-        preferences: pref
-      }
-    }
-  );
+        preferences: pref,
+        name: {
+          firstName: firstName,
+          lastName: lastName,
+        },
+      },
+    });
 }
 
 /** When running app for first time, pass a settings file to set up a default user account. */
