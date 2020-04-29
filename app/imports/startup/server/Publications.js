@@ -7,35 +7,35 @@ import { SubOrders } from '../../api/order/SubOrder';
 import { Restaurants } from '../../api/restaurant/Restaurant';
 
 Meteor.publish('Restaurants', function publish() {
-    return Restaurants.find();
+  return Restaurants.find();
 });
 
 Meteor.publish('Ethnicity', function publish() {
-    return Ethnicity.find();
+  return Ethnicity.find();
 });
 
 Meteor.publish('Meat', function publish() {
-    return Meat.find();
+  return Meat.find();
 });
 
 Meteor.publish('Menu', function publish() {
-    return Menu.find();
+  return Menu.find();
 });
 
 Meteor.publish('Orders', function publish() {
-    return Orders.find();
+  return Orders.find();
 });
 
 Meteor.publish('SubOrders', function publish() {
-    return SubOrders.find();
+  return SubOrders.find();
 });
 
 Meteor.publish('Meteor.users.user', function publish() {
-    if (!this.userId) {
-      this.ready();
-    } else {
-        return Meteor.users.find(this.userId, {
-            fields: { preferences: 1, age: 1, name: 1, gender: 1 },
-        });
-    }
+  if (!this.userId) {
+    this.ready();
+  } else {
+    return Meteor.users.find(this.userId, {
+      fields: { preferences: 1, age: 1, name: 1, gender: 1 },
+    });
+  }
 });

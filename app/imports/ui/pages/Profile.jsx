@@ -17,73 +17,74 @@ class Profile extends React.Component {
   renderPage() {
     // Get ethnicity names from ethnicity Ids in userData object
     const userEthnicityPref = Ethnicity.find(
-      { ethnicityId: {
-        $in: this.props.userData[0].preferences.ethnicity,
+        {
+          ethnicityId: {
+            $in: this.props.userData[0].preferences.ethnicity,
+          },
         },
-      },
-      {
-        ethnicityDesc: 1,
-        ethnicityCardImage: 1,
-      },
+        {
+          ethnicityDesc: 1,
+          ethnicityCardImage: 1,
+        },
     ).fetch();
 
     // Get user's prefered diet
     const userDietPref = Meat.find(
-      {
-        meatId: this.props.userData[0].preferences.meat,
-      },
-      {
-        meatDesc: 1,
-        meatCardImage: 1,
-      },
+        {
+          meatId: this.props.userData[0].preferences.meat,
+        },
+        {
+          meatDesc: 1,
+          meatCardImage: 1,
+        },
     ).fetch();
 
     return (
-      <Container className="order order-menu" style={{ padding: 20 }}>
-        <Header inverted as="h1">
-          { this.props.userData[0].name.firstName } { this.props.userData[0].name.lastName }
-        </Header>
-        age: {this.props.userData[0].age},    Gender: {this.props.userData[0].gender}
+        <Container className="order order-menu" style={{ padding: 20 }}>
+          <Header inverted as="h1">
+            {this.props.userData[0].name.firstName} {this.props.userData[0].name.lastName}
+          </Header>
+          age: {this.props.userData[0].age}, Gender: {this.props.userData[0].gender}
 
-        <Divider />
+          <Divider/>
 
-        <Header inverted as="h2">Liked Foods</Header>
+          <Header inverted as="h2">Liked Foods</Header>
           <List divided horizontal verticalAlign="middle">
             {
               userEthnicityPref.map((ethnic) => (<List.Item key={ethnic._id}>{ethnic.ethnicityDesc}</List.Item>))
             }
           </List>
 
-        <Header inverted as="h2">Preferred Diet</Header>
+          <Header inverted as="h2">Preferred Diet</Header>
           <List>
             {
-              userDietPref.map((diet) => (<List.Item key={diet._id} content={diet.meatDesc} />))
+              userDietPref.map((diet) => (<List.Item key={diet._id} content={diet.meatDesc}/>))
             }
           </List>
 
-        <Header inverted as="h2">Owned Restaurants</Header>
-        <Grid columns={3} padded>
-          <Grid.Row>
-            {
-              this.props.ownedRestaurants.map((restaurant) => (
-                <Grid.Column key={restaurant._id}>
-                  <RestaurantCard
-                    id={restaurant._id}
-                    image="https://react.semantic-ui.com/images/wireframe/square-image.png"
-                    name={restaurant.restaurantName}
-                    address={restaurant.restaurantAddress.city}
-                    description={restaurant.restaurantDesc}
-                  />
-                </Grid.Column>
-              ))
-            }
-          </Grid.Row>
-          <Grid.Row>
-            <Header inverted as="h2">Recommended Restaurants For You</Header>
-            <br />
-            <br />
-            <br />
-            {/* {
+          <Header inverted as="h2">Owned Restaurants</Header>
+          <Grid columns={3} padded>
+            <Grid.Row>
+              {
+                this.props.ownedRestaurants.map((restaurant) => (
+                    <Grid.Column key={restaurant._id}>
+                      <RestaurantCard
+                          id={restaurant._id}
+                          image="https://react.semantic-ui.com/images/wireframe/square-image.png"
+                          name={restaurant.restaurantName}
+                          address={restaurant.restaurantAddress.city}
+                          description={restaurant.restaurantDesc}
+                      />
+                    </Grid.Column>
+                ))
+              }
+            </Grid.Row>
+            <Grid.Row>
+              <Header inverted as="h2">Recommended Restaurants For You</Header>
+              <br/>
+              <br/>
+              <br/>
+              {/* {
               this.props.ownedRestaurants.map((restaurant) => (
                 <Grid.Column key={restaurant._id}>
                   <RestaurantCard
@@ -96,9 +97,9 @@ class Profile extends React.Component {
                 </Grid.Column>
               ))
             } */}
-          </Grid.Row>
-        </Grid>
-      </Container>
+            </Grid.Row>
+          </Grid>
+        </Container>
     );
   }
 }

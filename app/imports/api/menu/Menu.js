@@ -12,7 +12,7 @@ const MenuSchema = new SimpleSchema({
   menuItemImage: String,
   menuItemDescription: String,
   menuItemIngredients: { type: Array, required: false },
-    'menuItemIngredients.$': String,
+  'menuItemIngredients.$': String,
   menuItemRestaurantId: String,
   menuItemMeatId: { type: SimpleSchema.Integer, required: false },
   menuItemAllergyId: { type: SimpleSchema.Integer, required: false },

@@ -15,16 +15,16 @@ function createUser(email, password, firstName, lastName, gender, pref, age) {
 
   // add custom fields of gender and preferences
   Meteor.users.update(id, {
-      $set: {
-        age: age,
-        gender: gender,
-        preferences: pref,
-        name: {
-          firstName: firstName,
-          lastName: lastName,
-        },
+    $set: {
+      age: age,
+      gender: gender,
+      preferences: pref,
+      name: {
+        firstName: firstName,
+        lastName: lastName,
       },
-    });
+    },
+  });
 }
 
 /** When running app for first time, pass a settings file to set up a default user account. */

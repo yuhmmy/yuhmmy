@@ -71,72 +71,72 @@ class MenuPage extends React.Component {
 
   render() {
     return (
-      <div className="order">
-        <Grid>
-          <Grid.Column width={11}>
-            <div className="order-menu">
-              <Header as="h2" inverted>
-                {this.props.ready ? this.props.restaurant.restaurantName : ''} Menu
-              </Header>
-              <Grid columns={3}>
-                <Grid.Row>
-                  {
-                    this.props.menu.map(item => (
-                      <Grid.Column key={item._id}>
-                        <MenuCard
-                          addItem={(menu) => this.addItem(menu)}
-                          item={item}
-                          image={item.menuItemImage}
-                          name={item.menuItemName}
-                          price={item.menuItemPrice}
-                          description={item.menuItemDescription}
-                        />
-                      </Grid.Column>
-                    ))
-                  }
-                </Grid.Row>
-              </Grid>
-            </div>
-          </Grid.Column>
-          <Grid.Column width={5}>
-            <div className="order-checkout">
-              <Header as="h2" inverted>
-                Your Order
-              </Header>
-              <table>
-                <tbody>
+        <div className="order">
+          <Grid>
+            <Grid.Column width={11}>
+              <div className="order-menu">
+                <Header as="h2" inverted>
+                  {this.props.ready ? this.props.restaurant.restaurantName : ''} Menu
+                </Header>
+                <Grid columns={3}>
+                  <Grid.Row>
+                    {
+                      this.props.menu.map(item => (
+                          <Grid.Column key={item._id}>
+                            <MenuCard
+                                addItem={(menu) => this.addItem(menu)}
+                                item={item}
+                                image={item.menuItemImage}
+                                name={item.menuItemName}
+                                price={item.menuItemPrice}
+                                description={item.menuItemDescription}
+                            />
+                          </Grid.Column>
+                      ))
+                    }
+                  </Grid.Row>
+                </Grid>
+              </div>
+            </Grid.Column>
+            <Grid.Column width={5}>
+              <div className="order-checkout">
+                <Header as="h2" inverted>
+                  Your Order
+                </Header>
+                <table>
+                  <tbody>
                   {
                     this.state.orderItems.length > 0 ? this.state.orderItems.map((item, i) => (
-                      <CheckoutItem
-                        removeItem={(index, price) => this.removeItem(index, price)}
-                        quantity={1}
-                        name={item.name}
-                        price={item.price}
-                        index={i}
-                        key={i}
-                      />
+                        <CheckoutItem
+                            removeItem={(index, price) => this.removeItem(index, price)}
+                            quantity={1}
+                            name={item.name}
+                            price={item.price}
+                            index={i}
+                            key={i}
+                        />
                     )) : 'No items in your order.'
                   }
-                </tbody>
-              </table>
-              <br />
-              <br />
-              <Grid textAlign="left">
-                <Header inverted as="h3">
-                  Total
-                </Header>
-                <span>
+                  </tbody>
+                </table>
+                <br/>
+                <br/>
+                <Grid textAlign="left">
+                  <Header inverted as="h3">
+                    Total
+                  </Header>
+                  <span>
                   ${this.state.total}
                 </span>
-              </Grid>
-            </div>
-            <br />
-            <Button onClick={() => this.submitOrder()} size="massive" color="teal" fluid>
-              Checkout
-            </Button>
-          </Grid.Column>
-        </Grid>
-      </div>
+                </Grid>
+              </div>
+              <br/>
+              <Button onClick={() => this.submitOrder()} size="massive" color="teal" fluid>
+                Checkout
+              </Button>
+            </Grid.Column>
+          </Grid>
+        </div>
     );
   }
 }

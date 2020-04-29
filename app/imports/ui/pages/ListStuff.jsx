@@ -29,7 +29,7 @@ class ListStuff extends React.Component {
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {this.props.stuffs.map((stuff) => <StuffItem key={stuff._id} stuff={stuff} />)}
+              {this.props.stuffs.map((stuff) => <StuffItem key={stuff._id} stuff={stuff}/>)}
             </Table.Body>
           </Table>
         </Container>

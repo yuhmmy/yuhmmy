@@ -18,35 +18,35 @@ class Order extends React.Component {
   render() {
     // Otherwise return the Login form.
     return (
-      <Container>
-        <Grid verticalAlign="middle" centered columns={2}>
-          <Grid.Column className="login" style={{ marginTop: 30, marginBottom: 30, padding: 75 }}>
-            <div className="spacing">
-              <Header inverted as="h2">
-                Order
-                &nbsp;&nbsp;
-                <span className="secondary-text">
+        <Container>
+          <Grid verticalAlign="middle" centered columns={2}>
+            <Grid.Column className="login" style={{ marginTop: 30, marginBottom: 30, padding: 75 }}>
+              <div className="spacing">
+                <Header inverted as="h2">
+                  Order
+                  &nbsp;&nbsp;
+                  <span className="secondary-text">
                   #{this.props.ready ? this.props.order._id : ''}
                 </span>
-              </Header>
-              <table>
-                <tbody>
+                </Header>
+                <table>
+                  <tbody>
                   {
                     this.props.subOrders.map(order => (
-                      <OrderItem
-                        order={this.props.order._id}
-                        subOrder={order}
-                        restaurant={this.props.order.orderRestaurantId}
-                        key={order._id}
-                      />
+                        <OrderItem
+                            order={this.props.order._id}
+                            subOrder={order}
+                            restaurant={this.props.order.orderRestaurantId}
+                            key={order._id}
+                        />
                     ))
                   }
-                </tbody>
-              </table>
-            </div>
-          </Grid.Column>
-        </Grid>
-      </Container>
+                  </tbody>
+                </table>
+              </div>
+            </Grid.Column>
+          </Grid>
+        </Container>
     );
   }
 }

@@ -40,17 +40,17 @@ class Signup extends React.Component {
     );
     // Update custom fields
     Meteor.users.update(id, {
-        $set: {
-          // age: age,
-          // gender: gender,
-          // preferences: pref,
-          name: {
-            firstName: firstName,
-            lastName: lastName,
+          $set: {
+            // age: age,
+            // gender: gender,
+            // preferences: pref,
+            name: {
+              firstName: firstName,
+              lastName: lastName,
+            },
           },
         },
-      },
-    ); 
+    );
   };
 
   cancel = () => {
