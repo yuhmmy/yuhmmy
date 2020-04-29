@@ -47,32 +47,6 @@
       "menuItemIsDrink": 1
     },
     {
-      "menuItemName": "Orange Dream Machine",
-      "menuItemPrice": 0.00,
-      "menuItemDescription": "smoothie",
-      "menuItemImage": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
-      "menuItemIngredients": [
-        "Water"
-      ],
-      "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
-      "menuItemRestaurantId": "2",
-      "menuItemIsDrink": 1
-    },
-    {
-      "menuItemName": "Acai Bowl",
-      "menuItemPrice": 0.00,
-      "menuItemDescription": "food",
-      "menuItemImage": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
-      "menuItemIngredients": [
-        "Water"
-      ],
-      "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
-      "menuItemRestaurantId": "2",
-      "menuItemIsDrink": 1
-    },
-    {
       "menuItemName": "All Natural Iced Tea",
       "menuItemPrice": 6.00,
       "menuItemDescription": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar",
@@ -86,6 +60,396 @@
       "menuItemMeatId": 1,
       "menuItemEthnicityId": 1,
       "menuItemRestaurantId": "1",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Orange Dream Machine",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "smoothie with orange juice orange, sherbet soymilk, and fat free vanilla frozen yogurt",
+      "menuItemImage": "https://jambajuice.ph/wp-content/uploads/ODM.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "2",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Acai Primo Bowl",
+      "menuItemPrice": 7.00,
+      "menuItemDescription": "A bowl of acai blend with fruit and nut toppings",
+      "menuItemImage": "https://cdn.jamba.com/-/media/jamba/menu/bowls-acaiprimo_hero.png?v=1&d=20200220T112644Z0",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "2",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Chicken Katsu Bowl",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "\nTender pieces of deep-fried boneless chicken, this best-seller is served with our piquant katsu sauce.",
+      "menuItemImage": "https://www.hawaiianbarbecue.com/wp-content/uploads/2016/07/Chicken_Katsu-optimized.png",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "3",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "BBQ Chicken Plate",
+      "menuItemPrice": 7.00,
+      "menuItemDescription": "Grilled boneless chicken marinated in our tangy, Hawaii-inspired barbecue sauce.",
+      "menuItemImage": "https://www.hawaiianbarbecue.com/wp-content/uploads/2016/07/BBQ_Chicken-optimized.png",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "3",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Shrimp Wonton Ramen",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "pork and shrimp broth: shrimp & chicken wonton, green onion and kikurage » served with thick noodles",
+      "menuItemImage": "https://jinya-ramenbar.com/img/files/menu-item/1/3/1346/main.png?20200123055958",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "4",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Vegetable Soup Ramen",
+      "menuItemPrice": 7.00,
+      "menuItemDescription": "vegetable broth: mushroom, baby leaf, spinach, asparagus, broccoli, cauliflower, cabbage and black pepper » served with thin noodles",
+      "menuItemImage": "https://jinya-ramenbar.com/img/files/menu-item/1/3/1308/main.png?20200123045826",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "4",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Tofu Salad",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "Vegan salad with Tofu as the source of protein",
+      "menuItemImage": "https://cms.splendidtable.org/sites/default/files/styles/w2000/public/VIBF20Thai20Chopped20Salad20with20Tofu20image20p2080.jpg?itok=HwtnDyGY",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "5",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Thai Vegetable Curry",
+      "menuItemPrice": 3.25,
+      "menuItemDescription": "Spicy Thai Soup with Vegetables",
+      "menuItemImage": "https://cookieandkate.com/images/2015/10/thai-red-curry-with-vegetables-1.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "5",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Pineapple Coconut Halwa",
+      "menuItemPrice": 1.00,
+      "menuItemDescription": "A sweet Hawaii inspired Karma-free desert",
+      "menuItemImage": "https://sanjeevkapoor.com/UploadFiles/RecipeImages/Fresh-Nariyal-and-Pineapple-Burfi.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "6",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Rice",
+      "menuItemPrice": 2.00,
+      "menuItemDescription": "An Asian staple for a side dish",
+      "menuItemImage": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/DE38BC2F-473D-4AC2-9DFC-AF9E51A04568/Derivates/8C97D37C-410B-439F-B412-AC2D81AD7D1F.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "6",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Strawberry Sorbet Bowl",
+      "menuItemPrice": 3.50,
+      "menuItemDescription": "Dairy-free treat of strawberry ice cream",
+      "menuItemImage": "https://www.zliving.com/wp-content/uploads/2018/06/strawberrysorbetrecipe.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "7",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Rainbow Shave Ice",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "A Hawaii classic desert with ice and sweet syrup",
+      "menuItemImage": "https://media-cdn.tripadvisor.com/media/photo-s/02/b5/db/21/rainbow-shave-ice-yum.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "7",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Meatball Pho",
+      "menuItemPrice": 8.00,
+      "menuItemDescription": "a Vietnamese soup consisting of broth, rice noodles, herbs, and meat",
+      "menuItemImage": "https://runawayrice.com/wp-content/uploads/2019/03/Beef-Meatball-Pho-Bo-Vien-Instant-Pot-Recipe.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "8",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Classic Banh mi",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "type of baguette which is often split lengthwise and filled with various savory ingredients as a sandwich",
+      "menuItemImage": "https://jinya-ramenbar.com/img/files/menu-item/1/3/1346/main.png?20200123055958",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "8",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Cheese Pizza",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "Your favorite cheese pizza made with classic marinara sauce topped with mozzarella cheese.",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Cheese.png",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Pepperoni Pizza",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "This gourmet pizza is ideal for easy late night delivery, complete with mozzarella cheese and pepperoni.",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Pepperoni.png",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "BREWED COFFEE",
+      "menuItemPrice": 4.00,
+      "menuItemDescription": "One of our light, medium, dark, decaffeinated, or flavored brews of the day, brewed from only the top 1% of Arabica beans in the world.",
+      "menuItemImage": "https://cbtl-images.s3.us-west-1.amazonaws.com/Production/Drupal/s3fs-public/styles/cafe_menu_item/public/cafe-menu/Brewed-Coffee_BigMug.jpg?itok=__b2JUMc",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "10",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "ICED COFFEE",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Our specially brewed coffee served over ice for a refreshing and bold coffee taste.",
+      "menuItemImage": "https://cbtl-images.s3.us-west-1.amazonaws.com/Production/Drupal/s3fs-public/styles/cafe_menu_item/public/cafe-menu/Iced-Coffee_MilkMarbeling.jpg?itok=1_BmE9gQ",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "10",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Triplelupa",
+      "menuItemPrice": 3.49,
+      "menuItemDescription": "The Triplelupa is a flight of unforgettable flavors in a burrito",
+      "menuItemImage": "https://res.cloudinary.com/culturemap-com/image/upload/ar_4:3,c_fill,g_faces:center,w_1200/v1585155278/photos/311757_original.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "11",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Two Tacos",
+      "menuItemPrice": 2.00,
+      "menuItemDescription": "traditional Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a fillin",
+      "menuItemImage": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcarlsbadcravings.com%2Fground-beef-tacos%2F&psig=AOvVaw29_drENrYpakgLWJVmSVwA&ust=1588237119859000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDEjb6ijekCFQAAAAAdAAAAABAN",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "11",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "PB&J Sandwich",
+      "menuItemPrice": 3.00,
+      "menuItemDescription": "includes one or more layers of peanut butter and one or more layers of jelly or jam on bread",
+      "menuItemImage": "https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/2018_grilled-peanut-butter-and-jelly_20336_760x580.jpg?ext=.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "12",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Chicken Noodle Soup",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "a soup made from chicken, simmered in water, usually with various other ingredients",
+      "menuItemImage": "https://www.inspiredtaste.net/wp-content/uploads/2018/09/Easy-Chicken-Noodle-Soup-Recipe-1200.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "12",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "poke bowl",
+      "menuItemPrice": 11.00,
+      "menuItemDescription": "diced raw fish served either as an appetizer or as a main course and is one of the main dishes of Native Hawaiian cuisine.",
+      "menuItemImage": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/poke-bowl-221-1550260964.jpg?crop=0.605xw:0.908xh;0.184xw,0.0408xh&resize=480:*",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "13",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "california roll sushi",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "a makizushi sushi roll that is usually rolled inside-out, and containing cucumber, crab or imitation crab, and avocado",
+      "menuItemImage": "https://norecipes.com/wp-content/uploads/2012/07/california-roll-012.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "13",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "The Amazon Bowl",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "Acaí Banán, Strawberries, Sliced Banana, Granola, Puffed Quinoa, Honey",
+      "menuItemImage": "https://static.wixstatic.com/media/66de1a_38badd009428490e88cdfe84bc6f9c44~mv2_d_3280_4912_s_4_2.png/v1/fill/w_430,h_610,al_c,q_85,usm_0.66_1.00_0.01/66de1a_38badd009428490e88cdfe84bc6f9c44~mv2_d_3280_4912_s_4_2.webp",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "14",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Mac Nut Mocha Float",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "Nitro Cold Brew, Macnella, Banán",
+      "menuItemImage": "https://static.wixstatic.com/media/66de1a_bd4a1f6447ed45dc96936992a2d166a0~mv2_d_4312_6760_s_4_2.png/v1/fill/w_438,h_684,al_c,q_85,usm_0.66_1.00_0.01/66de1a_bd4a1f6447ed45dc96936992a2d166a0~mv2_d_4312_6760_s_4_2.webp",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "14",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Kimchi",
+      "menuItemPrice": 4.00,
+      "menuItemDescription": "a staple in Korean cuisine, is a famous traditional side dish of salted and fermented vegetables, such as napa cabbage and Korean radish, made with a widely varying selection of seasonings including gochugaru, spring onions, garlic, ginger, and jeotgal, etc.",
+      "menuItemImage": "https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/cropped-kimchi.jpg?itok=IDG9W1kh",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "15",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Hoeddeok",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "a type of filled Korean pancake; it is a popular street food in South Korea.",
+      "menuItemImage": "https://i.ytimg.com/vi/R_MPEq53QFs/maxresdefault.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "15",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Chocolate Donut",
+      "menuItemPrice": 3.00,
+      "menuItemDescription": "The doughnut is popular in many countries and is prepared in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets, food stalls, and franchised specialty vendors.",
+      "menuItemImage": "https://www.bunsinmyoven.com/wp-content/uploads/2013/03/DSC_4851.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "16",
+      "menuItemIsDrink": 1
+    },
+    {
+      "menuItemName": "Hot Chocolate",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Hot chocolate, also known as drinking chocolate, cocoa, and as chocolate tea in Nigeria, is a heated drink consisting of shaved chocolate, melted chocolate or cocoa powder, heated milk or water, and usually a sweetener.",
+      "menuItemImage": "https://s3.amazonaws.com/cms.ipressroom.com/285/files/201602/56afc6ccacae6e374ce050e2_Hot+Chocolate+Hot+%26+Frozen/Hot+Chocolate+Hot+%26+Frozen_faf8798d-dfa0-4911-9f5d-ec061d48b667-prv.jpg",
+      "menuItemIngredients": [
+        "Water"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "16",
       "menuItemIsDrink": 1
     }
   ],
