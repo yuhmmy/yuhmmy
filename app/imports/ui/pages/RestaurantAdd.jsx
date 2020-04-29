@@ -10,15 +10,11 @@ import { Restaurants } from '../../api/restaurant/Restaurant';
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
   restaurantName: String,
-  restaurantAddress: String,
-  /*
   restaurantAddress: Object,
   'restaurantAddress.street': String,
   'restaurantAddress.city': String,
   'restaurantAddress.state': String,
   'restaurantAddress.zipCode': String,
-   restaurantOwner: String,
-   */
   restaurantImage: String,
   restaurantDesc: String,
 });
@@ -53,8 +49,10 @@ class RestaurantAdd extends React.Component {
             }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
               <Segment>
                 <TextField label='Restaurant Name:' name='restaurantName' placeholder='McDonald&apos;s'/>
-                <TextField label='Restaurant Address:' name='restaurantAddress'
-                           placeholder='2121 S King St, Honolulu, HI 96826'/>
+                <TextField label='Restaurant Street:' name='restaurantAddress.street' placeholder='2121 S King St'/>
+                <TextField label='Restaurant City:' name='restaurantAddress.city' placeholder='Honolulu'/>
+                <TextField label='Restaurant State:' name='restaurantAddress.state' placeholder='HI'/>
+                <TextField label='Restaurant Zip Code:' name='restaurantAddress.zipCode' placeholder='96826'/>
                 <TextField label='Restaurant Image:' name='restaurantImage' placeholder='McD.jpg'/>
                 <LongTextField label='Restaurant Description:' name='restaurantDesc'
                                placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'/>
