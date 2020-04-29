@@ -9,7 +9,6 @@ import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 // import ListStuff from '../pages/ListStuff';
 // import ListStuffAdmin from '../pages/ListStuffAdmin';
-// import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
@@ -19,6 +18,7 @@ import Order from '../pages/Order';
 import RestaurantOrder from '../pages/RestaurantOrder';
 import RestaurantSearch from '../pages/RestaurantSearch';
 import RestaurantAdd from '../pages/RestaurantAdd';
+import RestaurantEdit from '../pages/RestaurantEdit';
 import Profile from '../pages/Profile';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -37,6 +37,7 @@ class App extends React.Component {
               <Route path="/restaurantorder" component={RestaurantOrder}/>
               <Route path="/search" component={RestaurantSearch} />
               <ProtectedRoute path="/add" component={RestaurantAdd}/>
+              <ProtectedRoute path="/edit/:_id" component={RestaurantEdit}/>
               <ProtectedRoute path="/profile" component={Profile} />
               {/* <ProtectedRoute path="/list" component={ListStuff}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
