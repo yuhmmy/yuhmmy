@@ -8,7 +8,7 @@ const Restaurants = new Mongo.Collection('Restaurants');
 /** Define a schema to specify the structure of each document in the collection. */
 const RestaurantSchema = new SimpleSchema({
   restaurantName: String,
-  restaurantAddress: Object,
+  restaurantAddress: String,
   'restaurantAddress.street': String,
   'restaurantAddress.city': String,
   'restaurantAddress.state': String,

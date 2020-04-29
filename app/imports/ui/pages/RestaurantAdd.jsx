@@ -10,14 +10,17 @@ import { Restaurants } from '../../api/restaurant/Restaurant';
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
   restaurantName: String,
+  restaurantAddress: String,
+  /*
   restaurantAddress: Object,
   'restaurantAddress.street': String,
   'restaurantAddress.city': String,
   'restaurantAddress.state': String,
   'restaurantAddress.zipCode': String,
+   restaurantOwner: String,
+   */
   restaurantImage: String,
   restaurantDesc: String,
-  restaurantOwner: String,
 });
 
 /** Renders the Page for adding a document. */
@@ -49,10 +52,12 @@ class RestaurantAdd extends React.Component {
               fRef = ref;
             }} schema={formSchema} onSubmit={data => this.submit(data, fRef)}>
               <Segment>
-                <TextField name='restaurantName'/>
-                <TextField name='restaurantAddress'/>
-                <TextField name='restaurantImage'/>
-                <LongTextField name='restaurantDesc'/>
+                <TextField label='Restaurant Name:' name='restaurantName' placeholder='McDonald&apos;s'/>
+                <TextField label='Restaurant Address:' name='restaurantAddress'
+                           placeholder='2121 S King St, Honolulu, HI 96826'/>
+                <TextField label='Restaurant Image:' name='restaurantImage' placeholder='McD.jpg'/>
+                <LongTextField label='Restaurant Description:' name='restaurantDesc'
+                               placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
               </Segment>
