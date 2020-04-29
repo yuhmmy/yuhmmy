@@ -70,7 +70,7 @@ class Profile extends React.Component {
                     <Grid.Column key={restaurant._id}>
                       <RestaurantCard
                           id={restaurant._id}
-                          image="https://react.semantic-ui.com/images/wireframe/square-image.png"
+                          image={restaurant.restaurantImage}
                           name={restaurant.restaurantName}
                           address={restaurant.restaurantAddress.city}
                           description={restaurant.restaurantDesc}
