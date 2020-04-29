@@ -34,6 +34,7 @@
   ],
   "defaultMenu": [
     {
+      "_id": "1",
       "menuItemName": "Water",
       "menuItemPrice": 0.00,
       "menuItemDescription": "Iced cold glass of water",
@@ -47,6 +48,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "2",
       "menuItemName": "All Natural Iced Tea",
       "menuItemPrice": 6.00,
       "menuItemDescription": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar",
@@ -63,6 +65,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "3",
       "menuItemName": "Orange Dream Machine",
       "menuItemPrice": 5.00,
       "menuItemDescription": "smoothie with orange juice orange, sherbet soymilk, and fat free vanilla frozen yogurt",
@@ -76,6 +79,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "4",
       "menuItemName": "Acai Primo Bowl",
       "menuItemPrice": 7.00,
       "menuItemDescription": "A bowl of acai blend with fruit and nut toppings",
@@ -89,6 +93,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "5",
       "menuItemName": "Chicken Katsu Bowl",
       "menuItemPrice": 5.00,
       "menuItemDescription": "\nTender pieces of deep-fried boneless chicken, this best-seller is served with our piquant katsu sauce.",
@@ -102,6 +107,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "6",
       "menuItemName": "BBQ Chicken Plate",
       "menuItemPrice": 7.00,
       "menuItemDescription": "Grilled boneless chicken marinated in our tangy, Hawaii-inspired barbecue sauce.",
@@ -115,6 +121,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "7",
       "menuItemName": "Shrimp Wonton Ramen",
       "menuItemPrice": 5.00,
       "menuItemDescription": "pork and shrimp broth: shrimp & chicken wonton, green onion and kikurage » served with thick noodles",
@@ -128,6 +135,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "8",
       "menuItemName": "Vegetable Soup Ramen",
       "menuItemPrice": 7.00,
       "menuItemDescription": "vegetable broth: mushroom, baby leaf, spinach, asparagus, broccoli, cauliflower, cabbage and black pepper » served with thin noodles",
@@ -141,6 +149,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "9",
       "menuItemName": "Tofu Salad",
       "menuItemPrice": 4.99,
       "menuItemDescription": "Vegan salad with Tofu as the source of protein",
@@ -154,6 +163,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "10",
       "menuItemName": "Thai Vegetable Curry",
       "menuItemPrice": 3.25,
       "menuItemDescription": "Spicy Thai Soup with Vegetables",
@@ -167,6 +177,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "11",
       "menuItemName": "Pineapple Coconut Halwa",
       "menuItemPrice": 1.00,
       "menuItemDescription": "A sweet Hawaii inspired Karma-free desert",
@@ -180,6 +191,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "12",
       "menuItemName": "Rice",
       "menuItemPrice": 2.00,
       "menuItemDescription": "An Asian staple for a side dish",
@@ -193,6 +205,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "13",
       "menuItemName": "Strawberry Sorbet Bowl",
       "menuItemPrice": 3.50,
       "menuItemDescription": "Dairy-free treat of strawberry ice cream",
@@ -206,6 +219,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "14",
       "menuItemName": "Rainbow Shave Ice",
       "menuItemPrice": 5.00,
       "menuItemDescription": "A Hawaii classic desert with ice and sweet syrup",
@@ -219,6 +233,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "15",
       "menuItemName": "Meatball Pho",
       "menuItemPrice": 8.00,
       "menuItemDescription": "a Vietnamese soup consisting of broth, rice noodles, herbs, and meat",
@@ -232,6 +247,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "16",
       "menuItemName": "Classic Banh mi",
       "menuItemPrice": 5.00,
       "menuItemDescription": "type of baguette which is often split lengthwise and filled with various savory ingredients as a sandwich",
@@ -245,6 +261,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "17",
       "menuItemName": "Cheese Pizza",
       "menuItemPrice": 4.99,
       "menuItemDescription": "Your favorite cheese pizza made with classic marinara sauce topped with mozzarella cheese.",
@@ -258,6 +275,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "18",
       "menuItemName": "Pepperoni Pizza",
       "menuItemPrice": 4.99,
       "menuItemDescription": "This gourmet pizza is ideal for easy late night delivery, complete with mozzarella cheese and pepperoni.",
@@ -271,6 +289,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "19",
       "menuItemName": "BREWED COFFEE",
       "menuItemPrice": 4.00,
       "menuItemDescription": "One of our light, medium, dark, decaffeinated, or flavored brews of the day, brewed from only the top 1% of Arabica beans in the world.",
@@ -284,6 +303,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "20",
       "menuItemName": "ICED COFFEE",
       "menuItemPrice": 5.00,
       "menuItemDescription": "Our specially brewed coffee served over ice for a refreshing and bold coffee taste.",
@@ -297,6 +317,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "21",
       "menuItemName": "Triplelupa",
       "menuItemPrice": 3.49,
       "menuItemDescription": "The Triplelupa is a flight of unforgettable flavors in a burrito",
@@ -310,6 +331,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "22",
       "menuItemName": "Two Tacos",
       "menuItemPrice": 2.00,
       "menuItemDescription": "traditional Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a fillin",
@@ -323,6 +345,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "23",
       "menuItemName": "PB&J Sandwich",
       "menuItemPrice": 3.00,
       "menuItemDescription": "includes one or more layers of peanut butter and one or more layers of jelly or jam on bread",
@@ -336,6 +359,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "24",
       "menuItemName": "Chicken Noodle Soup",
       "menuItemPrice": 5.00,
       "menuItemDescription": "a soup made from chicken, simmered in water, usually with various other ingredients",
@@ -349,6 +373,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "25",
       "menuItemName": "poke bowl",
       "menuItemPrice": 11.00,
       "menuItemDescription": "diced raw fish served either as an appetizer or as a main course and is one of the main dishes of Native Hawaiian cuisine.",
@@ -362,6 +387,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "26",
       "menuItemName": "california roll sushi",
       "menuItemPrice": 5.00,
       "menuItemDescription": "a makizushi sushi roll that is usually rolled inside-out, and containing cucumber, crab or imitation crab, and avocado",
@@ -375,6 +401,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "27",
       "menuItemName": "The Amazon Bowl",
       "menuItemPrice": 10.00,
       "menuItemDescription": "Acaí Banán, Strawberries, Sliced Banana, Granola, Puffed Quinoa, Honey",
@@ -388,6 +415,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "28",
       "menuItemName": "Mac Nut Mocha Float",
       "menuItemPrice": 10.00,
       "menuItemDescription": "Nitro Cold Brew, Macnella, Banán",
@@ -401,6 +429,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "29",
       "menuItemName": "Kimchi",
       "menuItemPrice": 4.00,
       "menuItemDescription": "a staple in Korean cuisine, is a famous traditional side dish of salted and fermented vegetables, such as napa cabbage and Korean radish, made with a widely varying selection of seasonings including gochugaru, spring onions, garlic, ginger, and jeotgal, etc.",
@@ -414,6 +443,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "30",
       "menuItemName": "Hoeddeok",
       "menuItemPrice": 5.00,
       "menuItemDescription": "a type of filled Korean pancake; it is a popular street food in South Korea.",
@@ -427,6 +457,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "31",
       "menuItemName": "Chocolate Donut",
       "menuItemPrice": 3.00,
       "menuItemDescription": "The doughnut is popular in many countries and is prepared in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets, food stalls, and franchised specialty vendors.",
@@ -440,6 +471,7 @@
       "menuItemIsDrink": 1
     },
     {
+      "_id": "32",
       "menuItemName": "Hot Chocolate",
       "menuItemPrice": 5.00,
       "menuItemDescription": "Hot chocolate, also known as drinking chocolate, cocoa, and as chocolate tea in Nigeria, is a heated drink consisting of shaved chocolate, melted chocolate or cocoa powder, heated milk or water, and usually a sweetener.",
@@ -450,6 +482,362 @@
       "menuItemMeatId": 1,
       "menuItemEthnicityId": 1,
       "menuItemRestaurantId": "16",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "33",
+      "menuItemName": "All-American Slam",
+      "menuItemPrice": 13.99,
+      "menuItemDescription": "Three scrambled eggs with Cheddar cheese, bacon strips, and sausage links, hash browns and bread.",
+      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/v4zqy9uggt9e1j3fv1en",
+      "menuItemIngredients": [
+        "Cheese",
+        "Bacon",
+        "Sausage",
+        "Hash Browns",
+        "Bread"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "17",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "34",
+      "menuItemName": "French Toast Slam",
+      "menuItemPrice": 13.49,
+      "menuItemDescription": "Served with eggs, bacon strips and sausage links.",
+      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/v4zqy9uggt9e1j3fv1en",
+      "menuItemIngredients": [
+        "Eggs",
+        "Bacon",
+        "Sausage"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "17",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "35",
+      "menuItemName": "SGT Pizza",
+      "menuItemPrice": 17.00,
+      "menuItemDescription": "Spinach, garlic, tomato.",
+      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/vxmos0rfuuvvucsqcfol",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "18",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "36",
+      "menuItemName": "White Garlic Pizza",
+      "menuItemPrice": 14.00,
+      "menuItemDescription": "Olive oil base. No red sauce.",
+      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/vxmos0rfuuvvucsqcfol",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "18",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "37",
+      "menuItemName": "Spring Rolls (Dinner)",
+      "menuItemPrice": 12.15,
+      "menuItemDescription": "Crispy wheat rolls with taro, cabbage, celery, carrot, onion, glass noodle served with sweet chili sauce.",
+      "menuItemImage": "http://assets.bitesquad.com/media-thumbs/130/menu-item-images/SpringRolls_1.jpg",
+      "menuItemIngredients": [
+        "Cheese",
+        "Bacon",
+        "Sausage",
+        "Hash Browns",
+        "Bread"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "19",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "38",
+      "menuItemName": "Summer Rolls (Dinner)",
+      "menuItemPrice": 12.15,
+      "menuItemDescription": "Fresh and soft rolls with lettuce, mint, carrot, cucumber, rice noodle with sweet chili sauce and crushed peanut.",
+      "menuItemImage": "http://assets.bitesquad.com/media-thumbs/130/menu-item-images/SummerRolls.jpg",
+      "menuItemIngredients": [
+        "Eggs",
+        "Bacon",
+        "Sausage"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "19",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "39",
+      "menuItemName": "Mixed Plate",
+      "menuItemPrice": 20.35,
+      "menuItemDescription": "Bar-b-q short rib, beef, chicken and fried man doo, with veg and rice.",
+      "menuItemImage": "https://i.redd.it/iqs1igm8ldy21.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "20",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "40",
+      "menuItemName": "Combo Plate",
+      "menuItemPrice": 14.19,
+      "menuItemDescription": "Bar-b-q beef, chicken and fried man doo, with veg and rice",
+      "menuItemImage": "https://i.redd.it/iqs1igm8ldy21.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "20",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "41",
+      "menuItemName": "Big City Chili (Dinner)",
+      "menuItemPrice": 9.99,
+      "menuItemDescription": "Scoop of steamed rice and topped with shredded real cheddar cheese, diced onions and green onions.",
+      "menuItemImage": "https://pinchofyum.com/wp-content/uploads/Sunday-Chili-Square.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "21",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "42",
+      "menuItemName": "Super Soup of the Day (Dinner)",
+      "menuItemPrice": 4.49,
+      "menuItemDescription": "Super Soup of the Day (Dinner)",
+      "menuItemImage": "https://pinchofyum.com/wp-content/uploads/Sunday-Chili-Square.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "21",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "43",
+      "menuItemName": "Fried Wonton (12)",
+      "menuItemPrice": 7.50,
+      "menuItemDescription": "Fried Wonton (12)",
+      "menuItemImage": "https://www.jessicagavin.com/wp-content/uploads/2016/02/easy-chinese-wonton-soup-recipe-1200.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "22",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "44",
+      "menuItemName": "Fried Gau Gee (8)",
+      "menuItemPrice": 7.50,
+      "menuItemDescription": "Fried Gau Gee (8)",
+      "menuItemImage": "https://www.jessicagavin.com/wp-content/uploads/2016/02/easy-chinese-wonton-soup-recipe-1200.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "22",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "45",
+      "menuItemName": "BBQ Chicken (Lunch)",
+      "menuItemPrice": 11.75,
+      "menuItemDescription": "BBQ Chicken (Lunch)",
+      "menuItemImage": "https://thestayathomechef.com/wp-content/uploads/2018/06/Baked-BBQ-Chicken-1-small-1.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "23",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "46",
+      "menuItemName": "Vinha D'Alhos (Lunch)",
+      "menuItemPrice": 12.44,
+      "menuItemDescription": "https://www.justonecookbook.com/wp-content/uploads/2020/01/Sushi-Rolls-Maki-Sushi-%E2%80%93-Hosomaki-1117-I.jpg",
+      "menuItemImage": "Vinha D'Alhos (Lunch)",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "23",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "47",
+      "menuItemName": "Tuna Mayo Roll",
+      "menuItemPrice": 2.29,
+      "menuItemDescription": "Tuna Mayo Roll",
+      "menuItemImage": "https://www.justonecookbook.com/wp-content/uploads/2020/01/Sushi-Rolls-Maki-Sushi-%E2%80%93-Hosomaki-1117-I.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "24",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "48",
+      "menuItemName": "Shrimp Tempura Roll",
+      "menuItemPrice": 3.44,
+      "menuItemDescription": "Strawberry guava cake bomb.",
+      "menuItemImage": "http://assets.bitesquad.com/media-thumbs/130/menu-item-images/SHRIMP-TEMPURA-HANDROLL.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "24",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "49",
+      "menuItemName": "Lemon Cake Bomb",
+      "menuItemPrice": 3.85,
+      "menuItemDescription": "Lemon cake bomb.",
+      "menuItemImage": "https://di2ponv0v5otw.cloudfront.net/posts/2019/06/10/5cfea48e248f7acc8d91f2b1/m_5cfea4967f617fbff0226223.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "25",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "50",
+      "menuItemName": "Strawberry Guava Cake Bomb",
+      "menuItemPrice": 6.95,
+      "menuItemDescription": "Strawberry guava cake bomb.",
+      "menuItemImage": "https://di2ponv0v5otw.cloudfront.net/posts/2019/06/10/5cfea48e248f7acc8d91f2b1/m_5cfea4967f617fbff0226223.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "25",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "51",
+      "menuItemName": "Papadum",
+      "menuItemPrice": 3.95,
+      "menuItemDescription": "Crisp, mild spicy lentil flour wafers.",
+      "menuItemImage": "https://images.ctfassets.net/3s5io6mnxfqz/2XpDNdeBs4ZFuuzHbqlqY2/8081476e0cf453475bede71384703da6/AdobeStock_143434570.jpeg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "26",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "52",
+      "menuItemName": "Veggie Samosa",
+      "menuItemPrice": 6.95,
+      "menuItemDescription": "Turnovers filled with potatoes, peas and mild peas, with chutney",
+      "menuItemImage": "https://www.indianhealthyrecipes.com/wp-content/uploads/2019/11/samosa-recipe.jpg",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "26",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "53",
+      "menuItemName": "Island Cobb Salad with Kalua Pig",
+      "menuItemPrice": 14.95,
+      "menuItemDescription": "Our house salad made with kalua pig, local cucumbers, lettuce, corn, tomatoes, and avocado. Served with sweet onion dressing.",
+      "menuItemImage": "http://assets.bitesquad.com/media-thumbs/130/menu-item-images/Island-Cobb-Salad-with-Kalua-Pig.JPG",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "27",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "54",
+      "menuItemName": "Vegetarian Cobb Salad",
+      "menuItemPrice": 14.00,
+      "menuItemDescription": "Our house salad made with local cucumbers, lettuce, corn, tomatoes, and avocado. Served with sweet onion dressing.",
+      "menuItemImage": "http://assets.bitesquad.com/media-thumbs/130/menu-item-images/Vegetarian-Cobb-Salad.JPG",
+      "menuItemIngredients": [
+        "Spinach",
+        "Garlic",
+        "Tomato"
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "27",
       "menuItemIsDrink": 1
     }
   ],
@@ -699,6 +1087,149 @@
       },
       "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-dunkind.png",
       "restaurantDesc": "Coffee, Sandwich, and Donut Shop",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "17",
+      "restaurantName": "Denny's",
+      "restaurantAddress": {
+        "street": "205 Lewers St",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/aqeom6oiawn14dq84jxp",
+      "restaurantDesc": "America's Diner",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "18",
+      "restaurantName": "The Lounge",
+      "restaurantAddress": {
+        "street": "1344 Kona St",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/cxnjvsgwbjtkiz84ln0h",
+      "restaurantDesc": "The Lounge HI’s pizzas is handcrafted and prepared with local ingredients and baked in our 800 degree Kiawe wood fire oven.",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "19",
+      "restaurantName": "To Thai For",
+      "restaurantAddress": {
+        "street": "3571 Waialae Ave",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/to-thai-for_1.png",
+      "restaurantDesc": "Thai food 4 dayz",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "20",
+      "restaurantName": "Kim Chee II Restaurant",
+      "restaurantAddress": {
+        "street": "3569 Waialae Ave",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/kim-che-II.png",
+      "restaurantDesc": "Kim Chee",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "21",
+      "restaurantName": "Big City Diner - Kaimuki",
+      "restaurantAddress": {
+        "street": "3565 Waialae Ave St",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/Big-City-Diner-Pearlidge-%28Honolulu,-HI%29_3.jpg",
+      "restaurantDesc": "Classic American",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "22",
+      "restaurantName": "Happy Days",
+      "restaurantAddress": {
+        "street": "3553 Waialae Ave St",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/Happy-Day_2.png",
+      "restaurantDesc": "Thai food 4 dayz",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "23",
+      "restaurantName": "Koa Pancake House - Kaimuki",
+      "restaurantAddress": {
+        "street": "1139 12th Ave",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/koa-pancake-house.png",
+      "restaurantDesc": "Thai food 4 dayz",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "24",
+      "restaurantName": "Sushiya (Good Sushi & Poke)",
+      "restaurantAddress": {
+        "street": "3506 Waialae Ave St",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/sushiya_1.png",
+      "restaurantDesc": "Thai food 4 dayz",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "25",
+      "restaurantName": "Pipeline Bakeshop & Creamery",
+      "restaurantAddress": {
+        "street": "3632 Waialae Ave St",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/Pipeline-Bakeshop---Creamery.png",
+      "restaurantDesc": "Fine deserts",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "26",
+      "restaurantName": "Himalayan Kitchen - Honolulu",
+      "restaurantAddress": {
+        "street": "1137 11th Ave",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/Himalayan%20Kitchen-logo.jpg",
+      "restaurantDesc": "Indian food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "27",
+      "restaurantName": "Oahu Grill Hawaiian Food",
+      "restaurantAddress": {
+        "street": "1137 11th Avenue",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/Oahu-Grill-Hawaiian-Food.png",
+      "restaurantDesc": "Classic Hawaiian Food",
       "restaurantOwner": "1"
     }
   ]
