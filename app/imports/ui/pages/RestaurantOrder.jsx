@@ -4,11 +4,16 @@ import { Grid, Header, Card } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Orders } from '../../api/order/Order';
-import OrderCard from '../components/OrderCard';
+import { OrderCard } from '../components/OrderCard';
 import { Restaurants } from '../../api/restaurant/Restaurant';
+import { SubOrders } from '../../api/order/SubOrder';
 
 class RestaurantOrder extends React.Component {
   render() {
+    const orderIds = this.props.order.map((index,a) => index._id);
+    orderArray: SubOrders.find({ orderId:{
+      $in: orderIds
+  }}).fetch(),
     return (
       <div className="order">
         <Grid>
@@ -18,9 +23,9 @@ class RestaurantOrder extends React.Component {
               <div className="order-menu-item">
               <div>
                   <Card.Group>
-                      {this.props.orders.map((orders, index) => (
-                      <OrderCard key={orders._id} orders={orders}/>
-                    ))}
+                      {orders.map((orders, index) =>
+                      <OrderCard key={orders._id} subOrder={orders}/>
+                    )}
                   </Card.Group>
                 </div>
                 <br />
@@ -33,17 +38,21 @@ class RestaurantOrder extends React.Component {
   }
 }
 RestaurantOrder.propTypes = {
-  orders: PropTypes.array.isRequired,
-  restaurants: PropTypes.array.isRequired,
+  order: PropTypes.array,
+  restaurants: PropTypes.array,
+  subOrders: PropTypes.array,
+  orderArray: PropTypes.array,
+  orderIds: PropTypes.array,
   ready: PropTypes.bool.isRequired,
 };
+
 export default withTracker(({ match }) => {
   const restaurantId = match.params._id;
-  const subscription = Meteor.subscribe('Restaurants');
+  const subscription = Meteor.subscribe('SubOrders');
   const subscription2 = Meteor.subscribe('Orders');
     return {
-      orders: Orders.find({ orderRestaurantId: restaurantId }).fetch(),
-      restaurant: Restaurants.findOne(restaurantId),
+      order: Orders.find({ orderRestaurantId: restaurantId }).fetch(),
+      subOrders: SubOrders.find({}).fetch(),
       ready: subscription.ready() && subscription2.ready(),
     };
 })(RestaurantOrder);

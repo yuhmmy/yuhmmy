@@ -12,9 +12,9 @@ class OrderCard extends React.Component {
     return (
         <Card centered>
           <Card.Content>
-            <Card.Header>{this.props.name}</Card.Header>
+            <Card.Header></Card.Header>
             <Card.Description>
-              Quantity: {this.props.orders.subOrderQuantity}
+              Quantity:
             </Card.Description>
           </Card.Content>
         </Card>
@@ -22,7 +22,14 @@ class OrderCard extends React.Component {
   }
 }
 OrderCard.propTypes = {
-  name: PropTypes.string,
-  orders: PropTypes.array,
+  menu: PropTypes.array,
+  subOrder: PropTypes.object,
 };
+// export default withTracker(() => {
+//   const subscription = Meteor.subscribe('Menu');
+//   return {
+//     menu: Menu.find().fetch,
+//     ready: subscription.ready(),
+//   };
+// })(OrderCard);
 export default OrderCard;
