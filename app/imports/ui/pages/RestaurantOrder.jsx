@@ -11,7 +11,7 @@ import { SubOrders } from '../../api/order/SubOrder';
 class RestaurantOrder extends React.Component {
   render() {
     const orderIds = this.props.order.map((index,a) => index._id);
-    orderArray: SubOrders.find({ orderId:{
+    orderArray = SubOrders.find({ orderId:{
       $in: orderIds
   }}).fetch(),
     return (
