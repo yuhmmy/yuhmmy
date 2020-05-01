@@ -6,15 +6,17 @@ import { Card } from 'semantic-ui-react';
 import { Menu } from '../../api/menu/Menu';
 import { SubOrders } from '../../api/order/SubOrder';
 import { Orders } from '../../api/order/Order';
+import { withRouter, Link } from 'react-router-dom';
+
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class OrderCard extends React.Component {
   render() {
     return (
         <Card centered>
           <Card.Content>
-            <Card.Header></Card.Header>
+            <Card.Header>A</Card.Header>
             <Card.Description>
-              Quantity:
+              Quantity: {this.props.subOrder.subOrderQuantity}
             </Card.Description>
           </Card.Content>
         </Card>
@@ -22,7 +24,6 @@ class OrderCard extends React.Component {
   }
 }
 OrderCard.propTypes = {
-  menu: PropTypes.array,
   subOrder: PropTypes.object,
 };
 // export default withTracker(() => {

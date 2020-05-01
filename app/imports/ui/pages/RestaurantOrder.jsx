@@ -1,38 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Header, Card } from 'semantic-ui-react';
+import { Grid, Header, Card, Loader } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Orders } from '../../api/order/Order';
-import { OrderCard } from '../components/OrderCard';
+import OrderCard from '../components/OrderCard';
 import { Restaurants } from '../../api/restaurant/Restaurant';
 import { SubOrders } from '../../api/order/SubOrder';
 
 class RestaurantOrder extends React.Component {
   render() {
-    const orderIds = this.props.order.map((index,a) => index._id);
-    orderArray = SubOrders.find({ orderId:{
+    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+  }
+  renderPage() {
+    const orderIds = this.props.order.map(index => index._id);
+    let orderArray = SubOrders.find({ orderId:{
       $in: orderIds
-  }}).fetch(),
+  }}).fetch();
+  console.log(orderArray);
     return (
       <div className="order">
-        <Grid>
-          <Grid.Column width={11}>
             <div className="order-menu">
               <Header as="h2" inverted>Kitchen Queue</Header>
-              <div className="order-menu-item">
-              <div>
+              <Grid columns={3}>
+                <Grid.Row>
                   <Card.Group>
-                      {orders.map((orders, index) =>
-                      <OrderCard key={orders._id} subOrder={orders}/>
-                    )}
+                    {
+                      orderArray.map(orders => (
+                        <OrderCard
+                          subOrder={orders}
+                        />
+                      ))
+                    }
                   </Card.Group>
-                </div>
-                <br />
-              </div>
+                </Grid.Row>
+              </Grid>
             </div>
-          </Grid.Column>
-        </Grid>
       </div>
     );
   }
@@ -41,7 +44,6 @@ RestaurantOrder.propTypes = {
   order: PropTypes.array,
   restaurants: PropTypes.array,
   subOrders: PropTypes.array,
-  orderArray: PropTypes.array,
   orderIds: PropTypes.array,
   ready: PropTypes.bool.isRequired,
 };
