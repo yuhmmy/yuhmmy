@@ -1,0 +1,131 @@
+"defaultRestaurant": [
+    {
+      "_id": "100",
+      "restaurantName": "Pandas Express",
+      "restaurantAddress": {
+        "street": "2560 McCarthy mall",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_205,h_205,f_auto,fl_lossy,q_80,c_fill/t8qtbe872v8kywfbmjrh",
+      "restaurantDesc": "Fast-food restaurant",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "101",
+      "restaurantName": "TacoBell",
+      "restaurantAddress": {
+        "street": "1961 Kapiolani Blvd",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96826"
+      },
+      "restaurantImage": "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_205,h_205,f_auto,fl_lossy,q_80,c_fill/iafmml3ovfotesgmbmxu",
+      "restaurantDesc": "Mexican-Food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "102",
+      "restaurantName": "Chronic Tacos",
+      "restaurantAddress": {
+        "street": "888 Kapahulku Ave Ste D1",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_205,h_205,f_auto,fl_lossy,q_80,c_fill/qmdcttez3xdxppnbxcvx",
+      "restaurantDesc": "Mexican-food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "103",
+      "restaurantName": "Serg's Mexican Kitchen",
+      "restaurantAddress": {
+        "street": "2740 E Manoa Rd",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_205,h_205,f_auto,fl_lossy,q_80,c_fill/oer3iowjqdewna1vci4j",
+      "restaurantDesc": "Mexican-food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "104",
+      "restaurantName": "Golden Duck",
+      "restaurantAddress": {
+        "street": "1221 South King Street",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96814"
+      },
+      "restaurantImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/hyyzksgyjkj2v19mgeqb",
+      "restaurantDesc": "Chinese-food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "105",
+      "restaurantName": "On Dong Chinese Restaurant",
+      "restaurantAddress": {
+        "street": "1449 South King Street",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96817"
+      },
+      "restaurantImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/mi5iw8veensvopogv2e2",
+      "restaurantDesc": "Chinese-food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "106",
+      "restaurantName": "Hoy Tin Kitchen",
+      "restaurantAddress": {
+        "street": "1727 Liliha St",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96817"
+      },
+      "restaurantImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/cvm01buexttkoinqllvd",
+      "restaurantDesc": "Chinese-food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "107",
+      "restaurantName": "Betty's Burgers",
+      "restaurantAddress": {
+        "street": "1025 University Ave",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96826"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/bettys-burgers-hi.png",
+      "restaurantDesc": "Fast-food restaurant",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "108",
+      "restaurantName": "Oahu Mexican Grill",
+      "restaurantAddress": {
+        "street": "3036 Waialae Ave",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/Oahu-Mexican-Grill.png",
+      "restaurantDesc": "Mexican-food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "109",
+      "restaurantName": "The Counter",
+      "restaurantAddress": {
+        "street": "4211 Waialae Ave E-1",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/the-counter_1.png",
+      "restaurantDesc": "Fast-food restaurant",
+      "restaurantOwner": "1"
+    }
