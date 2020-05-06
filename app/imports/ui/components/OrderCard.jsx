@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
-import { Card } from 'semantic-ui-react';
+import { Card, Loader } from 'semantic-ui-react';
 import { Menu } from '../../api/menu/Menu';
 import { SubOrders } from '../../api/order/SubOrder';
 import { Orders } from '../../api/order/Order';
@@ -11,15 +11,21 @@ import { withRouter, Link } from 'react-router-dom';
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class OrderCard extends React.Component {
   render() {
+    return (this.props.ready) ? this.renderComp() : <Loader active>Getting data</Loader>;
+  }
+  renderComp() {
     const itemId = this.props.subOrder.menuItemId;
     const menuItem = this.props.menu.find(item => item._id === itemId);
-    // const name = menuItem.menuItemName;
-    console.log(menuItem);
+    console.log('props', this.props);
+    console.log('menuItem', menuItem.menuItemName);
+    
+   // const name = menuItem.menuItemDescription;
+   
     return (
         <Card centered>
           <Card.Content>
             {/* {console.log(this.props.subOrder)} */}
-            <Card.Header></Card.Header>
+            <Card.Header>{menuItem.menuItemName}</Card.Header>
             <Card.Description>
               Quantity: {this.props.subOrder.subOrderQuantity}
             </Card.Description>
@@ -28,6 +34,7 @@ class OrderCard extends React.Component {
     );
   }
 }
+
 OrderCard.propTypes = {
   menu: PropTypes.array,
   subOrder: PropTypes.object,
