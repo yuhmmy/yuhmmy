@@ -11,10 +11,15 @@ import { withRouter, Link } from 'react-router-dom';
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class OrderCard extends React.Component {
   render() {
+    const itemId = this.props.subOrder.menuItemId;
+    const menuItem = this.props.menu.find(item => item._id === itemId);
+    // const name = menuItem.menuItemName;
+    console.log(menuItem);
     return (
         <Card centered>
           <Card.Content>
-            <Card.Header>A</Card.Header>
+            {/* {console.log(this.props.subOrder)} */}
+            <Card.Header></Card.Header>
             <Card.Description>
               Quantity: {this.props.subOrder.subOrderQuantity}
             </Card.Description>
@@ -24,13 +29,15 @@ class OrderCard extends React.Component {
   }
 }
 OrderCard.propTypes = {
+  menu: PropTypes.array,
   subOrder: PropTypes.object,
+  itemName: PropTypes.string,
 };
-// export default withTracker(() => {
-//   const subscription = Meteor.subscribe('Menu');
-//   return {
-//     menu: Menu.find().fetch,
-//     ready: subscription.ready(),
-//   };
-// })(OrderCard);
-export default OrderCard;
+export default withTracker(() => {
+  const subscription = Meteor.subscribe('Menu');
+  return {
+    menu: Menu.find().fetch(),
+    ready: subscription.ready(),
+  };
+})(OrderCard);
+// export default OrderCard;

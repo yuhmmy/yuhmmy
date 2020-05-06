@@ -14,7 +14,7 @@ class RestaurantOrder extends React.Component {
   }
   renderPage() {
     const orderIds = this.props.order.map(index => index._id);
-    let orderArray = SubOrders.find({ orderId:{
+    const orderArray = SubOrders.find({ orderId:{
       $in: orderIds
   }}).fetch();
   console.log(orderArray);
@@ -42,9 +42,7 @@ class RestaurantOrder extends React.Component {
 }
 RestaurantOrder.propTypes = {
   order: PropTypes.array,
-  restaurants: PropTypes.array,
   subOrders: PropTypes.array,
-  orderIds: PropTypes.array,
   ready: PropTypes.bool.isRequired,
 };
 
