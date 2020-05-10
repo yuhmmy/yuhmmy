@@ -302,7 +302,7 @@
       "menuItemName": "Two Tacos",
       "menuItemPrice": 2.00,
       "menuItemDescription": "traditional Mexican dish consisting of a small hand-sized corn or wheat tortilla topped with a fillin",
-      "menuItemImage": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcarlsbadcravings.com%2Fground-beef-tacos%2F&psig=AOvVaw29_drENrYpakgLWJVmSVwA&ust=1588237119859000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDEjb6ijekCFQAAAAAdAAAAABAN",
+      "menuItemImage": "https://d1doqjmisr497k.cloudfront.net/-/media/mccormick-us/recipes/mccormick/f/800/fiesta_tacos_800x800.jpg?vd=20180710T045435Z&hash=E1A749A92C6D606DD072CC2B2AF53B66A0D3E2DC",
       "menuItemIngredients": [
         "Water"
       ],
@@ -805,6 +805,84 @@
       "menuItemMeatId": 1,
       "menuItemEthnicityId": 1,
       "menuItemRestaurantId": "27",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "55",
+      "menuItemName": "Egg Masala",
+      "menuItemPrice": 12.00,
+      "menuItemDescription": "An exciting blend of eggs marinated in thick masala sauce of tomatoes, tamarind, ginger, and garlic",
+      "menuItemImage": "http://manoa.hawaii.edu/food/resources/images/indiaCafePhoto.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "28",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "56",
+      "menuItemName": "Vegetable Sambal",
+      "menuItemPrice": 9.00,
+      "menuItemDescription": "Carrots, onions, ginger, garlic, dried peppers, curry leaves, daikon, long beans in a yellow split pea dhal stew",
+      "menuItemImage": "http://assets.bitesquad.com/media-thumbs/130/menu-item-images/Vegetarian-Cobb-Salad.JPG",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "28",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "57",
+      "menuItemName": "Nutella Banana Crepe",
+      "menuItemPrice": 12.00,
+      "menuItemDescription": "A French pastry version of a pizza with Hazelnut, chocolate, and bananas",
+      "menuItemImage": "http://manoa.hawaii.edu/food/resources/images/leCrepePhoto.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "29",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "58",
+      "menuItemName": "Veggie Crepe",
+      "menuItemPrice": 9.00,
+      "menuItemDescription": "A savory French dessert with Mozzarella, spinach, tomatoes, basil, green onions, and bell peppers",
+      "menuItemImage": "http://manoa.hawaii.edu/food/resources/images/leCrepePhoto2.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "29",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "59",
+      "menuItemName": "Orange Chicken Bowl",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "A guest favorite, perfect for lunch, dinner or as a pick-me-up snack between classes",
+      "menuItemImage": "http://manoa.hawaii.edu/food/resources/images/pandasPhoto.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 1,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "30",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "60",
+      "menuItemName": "String Bean Chicken Breast",
+      "menuItemPrice": 7.00,
+      "menuItemDescription": "A healthier alternative to the classic Chinese dish",
+      "menuItemImage": "http://manoa.hawaii.edu/food/resources/images/pandasPhoto4.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "30",
       "menuItemIsDrink": 1
     }
   ],
@@ -1327,6 +1405,32 @@
       },
       "restaurantImage": "https://www.google.com/url?sa=i&url=https%3A%2F%2Filluminatisymbols.info%2Fstarbucks-logo%2F&psig=AOvVaw28lB1e3RIttHV-gvQO19m3&ust=1589203506470000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIC84cayqekCFQAAAAAdAAAAABAD",
       "restaurantDesc": "the largest coffeehouse in the world",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "41",
+      "restaurantName": "Subway",
+      "restaurantAddress": {
+        "street": "UHM Campus Center",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://cdn.designcrowd.com/blog/2016/August/subway-new-logo/subway_symbol_828.png",
+      "restaurantDesc": "Eat Fresh. Customize your own sandwiches.",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "42",
+      "restaurantName": "Simply To Go",
+      "restaurantAddress": {
+        "street": "UHM Campus Center",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://content-service.sodexomyway.com/media/STG%20BG%20LOGO_tcm247-102641_w808_h424_n.jpg?url=https://uhm.sodexomyway.com/",
+      "restaurantDesc": "just, as the name says... simple items purchased to go!",
       "restaurantOwner": "1"
     }
   ]
