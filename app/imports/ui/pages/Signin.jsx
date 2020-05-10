@@ -71,7 +71,7 @@ export default class Signin extends React.Component {
                 />
                 <Grid centered style={{ marginTop: 15, marginBottom: 15 }}>
                   <Link to="/signup">
-                    <Button color="grey">Register</Button>
+                    <Button type="reset" color="grey">Register</Button>
                   </Link>
                   <Button color="teal" onClick={this.submit}>Login</Button>
                 </Grid>

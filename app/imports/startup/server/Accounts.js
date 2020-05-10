@@ -27,6 +27,7 @@ function createUser(email, password, firstName, lastName, gender, pref, age) {
   });
 }
 
+
 /** When running app for first time, pass a settings file to set up a default user account. */
 if (Meteor.users.find().count() === 0) {
   if (Meteor.settings.defaultAccounts) {

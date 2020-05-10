@@ -27,6 +27,11 @@ function addEthnicity(data) {
   Ethnicity.insert(data);
 }
 
+// For users doc
+Meteor.users.allow({
+  update: () => true,
+});
+
 /** Initialize the collection if empty. */
 if (
     Menu.find().count() === 0 &&
