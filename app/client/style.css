@@ -83,3 +83,9 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+.order-card-item {
+  background-color: #393E46;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 10px;
+}

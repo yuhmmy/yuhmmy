@@ -22,17 +22,15 @@ class RestaurantOrder extends React.Component {
       <div className="order">
             <div className="order-menu">
               <Header as="h2" inverted>Kitchen Queue</Header>
-              <Grid columns={3}>
+              <Grid columns={3} padded>
                 <Grid.Row>
-                  <Card.Group>
-                    {
-                      orderArray.map(orders => (
-                        <OrderCard
-                          subOrder={orders}
-                        />
-                      ))
-                    }
-                  </Card.Group>
+                  {
+                    orderArray.map(orders => (
+                      <OrderCard
+                        subOrder={orders}
+                      />
+                    ))
+                  }
                 </Grid.Row>
               </Grid>
             </div>
