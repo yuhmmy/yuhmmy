@@ -826,7 +826,7 @@
       "_id": "2",
       "restaurantName": "Jamba Juice",
       "restaurantAddress": {
-        "street": "UHM Campus Center 2nd Floor",
+        "street": "UHM Campus Center",
         "city": "Honolulu",
         "state": "HI",
         "zipCode": "96822"
@@ -839,13 +839,13 @@
       "_id": "3",
       "restaurantName": "L&L Hawaiian Barbecue",
       "restaurantAddress": {
-        "street": "UHM Paradise Palms",
+        "street": "UHM Paradise Palms Cafe",
         "city": "Honolulu",
         "state": "HI",
         "zipCode": "96822"
       },
       "restaurantImage": "https://www.hawaiianbarbecue.com/wp-content/uploads/2019/08/LLHawaii-Logo_Badge-CMYK.jpg",
-      "restaurantDesc": "a Hawaiian-themed franchise, centered on the Hawaiian plate lunch",
+      "restaurantDesc": "Hawaiian-themed plate lunch franchise",
       "restaurantOwner": "3"
     },
     {
@@ -889,7 +889,7 @@
     },
     {
       "_id": "7",
-      "restaurantName": "Just Ice Hawai",
+      "restaurantName": "Just Ice Hawaii",
       "restaurantAddress": {
         "street": "Outside UHM Kuykendall Hall",
         "city": "Honolulu",
@@ -917,7 +917,7 @@
       "_id": "9",
       "restaurantName": "Pizza Hut",
       "restaurantAddress": {
-        "street": "UHM Campus Center First Floor",
+        "street": "UHM Campus Center",
         "city": "Honolulu",
         "state": "HI",
         "zipCode": "96822"
@@ -936,7 +936,7 @@
         "zipCode": "96822"
       },
       "restaurantImage": "https://bloximages.newyork1.vip.townnews.com/manoanow.org/content/tncms/assets/v3/editorial/d/a5/da551820-4058-11e9-b4af-832b67a1b670/5c803ef59078a.image.png?resize=1200%2C801",
-      "restaurantDesc": "Coffee Shop with Pastries",
+      "restaurantDesc": "Serves up brewed coffee from the Hawaiian Islands and fulfills your caffeinated desires with a full service espresso bar",
       "restaurantOwner": "10"
     },
     {
@@ -949,20 +949,20 @@
         "zipCode": "96822"
       },
       "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-hottaco.png",
-      "restaurantDesc": "Authentic Mexican food, prepped and cooked daily from scratch",
+      "restaurantDesc": "Authentic Mexican food, prepped and cooked daily from scratch, offering tacos, burritos, and quesadillas",
       "restaurantOwner": "11"
     },
     {
       "_id": "12",
       "restaurantName": "Holoholo Grill ",
       "restaurantAddress": {
-        "street": "Paradise Palms Cafe",
+        "street": "UHM Paradise Palms Cafe",
         "city": "Honolulu",
         "state": "HI",
         "zipCode": "96822"
       },
       "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-holohol.png",
-      "restaurantDesc": "Healthy locally grown salads, sandwiches, poke bowls and  grab and go items at affordable prices",
+      "restaurantDesc": "Healthy locally grown salads, sandwiches, poke bowls and grab and go items at affordable prices",
       "restaurantOwner": "12"
     },
     {
@@ -975,7 +975,7 @@
         "zipCode": "96822"
       },
       "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-onoseaf.png",
-      "restaurantDesc": "Made to order poke by the pound & poke bowls",
+      "restaurantDesc": "Made to order poke by the pound & bowls",
       "restaurantOwner": "13"
     },
     {
@@ -1008,13 +1008,13 @@
       "_id": "16",
       "restaurantName": "Dunkin Donuts",
       "restaurantAddress": {
-        "street": "Paradise Palms Cafe",
+        "street": "UHM Paradise Palms Cafe",
         "city": "Honolulu",
         "state": "HI",
         "zipCode": "96822"
       },
       "restaurantImage": "https://manoa.hawaii.edu/food/index_files/stacks-image-dunkind.png",
-      "restaurantDesc": "Coffee, Sandwich, and Donut Shop",
+      "restaurantDesc": "Keeps Hawaii running with high-quality beverage offerings, paired perfectly with delicious donuts and more.",
       "restaurantOwner": "1"
     },
     {
@@ -1027,7 +1027,7 @@
         "zipCode": "96816"
       },
       "restaurantImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/aqeom6oiawn14dq84jxp",
-      "restaurantDesc": "America's Diner",
+      "restaurantDesc": "America's Diner where people can come in, sit down and connect with one another over great food and drinks",
       "restaurantOwner": "1"
     },
     {
@@ -1162,15 +1162,171 @@
     },
     {
       "_id": "28",
-      "restaurantName": "Restaurant",
+      "restaurantName": "Lasoon",
       "restaurantAddress": {
-        "street": "street",
+        "street": "UHM Paradise Palms Cafe",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://manoa.hawaii.edu/food/resources/images/lasoonSideLogo.png",
+      "restaurantDesc": "offers something for everyone with their signature exotic South Indian and Malaysian cuisine. Daily specials include chicken curry, lamb masala, garlic shrimp, seafood curry, spinach tofu, spicy eggplant, curried potatoes, coconut cabbage & over 10 different vegetarian entrees to choose from. Spiciness ranges from mild to very hot.",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "29",
+      "restaurantName": "Le Crepe Cafe",
+      "restaurantAddress": {
+        "street": "UHM Paradise Palms Cafe",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://manoa.hawaii.edu/food/resources/images/LeCrepeCafeSide2017Logo.png",
+      "restaurantDesc": "makes traditional French crêpes, cooked to order in front of customers. They specialize in a flavorsome menu of sweet and savory crêpes and use fresh ingredients, organic when possible. Their utensils are even bio-compostable. Enjoy a crêpe any time of day, as a breakfast, snack, main course, or dessert - close your eyes and you're in Paris!",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "30",
+      "restaurantName": "Panda Express",
+      "restaurantAddress": {
+        "street": "UHM Paradise Palms Cafe",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://manoa.hawaii.edu/food/resources/images/pandaExpressSideLogo.png",
+      "restaurantDesc": "Serves gourmet Chinese food made with only the freshest ingredients. Famous for its Orange Chicken, they also offer a number of Wok Smart entrées that contain less than 250 calories per serving. Offerings can be enjoyed in Panda Bowls, or two and three item plates. Perfect for lunch, dinner or as a pick-me-up snack between classes.",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "31",
+      "restaurantName": "TacoBell",
+      "restaurantAddress": {
+        "street": "1961 Kapiolani Blvd",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96826"
+      },
+      "restaurantImage": "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_205,h_205,f_auto,fl_lossy,q_80,c_fill/iafmml3ovfotesgmbmxu",
+      "restaurantDesc": "Mexican Food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "32",
+      "restaurantName": "Chronic Tacos",
+      "restaurantAddress": {
+        "street": "888 Kapahulku Ave Ste D1",
         "city": "Honolulu",
         "state": "HI",
         "zipCode": "96816"
       },
-      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/Oahu-Grill-Hawaiian-Food.png",
-      "restaurantDesc": "Classic Hawaiian Food",
+      "restaurantImage": "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_205,h_205,f_auto,fl_lossy,q_80,c_fill/qmdcttez3xdxppnbxcvx",
+      "restaurantDesc": "Mexican food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "33",
+      "restaurantName": "Serg's Mexican Kitchen",
+      "restaurantAddress": {
+        "street": "2740 E Manoa Rd",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_205,h_205,f_auto,fl_lossy,q_80,c_fill/oer3iowjqdewna1vci4j",
+      "restaurantDesc": "Mexican food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "34",
+      "restaurantName": "Golden Duck",
+      "restaurantAddress": {
+        "street": "1221 South King Street",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96814"
+      },
+      "restaurantImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/hyyzksgyjkj2v19mgeqb",
+      "restaurantDesc": "Chinese food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "35",
+      "restaurantName": "On Dong Chinese Restaurant",
+      "restaurantAddress": {
+        "street": "1449 South King Street",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96817"
+      },
+      "restaurantImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/mi5iw8veensvopogv2e2",
+      "restaurantDesc": "Chinese food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "36",
+      "restaurantName": "Hoy Tin Kitchen",
+      "restaurantAddress": {
+        "street": "1727 Liliha St",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96817"
+      },
+      "restaurantImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,h_100,f_auto,fl_lossy,q_80,c_fit/cvm01buexttkoinqllvd",
+      "restaurantDesc": "Chinese food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "37",
+      "restaurantName": "Betty's Burgers",
+      "restaurantAddress": {
+        "street": "1025 University Ave",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96826"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/bettys-burgers-hi.png",
+      "restaurantDesc": "Fast-food restaurant",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "38",
+      "restaurantName": "Oahu Mexican Grill",
+      "restaurantAddress": {
+        "street": "3036 Waialae Ave",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/Oahu-Mexican-Grill.png",
+      "restaurantDesc": "Mexican food",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "39",
+      "restaurantName": "The Counter",
+      "restaurantAddress": {
+        "street": "4211 Waialae Ave E-1",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96816"
+      },
+      "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/the-counter_1.png",
+      "restaurantDesc": "Fast-food restaurant",
+      "restaurantOwner": "1"
+    },
+    {
+      "_id": "40",
+      "restaurantName": "Starbucks",
+      "restaurantAddress": {
+        "street": "UHM Campus Center",
+        "city": "Honolulu",
+        "state": "HI",
+        "zipCode": "96822"
+      },
+      "restaurantImage": "https://www.google.com/url?sa=i&url=https%3A%2F%2Filluminatisymbols.info%2Fstarbucks-logo%2F&psig=AOvVaw28lB1e3RIttHV-gvQO19m3&ust=1589203506470000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIC84cayqekCFQAAAAAdAAAAABAD",
+      "restaurantDesc": "the largest coffeehouse in the world",
       "restaurantOwner": "1"
     }
   ]
