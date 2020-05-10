@@ -2,18 +2,45 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
-import { Container, Form, Grid, Header, Message, Segment, Button } from 'semantic-ui-react';
+import { Container, Form, Grid, Header, Message, Segment, Button, Select, Loader } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
+import { Ethnicity } from '../../api/menu/Ethnicity';
 import '../../stylesheets/Signup.css';
 
 /**
  * Signup component is similar to signin component, but we create a new user instead.
  */
+const genderOptions = [
+  { key: 'm', text: 'Male', value: 'M' },
+  { key: 'f', text: 'Female', value: 'F' },
+  { key: 'z', text: 'ZJ', value: 'Z' },
+];
+
+const EthnicityDb = Meteor.subscribe('Ethnicity');
+
+
+const dietaryOptions = [
+  { key: 've', text: 'Vegan', value: '1' },
+  { key: 'v', text: 'Vegetarian', value: '2' },
+  { key: 'pesc', text: 'Pescetarian', value: '3' },
+  { key: 'meat', text: 'MEAT', value: '4' },
+];
+
 class Signup extends React.Component {
   /** Initialize state fields. */
   constructor(props) {
     super(props);
-    this.state = { email: '', password: '', error: '', redirectToReferer: false };
+    this.state = {
+      email: '',
+      password: '',
+      firstName: '',
+      lastName: '',
+      age: 1,
+      gender: 'M',
+      dietary: 4,
+      error: '',
+      redirectToReferer: false,
+    };
   }
 
   /** Update the form controls each time the user interacts with them. */
@@ -23,32 +50,34 @@ class Signup extends React.Component {
 
   /** Handle Signup submission. Create user account and a profile entry, then redirect to the home page. */
   submit = () => {
-    const { email, password, firstName, lastName } = this.state;
-    const id = Accounts.createUser(
+    const { email, password, firstName, lastName, age, gender, dietary, ethnicity } = this.state;
+    const pref = { ethnicity: ethnicity, meat: dietary };
+    Accounts.createUser(
         {
-          email,
           username: email,
-          password,
+          email: email,
+          password: password,
         },
         (err) => {
           if (err) {
             this.setState({ error: err.reason });
           } else {
+
+            // Update custom fields
+            const id = Meteor.userId();
+            Meteor.users.update({ _id: id }, {
+              $set: {
+                age: age,
+                gender: gender,
+                preferences: pref,
+                name: {
+                  firstName: firstName,
+                  lastName: lastName,
+                },
+              },
+            });
             this.setState({ error: '', redirectToReferer: true });
           }
-        },
-    );
-    // Update custom fields
-    Meteor.users.update(id, {
-          $set: {
-            // age: age,
-            // gender: gender,
-            // preferences: pref,
-            name: {
-              firstName: firstName,
-              lastName: lastName,
-            },
-          },
         },
     );
   };
@@ -57,8 +86,20 @@ class Signup extends React.Component {
     this.setState({ error: '', redirectToReferer: true });
   };
 
-  /** Display the signup form. Redirect to add page after successful registration and login. */
   render() {
+    return (EthnicityDb.ready()) ? this.renderForm() : <Loader active>Getting data</Loader>;
+  }
+
+  /** Display the signup form. Redirect to add page after successful registration and login. */
+  renderForm() {
+    const ethnicities = Ethnicity.find().fetch();
+    const ethnicityOptions = ethnicities.map(ethnicity => ({
+      key: ethnicity._id,
+      text: ethnicity.ethnicityDesc,
+      value: ethnicity.ethnicityId,
+    }));
+    console.log(ethnicityOptions);
+
     const { from } = this.props.location.state || { from: { pathname: '/add' } };
     // if correct authentication, redirect to from: page instead of signup screen
     if (this.state.redirectToReferer) {
@@ -80,6 +121,14 @@ class Signup extends React.Component {
                       onChange={this.handleChange}
                       className="textBox"
                   />
+                  <Form.Input
+                      icon="lock"
+                      iconPosition="left"
+                      name="password"
+                      placeholder="Password"
+                      type="password"
+                      onChange={this.handleChange}
+                  />
                   <Form.Group widths='equal'>
                     <Form.Input
                         fluid
@@ -94,14 +143,40 @@ class Signup extends React.Component {
                         onChange={this.handleChange}
                     />
                   </Form.Group>
-                  <Form.Input
-                      icon="lock"
-                      iconPosition="left"
-                      name="password"
-                      placeholder="Password"
-                      type="password"
-                      onChange={this.handleChange}
-                  />
+                  <Form.Group widths='equal'>
+                    <Form.Input
+                        fluid
+                        name="gender"
+                        placeholder="Gender"
+                        control={Select}
+                        options={genderOptions}
+                        onChange={this.handleChange}
+                    />
+                    <Form.Input
+                        fluid
+                        name="age"
+                        placeholder="Age"
+                        type="number"
+                        onChange={this.handleChange}
+                    />
+                    <Form.Input
+                        fluid
+                        name="dietary"
+                        placeholder="Dietary"
+                        control={Select}
+                        options={dietaryOptions}
+                        onChange={this.handleChange}
+                    />
+                    <Form.Input
+                        fluid
+                        multiple
+                        name="ethnicity"
+                        placeholder="Favorites"
+                        control={Select}
+                        options={ethnicityOptions}
+                        onChange={this.handleChange}
+                    />
+                  </Form.Group>
                   <div className="spacing">
                     <Button type="submit" fluid content="Create Account" id="primaryButton"/>
                   </div>
