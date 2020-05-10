@@ -19,11 +19,11 @@
       "menuItemName": "All Natural Iced Tea",
       "menuItemPrice": 6.00,
       "menuItemDescription": "House made Iced tea with with artisan oolong black tea sweetened with natural cane sugar",
-      "menuItemImage": "https://images.everydayhealth.com/images/healthy-living/the-health-benefits-of-water-722x406.jpg?w=1110",
+      "menuItemImage": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/6/3/1/FNM_070111-Centerfold-007_s4x3.jpg.rend.hgtvcom.406.305.suffix/1371597847872.jpeg",
       "menuItemIngredients": [
         "Water",
         "Lemon Juice",
-        "Blacktea",
+        "Black Tea",
         "Sugar"
       ],
       "menuItemMeatId": 1,
@@ -1170,7 +1170,7 @@
         "zipCode": "96816"
       },
       "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/Happy-Day_2.png",
-      "restaurantDesc": "Thai food 4 dayz",
+      "restaurantDesc": "Chinese restaurant specializing in dumplings",
       "restaurantOwner": "1"
     },
     {
@@ -1183,12 +1183,12 @@
         "zipCode": "96816"
       },
       "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/koa-pancake-house.png",
-      "restaurantDesc": "Thai food 4 dayz",
+      "restaurantDesc": "A local pancake eatery",
       "restaurantOwner": "1"
     },
     {
       "_id": "24",
-      "restaurantName": "Sushiya (Good Sushi & Poke)",
+      "restaurantName": "Sushiya",
       "restaurantAddress": {
         "street": "3506 Waialae Ave St",
         "city": "Honolulu",
@@ -1196,7 +1196,7 @@
         "zipCode": "96816"
       },
       "restaurantImage": "https://assets.bitesquad.com/media-thumbs/120/location-images/sushiya_1.png",
-      "restaurantDesc": "Thai food 4 dayz",
+      "restaurantDesc": "Good Sushi and Poke",
       "restaurantOwner": "1"
     },
     {
@@ -1248,7 +1248,7 @@
         "zipCode": "96822"
       },
       "restaurantImage": "https://manoa.hawaii.edu/food/resources/images/lasoonSideLogo.png",
-      "restaurantDesc": "offers something for everyone with their signature exotic South Indian and Malaysian cuisine. Daily specials include chicken curry, lamb masala, garlic shrimp, seafood curry, spinach tofu, spicy eggplant, curried potatoes, coconut cabbage & over 10 different vegetarian entrees to choose from. Spiciness ranges from mild to very hot.",
+      "restaurantDesc": "Offers something for everyone with their signature exotic South Indian and Malaysian cuisine. Daily specials include chicken curry, lamb masala, garlic shrimp, seafood curry, spinach tofu, spicy eggplant, curried potatoes, coconut cabbage & over 10 different vegetarian entrees to choose from. Spiciness ranges from mild to very hot.",
       "restaurantOwner": "1"
     },
     {
@@ -1261,7 +1261,7 @@
         "zipCode": "96822"
       },
       "restaurantImage": "https://manoa.hawaii.edu/food/resources/images/LeCrepeCafeSide2017Logo.png",
-      "restaurantDesc": "makes traditional French crêpes, cooked to order in front of customers. They specialize in a flavorsome menu of sweet and savory crêpes and use fresh ingredients, organic when possible. Their utensils are even bio-compostable. Enjoy a crêpe any time of day, as a breakfast, snack, main course, or dessert - close your eyes and you're in Paris!",
+      "restaurantDesc": "Makes traditional French crêpes, cooked to order in front of customers. They specialize in a flavorsome menu of sweet and savory crêpes and use fresh ingredients, organic when possible. Their utensils are even bio-compostable. Enjoy a crêpe any time of day, as a breakfast, snack, main course, or dessert - close your eyes and you're in Paris!",
       "restaurantOwner": "1"
     },
     {
@@ -1403,8 +1403,8 @@
         "state": "HI",
         "zipCode": "96822"
       },
-      "restaurantImage": "https://www.google.com/url?sa=i&url=https%3A%2F%2Filluminatisymbols.info%2Fstarbucks-logo%2F&psig=AOvVaw28lB1e3RIttHV-gvQO19m3&ust=1589203506470000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIC84cayqekCFQAAAAAdAAAAABAD",
-      "restaurantDesc": "the largest coffeehouse in the world",
+      "restaurantImage": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png",
+      "restaurantDesc": "The largest coffeehouse in the world",
       "restaurantOwner": "1"
     },
     {
@@ -1430,7 +1430,7 @@
         "zipCode": "96822"
       },
       "restaurantImage": "https://content-service.sodexomyway.com/media/STG%20BG%20LOGO_tcm247-102641_w808_h424_n.jpg?url=https://uhm.sodexomyway.com/",
-      "restaurantDesc": "just, as the name says... simple items purchased to go!",
+      "restaurantDesc": "Just, as the name says... simple items purchased to go!",
       "restaurantOwner": "1"
     }
   ]
