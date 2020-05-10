@@ -20,10 +20,10 @@ const EthnicityDb = Meteor.subscribe('Ethnicity');
 
 
 const dietaryOptions = [
-  { key: 've', text: 'Vegan', value: '1' },
-  { key: 'v', text: 'Vegetarian', value: '2' },
-  { key: 'pesc', text: 'Pescetarian', value: '3' },
-  { key: 'meat', text: 'MEAT', value: '4' },
+  { key: 've', text: 'Vegan', value: 1 },
+  { key: 'v', text: 'Vegetarian', value: 2 },
+  { key: 'pesc', text: 'Pescetarian', value: 3 },
+  { key: 'meat', text: 'MEAT', value: 4 },
 ];
 
 class Signup extends React.Component {
