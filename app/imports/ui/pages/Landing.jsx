@@ -49,7 +49,7 @@ class Info extends React.Component {
                 Food Search
               </Header>
               <p style={{ color: '#999' }}>
-                Looking for somewhere to eat on campus? Easily search for the type of food that you are looking for!
+                Looking for somewhere to eat on campus? Easily search for what that you are looking for or view the map!
               </p>
             </Grid.Column>
             <Grid.Column textAlign='center'>
@@ -58,16 +58,16 @@ class Info extends React.Component {
                 Easy Ordering
               </Header>
               <p style={{ color: '#999' }}>
-                No time between your classes? Order beforehand & your food will *magically* appear at your table!
+                No time between classes? Order beforehand to practice social distancing between wait staff & customers!
               </p>
             </Grid.Column>
             <Grid.Column textAlign='center'>
               <Icon size='huge' name='money' inverted/>
               <Header inverted as='h2' textAlign='center'>
-                Virtual Payment
+                Payment Planning
               </Header>
               <p style={{ color: '#999' }}>
-                Quickly pay and tip on-app to practice social distancing between wait staff and customers.
+                On a budget? View prices of menu items and see your total without needing to set foot in the restaurant!
               </p>
             </Grid.Column>
           </Grid>
@@ -88,7 +88,7 @@ class Images extends React.Component {
           <Grid container stackable centered columns={1}>
             <Grid.Column textAlign='center'>
               <Header inverted as='h2' textAlign='center'>
-                Not sure where to eat? Try one of these:
+                Top 5 take-out locations near UH Manoa during Covid-19:
               </Header>
             </Grid.Column>
           </Grid>
@@ -98,13 +98,16 @@ class Images extends React.Component {
               <img className='ui tiny rounded centered image' src='images/bale.jpeg' style={imageStyle} alt='food1'/>
             </div>
             <div className="new">
-              <img className='ui tiny rounded centered image' src='images/jamba.png' style={imageStyle} alt='food2'/>
+              <img className='ui tiny rounded centered image' src='images/jj.jpg' style={imageStyle} alt='food2'/>
             </div>
             <div className="new">
               <img className='ui tiny rounded centered image' src='images/ll.png' style={imageStyle} alt='food3'/>
             </div>
             <div className="new">
               <img className='ui tiny rounded centered image' src='images/zip.png' style={imageStyle} alt='food4'/>
+            </div>
+            <div className="new">
+              <img className='ui tiny rounded centered image' src='images/panda.png' style={imageStyle} alt='food5'/>
             </div>
           </Fade>
         </div>
