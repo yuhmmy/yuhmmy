@@ -880,9 +880,477 @@
       "menuItemImage": "http://manoa.hawaii.edu/food/resources/images/pandasPhoto4.png",
       "menuItemIngredients": [
       ],
-      "menuItemMeatId": 2,
+      "menuItemMeatId": 1,
       "menuItemEthnicityId": 1,
       "menuItemRestaurantId": "30",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "61",
+      "menuItemName": "POWER MENU BOWL - VEGGIE",
+      "menuItemPrice": 5.49,
+      "menuItemDescription": "Power Menu Bowl with the guacamole, reduced fat sour cream, freshly prepared pico de gallo, crisp lettuce, and seasoned rice, packed into a seriously powerful bowl. But substitute the meat for a double portion of seasoned black beans. Boom. You didn’t just power-up, my friend. You veggied up.",
+      "menuItemImage": "https://www.tacobell.com/images/22490_power_menu_bowl_-_veggie_269x269.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "31",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "62",
+      "menuItemName": "NACHOS BELLGRANDE",
+      "menuItemPrice": 3.69,
+      "menuItemDescription": " A step-up on the classic Nachos Supreme. It’d be an easy choice to get the top prospect; the chip with the most well-rounded refried beans, nacho cheese sauce, seasoned beef, reduced fat sour cream, and diced tomatoes distribution. You know, that star player through college with first round draft caliber.",
+      "menuItemImage": "https://www.tacobell.com/images/22502_nachos_bellgrande_269x269.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "31",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "63",
+      "menuItemName": "BEEFY FRITOS BURRITO",
+      "menuItemPrice": 1.00,
+      "menuItemDescription": "Seasoned beef, nacho cheese sauce, and seasoned rice make for a pretty fantastic burrito in its own right, but when you add that corny x‐factor, Fritos corn chips, you get a very special kind of crunch. The fruits of your labor, in the form of a corny, crunchy, wildly delicious burrito. It's something special",
+      "menuItemImage": "https://www.tacobell.com/images/22480_beefy_fritos_burrito_269x269.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "31",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "64",
+      "menuItemName": "Shrimp Taco",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Shrimp served sautéed or beer battered. Battered shrimp is made to order, dipped in a special Tecate Beer batter and deep fried. Sautéed shrimp is seasoned to perfection and made to order. Baja Style is the way to go with this one.",
+      "menuItemImage": "https://therecipecritic.com/wp-content/uploads/2019/04/easy-shrimp-tacos-recipe-6.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "32",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "65",
+      "menuItemName": "Fish Taco",
+      "menuItemPrice": 6.00,
+      "menuItemDescription": "Hand cut Mahi Mahi served sautéed or beer battered. Battered fish is made to order, dipped in a special Tecate Beer batter and deep fried. Sautéed fish is seasoned to perfection and made to order. Be sure to try it Baja Style!",
+      "menuItemImage": "https://embed.widencdn.net/img/mccormick/0341toyhtt/1367x1367px/street_tacos1345.jpg?crop=true&anchor=341,0&q=80&color=ffffffff&u=o2hyef",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "32",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "66",
+      "menuItemName": "Grass Fed Steak Taco",
+      "menuItemPrice": 6.00,
+      "menuItemDescription": "Traditional, Mexican style Carne Asada. Marinated in a family recipe dating back 3 generations, then seared and grilled on our flat top to lock in the flavor. Fresh squeezed lime added at the end for a hint of citrus.",
+      "menuItemImage": "https://media4.s-nbcnews.com/i/newscms/2018_41/1375452/korean-steak-tacos-today-main-181010_606bb5f6f666d58aeb2fd3a030bac6e8.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "32",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "67",
+      "menuItemName": "Burrito",
+      "menuItemPrice": 11.95,
+      "menuItemDescription": "soft tortilla with guacamole and pico de gallo. Served with beans and rice.",
+      "menuItemImage": "https://www.recipetineats.com/wp-content/uploads/2020/02/Chicken-Burritos_2.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "33",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "68",
+      "menuItemName": "Flautas",
+      "menuItemPrice": 12.00,
+      "menuItemDescription": "Topped with sour cream, avocado salsa and queso fresco. Served with beans and rice.",
+      "menuItemImage": "https://cdn.apartmenttherapy.info/image/upload/v1559672646/k/Photo/Recipes/2019-06-how-to-make-the-best-chicken-flautas/How-to-Make-Best-Chicken-Flautas_094.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "33",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "69",
+      "menuItemName": "Aguas Frescas",
+      "menuItemPrice": 2.00,
+      "menuItemDescription": "Seasonal fresh fruit waters made with fruit, sugar and water. A Mexican tradition.",
+      "menuItemImage": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2012/6/1/4/FNM_070112-Aguas-Frescas-Recipe_s4x3.jpg.rend.hgtvcom.826.620.suffix/1371609999264.jpeg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "33",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "70",
+      "menuItemName": "Abalone with Pork & Vegetable Soup",
+      "menuItemPrice": 12.00,
+      "menuItemDescription": "A one-time common dish at Chinese Restaurants and fine dining establishments.",
+      "menuItemImage": "https://fastly.4sqi.net/img/general/200x200/21757968_hEd5CA9pU6VmLBuCQwhr1jJHd8ipC7iUBius9OFeHa0.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "34",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "71",
+      "menuItemName": "Lobster with Black Bean Sauce",
+      "menuItemPrice": 20.00,
+      "menuItemDescription": "A dish to dream about! Fresh caught ingredients",
+      "menuItemImage": "https://www.discusscooking.com/attachments/photobucket/img_847804_0_3f04a2111582c6aa183eb4d93edec756.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "34",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "72",
+      "menuItemName": "Fresh Oyster with ginger Onion Sizzling Platter",
+      "menuItemPrice": 15.00,
+      "menuItemDescription": "This is a simple, fast and enjoyable meal. Oysters have to be good for you because they taste good!",
+      "menuItemImage": "https://dining.staradvertiser.com/wp-content/uploads/2015/11/DO-112915-Ono-Goldenpalace-BC-1.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "34",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "73",
+      "menuItemName": "Cold Noodles",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "Your favorite noodles, but cold.",
+      "menuItemImage": "https://static01.nyt.com/images/2017/02/28/dining/28COOKING-COLDNOODLES-CHIX-CUKES2/28COOKING-COLDNOODLES-CHIX-CUKES2-articleLarge.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "35",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "74",
+      "menuItemName": "Fried Rice",
+      "menuItemPrice": 14.00,
+      "menuItemDescription": "Cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat",
+      "menuItemImage": "https://www.jessicagavin.com/wp-content/uploads/2018/09/fried-rice-8-1200.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "35",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "75",
+      "menuItemName": "Sea Cucumber in Gravy",
+      "menuItemPrice": 4.00,
+      "menuItemDescription": "Used in fresh or dried form in various cuisines. In some cultural contexts it is thought to have medicinal value.",
+      "menuItemImage": "https://media-cdn.tripadvisor.com/media/photo-s/16/65/b1/eb/braised-goose-web-fish.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "35",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "76",
+      "menuItemName": "Spring Roll",
+      "menuItemPrice": 9.00,
+      "menuItemDescription": "A large variety of filled, rolled appetizers or dim sum found in East Asian, South Asian, Middle Eastern and Southeast Asian cuisine. ",
+      "menuItemImage": "https://cdn.loveandlemons.com/wp-content/uploads/2013/10/spring-rolls.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "36",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "77",
+      "menuItemName": "Crispy Gau Gee Mein",
+      "menuItemPrice": 12.00,
+      "menuItemDescription": "Probably one of the most popular dishes in Hawaii, with pork, seafood, and noodles",
+      "menuItemImage": "https://www.frolichawaii.com/sites/default/files/field/image/CrispyGauGee-KuniaChinese.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "36",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "78",
+      "menuItemName": "BBQ Char Siu",
+      "menuItemPrice": 12.00,
+      "menuItemDescription": "A popular way to flavor and prepare barbecued pork or roasted meat in Cantonese cuisine",
+      "menuItemImage": "https://thewoksoflife.com/wp-content/uploads/2019/04/char-siu-recipe-11.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "36",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "79",
+      "menuItemName": "BBQ Chicken Salad",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "Romaine, iceberg, tomatoes, cucumber, onions, carrots, croutons, grilled chicken with ranch or bleu cheese.",
+      "menuItemImage": "https://amindfullmom.com/wp-content/uploads/2019/03/Easy-BBQ-Chicken-Salad.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "37",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "80",
+      "menuItemName": "Double Deluxe Burger with Cheese",
+      "menuItemPrice": 9.00,
+      "menuItemDescription": "Two 1/4 lb. beef patties, American cheese, lettuce, tomato, pickles, onion and BB sauce.",
+      "menuItemImage": "https://i.pinimg.com/originals/23/c4/64/23c4645670c965522a4537266f418db9.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "37",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "81",
+      "menuItemName": "Teriyaki Burger",
+      "menuItemPrice": 8.00,
+      "menuItemDescription": "Home-made teriyaki sauce, grilled pineapple, peppers Jack cheese, lettuce, tomato, onion, pickles and BB sauce.",
+      "menuItemImage": "https://www.skinnytaste.com/wp-content/uploads/2015/05/grilled-lean-teriyaki-burger-550x390.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "37",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "82",
+      "menuItemName": "Breakfast Bowl",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "Roasted potatoes OR Spanish rice with scrambled cage-free eggs and cheese. Choose your topping: Bacon, chorizo, braised beef, kalua carnitas, or roasted veggie",
+      "menuItemImage": "https://cookieandkate.com/images/2016/06/tex-mex-breakfast-bowl.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "38",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "83",
+      "menuItemName": "BEAN & CHEESE TACO PLATE",
+      "menuItemPrice": 9.00,
+      "menuItemDescription": "Your choice of vegan beans, vegan rice, salsas, and monterey jack shredded cheese.",
+      "menuItemImage": "https://www.unclejerryskitchen.com/wp-content/uploads/2015/02/San-Antonio-Style-Breakfast-Tacos-800x675.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "38",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "84",
+      "menuItemName": "GRILLED CHICKEN SUPER NACHOS",
+      "menuItemPrice": 12.00,
+      "menuItemDescription": "All-natural chicken marinated in chipotle sauce and homemade chips topped with chile con queso.",
+      "menuItemImage": "https://s23209.pcdn.co/wp-content/uploads/2018/05/Loaded-BBQ-Chicken-NachosIMG_5359-720x1080.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "38",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "85",
+      "menuItemName": "Classic Family 4-Pack",
+      "menuItemPrice": 50.00,
+      "menuItemDescription": "Bring The Counter experience to your home kitchen with a Family Burger Bundle! Customize your Classic Family Pack with choices of proteins, including our all-natural, antibiotic-free and no added hormones beef patties, buns and sides. Cook the meat and fries yourself or let us do it for you! Each pack comes standard with cheddar cheese, lettuce, tomato, pickles, red onions, garlic aioli, hickory bbq, mayo, ketchup & mustard.",
+      "menuItemImage": "https://img.etimg.com/thumb/msid-59563016,width-643,imgsize-268925,resizemode-4/love-having-burgers-and-fries-you-might-be-putting-your-liver-at-risk.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "39",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "86",
+      "menuItemName": "NYC Pastrami Burger",
+      "menuItemPrice": 12.00,
+      "menuItemDescription": "all-natural angus beef, thinly sliced New York Pastrami, melted swiss, grilled red onions, lettuce, tomatoes, toasted brioche bun, choice of horseradish aioli or house mustard.",
+      "menuItemImage": "https://olo-images-live.imgix.net/b1/b1f463c3211e4a27bd64e6a6a752c3ce.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=350&h=233&fit=fill&fm=png32&bg=transparent&s=2c92eb19628ea8fff381efd5eeaee555",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "39",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "87",
+      "menuItemName": "The Counter Burger",
+      "menuItemPrice": 16.00,
+      "menuItemDescription": "all-natural beef, provolone, tomatoes, lettuce blend, fried onion strings, sautéed mushrooms. garlic aioli, brioche bun",
+      "menuItemImage": "https://olo-images-live.imgix.net/62/62d0515a0fc94bcdac3e9d3481754235.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=350&h=233&fit=fill&fm=png32&bg=transparent&s=1b1614e116e5d5b0414833ea1823e508",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "39",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "88",
+      "menuItemName": "Smoked Butterscotch Frappuccino",
+      "menuItemPrice": 6.00,
+      "menuItemDescription": "Notes of smoked butterscotch blended with Frappuccino roast, milk and ice. Just when you thought you already had a Frappuccino favorite.",
+      "menuItemImage": "https://globalassets.starbucks.com/assets/ec23fe863389403f81e6776528cfdcf3.jpg?impolicy=1by1_wide_1242",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "40",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "89",
+      "menuItemName": "Nitro Cold Brew",
+      "menuItemPrice": 4.00,
+      "menuItemDescription": "Our small-batch cold brew—slow-steeped for a super-smooth taste—gets even better. We're infusing it with nitrogen to create a sweet flavor without sugar and cascading, velvety crema. Perfection is served.",
+      "menuItemImage": "https://globalassets.starbucks.com/assets/85ae42ce9eb5423d83c4410f7b561882.jpg?impolicy=1by1_wide_1242",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "40",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "90",
+      "menuItemName": "Oatmilk Honey Latte",
+      "menuItemPrice": 16.00,
+      "menuItemDescription": "Oatmilk and signature espresso are intentionally combined with a hint of honey and a toasted honey topping—a savory tribute to all things sweet and salty.",
+      "menuItemImage": "https://globalassets.starbucks.com/assets/edd75880341c437ab194c14835fbb24e.jpg?impolicy=1by1_wide_1242",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "40",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "91",
+      "menuItemName": "Classic Tuna Footlong",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "You’ll love every bite of our classic tuna sandwich. Flaked tuna blended with creamy mayo then topped with your choice of crisp, fresh veggies. Served on our freshly baked bread",
+      "menuItemImage": "https://www.subway.com/ns/images/menu/CAN/ENG/RPLC-sandwich-Tuna-594x334.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "41",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "92",
+      "menuItemName": "Turkey Breast Footlong",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "If a classic is what you crave, then our oven roasted Turkey Breast is the sandwich for you. It’s full of flavor and packed with protein. Made-to-order with your choice of crisp veggies, served on our freshly baked bread.",
+      "menuItemImage": "https://www.financeandfat.com/wp-content/uploads/2011/03/low-calorie-subway-sandwich.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "41",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "93",
+      "menuItemName": "Chicken & Bacon Ranch Melt Footlong",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Packed with tender all-white meat chicken with seasoning and marinade, savory bacon, melty Montery cheddar cheese…and toasted. Aw yeah.",
+      "menuItemImage": "https://www.subway.com/ns/images/menu/MAN/ENG/RPLC-all-sandwiches-Cchicken-bacon-ranch-594x334.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "41",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "94",
+      "menuItemName": "Fresh Fruit Cup",
+      "menuItemPrice": 3.00,
+      "menuItemDescription": "A cup packed with oranges, kiwis, strawberries, grapes, and blueberries",
+      "menuItemImage": "https://dqzrr9k4bjpzk.cloudfront.net/images/2809198/186711817.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "42",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "95",
+      "menuItemName": "Garden Salad with Tomatoes & Cucumbers",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "A nice healthy serving of vegetables plus dressing",
+      "menuItemImage": "https://www.melaniecooks.com/wp-content/uploads/2011/06/salad-tomatoes-cucumbers-lettuce.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "42",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "96",
+      "menuItemName": "Peanut Butter & Jelly On Wheat Bread",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Includes one or more layers of peanut butter and one or more layers of jelly or jam on bread",
+      "menuItemImage": "https://cms.splendidtable.org/sites/default/files/styles/w2000/public/186258899.jpg?itok=kDvbv4LO",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "42",
       "menuItemIsDrink": 1
     }
   ],
@@ -1430,7 +1898,7 @@
         "zipCode": "96822"
       },
       "restaurantImage": "https://content-service.sodexomyway.com/media/STG%20BG%20LOGO_tcm247-102641_w808_h424_n.jpg?url=https://uhm.sodexomyway.com/",
-      "restaurantDesc": "Just, as the name says... simple items purchased to go!",
+      "restaurantDesc": "Simple items purchased to go!",
       "restaurantOwner": "1"
     }
   ]
