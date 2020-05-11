@@ -13,27 +13,19 @@ class NavBar extends React.Component {
     return (
         <Menu style={menuStyle} attached="top" borderless inverted>
           <Menu.Item as={NavLink} activeClassName="" exact to="/">
-            <Header inverted as='h1'>yUHmmy</Header>
+            <Header inverted as='h1' color='teal'>yUHmmy</Header>
           </Menu.Item>
           {this.props.currentUser ? (
-              [<Menu.Item as={NavLink} activeClassName="active" exact to="/menu/1" key='menu/1'>Menu</Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/restaurantorder/1"
-                           key='/restaurantorder/1'>Orders</Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/search" key='search'>Search</Menu.Item>,
+              [<Menu.Item as={NavLink} activeClassName="active" exact to="/search" key='search'>Search</Menu.Item>,
+                <Menu.Item as={NavLink} activeClassName="active" exact to="/menu/1" key='menu/1'>Menu</Menu.Item>,
                 <Menu.Item as={NavLink} activeClassName="active" exact to="/profile" key='profile'>Profile</Menu.Item>,
                 <Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Restaurant</Menu.Item>,
-              ]
-          ) : ''}
+                <Menu.Item as={NavLink} activeClassName="active" exact to="/restaurantorder/1"
+                           key='/restaurantorder/1'>Orders</Menu.Item>,
+              ]) : ''}
           {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              [
-                <Menu.Item
-                    as={NavLink}
-                    activeClassName="active"
-                    exact to="/restaurantorder"
-                    key='admin'
-                >
-                  Orders
-                </Menu.Item>,
+              [<Menu.Item as={NavLink} activeClassName="active" exact to="/restaurantorder"
+                          key='admin'> Orders </Menu.Item>,
                 <Menu.Item as={NavLink} activeClassName="active" exact to="/Order" key='Order'>Menu</Menu.Item>,
                 <Menu.Item as={NavLink} activeClassName="active" exact to="/RestaurantOrder"
                            key='order'>Orders</Menu.Item>,

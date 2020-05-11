@@ -73,7 +73,7 @@ class Profile extends React.Component {
                           image={restaurant.restaurantImage}
                           name={restaurant.restaurantName}
                           address={restaurant.restaurantAddress.city}
-                          description={`${restaurant.restaurantDesc.slice(0, 20)}...`}
+                          description={`${restaurant.restaurantDesc.slice(0, 40)}...`}
                       />
                     </Grid.Column>
                 ))

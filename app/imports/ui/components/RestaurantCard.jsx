@@ -36,6 +36,11 @@ class RestaurantCard extends React.Component {
                 Edit
               </Button>
             </Link>
+            <Link to={`/restaurantorder/${this.props.id}`}>
+              <Button basic compact inverted size="mini">
+                Queue
+              </Button>
+            </Link>
           </div>
         </div>
     );

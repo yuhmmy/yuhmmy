@@ -30,7 +30,7 @@ class RestaurantEdit extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center" color='blue'>Edit Restaurant</Header>
+            <Header as="h2" textAlign="center" color='teal'>Edit Restaurant</Header>
             <AutoForm schema={RestaurantSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
               <Segment>
                 <TextField label='Restaurant Name:' name='restaurantName' placeholder='McDonald&apos;s'/>
