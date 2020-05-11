@@ -1352,8 +1352,399 @@
       "menuItemEthnicityId": 1,
       "menuItemRestaurantId": "42",
       "menuItemIsDrink": 1
+    },
+    {
+      "_id": "97",
+      "menuItemName": "The Happy Meal",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Contains a main item (a hamburger, cheeseburger or small serving of Chicken McNuggets), a side item (French fries, apple slices, a Go-Gurt tube or a salad in some areas) and a drink (milk, juice or a soft drink).",
+      "menuItemImage": "https://images2.minutemediacdn.com/image/upload/c_crop,h_1333,w_1981,x_9,y_0/v1585874998/shape/mentalfloss/622368-mcdonaldshed.jpg?itok=XNF7VAL_",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "1",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "98",
+      "menuItemName": "White Gummi Smoothie",
+      "menuItemPrice": 6.00,
+      "menuItemDescription": "peach juice blend, pineapple sherbet, soymilk, lime sherbet, orange sherbet, mangos, raspberry sherbet",
+      "menuItemImage": "https://149357383.v2.pressablecdn.com/wp-content/uploads/2019/05/img_0944.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "2",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "99",
+      "menuItemName": "FRIED SHRIMP PLATE",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "Juicy shrimp, breaded and fried to perfection and served with zesty tartar sauce.",
+      "menuItemImage": "https://www.hawaiianbarbecue.com/wp-content/uploads/2016/07/Fried_Shrimp-optimized.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "3",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "100",
+      "menuItemName": "Spicy Creamy Vegan Ramen",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "vegetable broth: tofu, onion, green onion, spinach, crispy onion, garlic chips, garlic oil, chili oil and sesame seeds » served with thick noodles.",
+      "menuItemImage": "https://www.hawaiianbarbecue.com/wp-content/uploads/2016/07/Fried_Shrimp-optimized.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "4",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "101",
+      "menuItemName": "Haupia Slices",
+      "menuItemPrice": 3.00,
+      "menuItemDescription": "a traditional coconut milk-based Hawaiian dessert often found at luaus and other local gatherings in Hawaiʻi..",
+      "menuItemImage": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2003/10/20/0/emsp20_haupia_pineapple.jpg.rend.hgtvcom.826.620.suffix/1387054682137.jpeg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "5",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "102",
+      "menuItemName": "Cauliflower Pea Curry",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Rooted in tradition and complexly flavored, it’s also approachable enough for a weeknight.",
+      "menuItemImage": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.foodandwine.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2F201304-xl-cauliflower-potato-and-pea-curry.jpg%3Fitok%3DqPzF-sNr",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "6",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "103",
+      "menuItemName": "BLUE HAWAIIAN SHAVED ICE",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "This tasty flavor is packed with the sweet, tangy tastes of Hawaiian punch. Meanwhile, a slight hint of coconut gives Blue Hawaiian shaved ice syrup a distinctly tropical taste and scent.",
+      "menuItemImage": "https://i.pinimg.com/originals/18/6f/50/186f5061ad6785f0066e5b54aac51f6f.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "7",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "104",
+      "menuItemName": "Chocolate Macaroon",
+      "menuItemPrice": 1.00,
+      "menuItemDescription": "A small cake or cookie, typically made from ground almonds, coconut or other nuts, with sugar and sometimes flavorings, food coloring, glacé cherries, jam or a chocolate coating",
+      "menuItemImage": "https://sugargeekshow.com/wp-content/uploads/2019/12/chocolate-macaron-recipe.jpgr",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "8",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "105",
+      "menuItemName": "Meat Lover's Pizza",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "The perfect game day pizza, packed with pepperoni, Italian sausage, ham, bacon, seasoned pork and beef.",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Meat_Lovers.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "106",
+      "menuItemName": "Chai Latte",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "A flavoured tea beverage made by brewing black tea with a mixture of aromatic Indian spices and herbs",
+      "menuItemImage": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190903-chai-latte-0075-portrait-pf-1568388608.jpg?crop=1.00xw:0.667xh;0,0.187xh&resize=480:*",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "10",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "107",
+      "menuItemName": "Bean Burrito",
+      "menuItemPrice": 4.00,
+      "menuItemDescription": "Dish in Mexican and Tex-Mex cuisine consisting of a flour tortilla wrapped into a sealed cylindrical shape around various ingredients",
+      "menuItemImage": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fassets.marthastewart.com%2Fstyles%2Fwmax-750%2Fd21%2F1105_edf_beanburritos%2F1105_edf_beanburritos_vert_0_horiz.jpg%3Fitok%3DECTcTQpD",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "11",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "108",
+      "menuItemName": "Spam Musubi",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "Popular snack and lunch food composed of a slice of grilled Spam on top of or sandwiched in between a block of rice, wrapped together with nori in the tradition of Japanese omusubi",
+      "menuItemImage": "https://rasamalaysia.com/wp-content/uploads/2020/02/spam-musubi-thumb.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "12",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "109",
+      "menuItemName": "maki sushi",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "the fish, vegetables or other ingredients are rolled up inside of seaweed (nori) and vinegared rice. The outside may be sprinkled with fish roe, sesame seeds or other ingredients. Maki may contain pieces of raw or cooked seafood.",
+      "menuItemImage": "https://images.japancentre.com/recipes/pics/18/main/makisushi.jpg?1557308201",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "13",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "110",
+      "menuItemName": "Pumpkin Almond Spice Cup",
+      "menuItemPrice": 8.99,
+      "menuItemDescription": "Bananas, Pumpkin Almond Spice Almond Milk",
+      "menuItemImage": "https://static.wixstatic.com/media/66de1a_844a9d46bd8144f4a75328fc1434e347~mv2_d_2812_3860_s_4_2.png/v1/fill/w_456,h_628,al_c,q_85,usm_0.66_1.00_0.01/66de1a_844a9d46bd8144f4a75328fc1434e347~mv2_d_2812_3860_s_4_2.webp",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "14",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "111",
+      "menuItemName": "Kalbi Bibimbap Bowl",
+      "menuItemPrice": 6.00,
+      "menuItemDescription": "served as a bowl of warm white rice topped with namul or kimchi and gochujang, soy sauce, or doenjang",
+      "menuItemImage": "https://futuredish.com/wp-content/uploads/2017/12/Dolsot-Bibimbap.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "15",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "112",
+      "menuItemName": "Rainbow Sprinkles Donut",
+      "menuItemPrice": 3.00,
+      "menuItemDescription": "a type of fried dough confection or dessert food with sugar sprinkles",
+      "menuItemImage": "https://www.intheswim.com/images/products/T3664/T3664_x.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "16",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "113",
+      "menuItemName": "Chicken Wings w/fries",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "BBQ, buffalo, lemon pepper. plain, add garlic fries...",
+      "menuItemImage": "https://envato-shoebox-0.imgix.net/103e/694f-a005-4b0d-aca9-ed1d7fab5df9/table_batch05_036.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=24b4cd8178a86b057eb5ecc8f56bcfb6",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "17",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "114",
+      "menuItemName": "MARGHERITA PIZZA",
+      "menuItemPrice": 15.00,
+      "menuItemDescription": "Tomato and Fresh Basil",
+      "menuItemImage": "https://images.squarespace-cdn.com/content/v1/5747bf411bbee069995186dd/1464773046415-O28S1VZZCJ14RRI6R3C1/ke17ZwdGBToddI8pDm48kHj0rpKthNAinpL73Mum75p7gQa3H78H3Y0txjaiv_0fYBFzjBHm6J75ndes7bSqn7pLQPtA81JRyJrG2qQoo568tYm6j2RpB0d1Gi3SQHdgOqpeNLcJ80NK65_fV7S1Uao5bn-CQDxeiPac3zZDb_I5u18DRtYbXJHs9TdRwuDbOpYghpI-Ha_TwZsqqmJXng/Lima01.jpg?format=750w",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "18",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "115",
+      "menuItemName": "Papaya Salad",
+      "menuItemPrice": 9.00,
+      "menuItemDescription": "Shredded green papaya, roasted crushed peanuts, garlic, lime fish sauce dressing.",
+      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/mdp6hzraossckeutgqc9",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "19",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "116",
+      "menuItemName": "Side of Kim Chee",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Spicy and pickled cabbage.",
+      "menuItemImage": "https://photos.bigoven.com/recipe/hero/chili-pickled-cabbage-kim-chee-301afb.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "20",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "117",
+      "menuItemName": "Loco Moco",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "1 pound 100 percent ground beef patty smothered with brown gravy and one fresh local egg on top a bed of steamed white or brown rice.",
+      "menuItemImage": "https://static01.nyt.com/images/2019/04/08/dining/kw-loco-moco/kw-loco-moco-articleLarge.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "21",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "118",
+      "menuItemName": "Beef Egg Drop Soup",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "A Chinese soup of wispy beaten eggs in boiled chicken broth with meat",
+      "menuItemImage": "https://www.simplyrecipes.com/wp-content/uploads/2015/05/egg-drop-soup-horiz-a-1800.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "22",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "119",
+      "menuItemName": "Macadamia Nut Pancake",
+      "menuItemPrice": 10.00,
+      "menuItemDescription": "One bite of these pancakes will leave you dreaming of the land of aloha with coconut syrup",
+      "menuItemImage": "https://lh3.googleusercontent.com/proxy/1LmuF_WXgXBI30Be5GNUTn0FzBBpwCGX0miqR5h78JSBQIyHbMvHPIIFgSXgtBIUgNZn6jMX3QiOxi6NVVjbeMVVu3c7r4L_TRQDUvDCBGCzyOAw7eJfSzgR-N-JIjY",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "23",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "120",
+      "menuItemName": "Hawaiian Limu Poke Bowl",
+      "menuItemPrice": 15.00,
+      "menuItemDescription": "Maui sweet onion, house-made shoyu, Molokai sea salt..",
+      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/zzfzdpt3jh6bib1coqsp",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "24",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "121",
+      "menuItemName": "Pain Au Chocolate",
+      "menuItemPrice": 4.00,
+      "menuItemDescription": "A french classic, this pastry is filled with chocolate , topped with a chocolate drizzle\n\n",
+      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/metscvcqf0da8uanbtxw",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "25",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "122",
+      "menuItemName": "Kale Dhal Plate",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Mild Lentils with Healthy Greens and your choice of sides.",
+      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/dugj1aaiizjzky5psiwj",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "26",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "123",
+      "menuItemName": "Laulau",
+      "menuItemPrice": 15.00,
+      "menuItemDescription": "Pork rubbed with Hawaiian salt, wrapped in taro leaves and steamed in ti leaves",
+      "menuItemImage": "https://thebesthawaiianfood.com/wp-content/uploads/2019/09/alacarte-laulau-300x300.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "27",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "124",
+      "menuItemName": "Roti Paratha",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Round flat bread made of wheat cooked to a flaky, chewy texture",
+      "menuItemImage": "http://manoa.hawaii.edu/food/resources/images/indiaCafePhoto2.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "28",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "125",
+      "menuItemName": "Choco Coco Crepe",
+      "menuItemPrice": 15.00,
+      "menuItemDescription": "A sweet crepe with Nutella, banana, and coconut",
+      "menuItemImage": "http://manoa.hawaii.edu/food/resources/images/leCrepePhoto3.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "29",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "126",
+      "menuItemName": "Fortune cookie",
+      "menuItemPrice": 1.00,
+      "menuItemDescription": "a crisp and sugary cookie usually made from flour, sugar, vanilla, and sesame seed oil with a piece of paper inside, a fortune, on which is an aphorism, or a vague prophecy",
+      "menuItemImage": "https://www.yourmodernfamily.com/wp-content/uploads/2013/01/fortune-cookie-2.jpg",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "30",
+      "menuItemIsDrink": 1
     }
   ],
+
   "defaultRestaurant": [
     {
       "_id": "1",
