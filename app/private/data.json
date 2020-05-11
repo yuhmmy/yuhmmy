@@ -474,7 +474,7 @@
       "menuItemName": "French Toast Slam",
       "menuItemPrice": 13.49,
       "menuItemDescription": "Served with eggs, bacon strips and sausage links.",
-      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/v4zqy9uggt9e1j3fv1en",
+      "menuItemImage": "https://i2.wp.com/www.sugarspunrun.com/wp-content/uploads/2019/01/Best-Easy-French-Toast-Recipe-1-of-1-6.jpg",
       "menuItemIngredients": [
         "Eggs",
         "Bacon",
@@ -506,7 +506,7 @@
       "menuItemName": "White Garlic Pizza",
       "menuItemPrice": 14.00,
       "menuItemDescription": "Olive oil base. No red sauce.",
-      "menuItemImage": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/vxmos0rfuuvvucsqcfol",
+      "menuItemImage": "https://www.howsweeteats.com/wp-content/uploads/2019/02/spicy-white-heart-pizza-I-howsweeteats.com-3.jpg",
       "menuItemIngredients": [
         "Spinach",
         "Garlic",
@@ -519,7 +519,7 @@
     },
     {
       "_id": "37",
-      "menuItemName": "Spring Rolls (Dinner)",
+      "menuItemName": "Spring Rolls",
       "menuItemPrice": 12.15,
       "menuItemDescription": "Crispy wheat rolls with taro, cabbage, celery, carrot, onion, glass noodle served with sweet chili sauce.",
       "menuItemImage": "http://assets.bitesquad.com/media-thumbs/130/menu-item-images/SpringRolls_1.jpg",
@@ -537,7 +537,7 @@
     },
     {
       "_id": "38",
-      "menuItemName": "Summer Rolls (Dinner)",
+      "menuItemName": "Summer Rolls",
       "menuItemPrice": 12.15,
       "menuItemDescription": "Fresh and soft rolls with lettuce, mint, carrot, cucumber, rice noodle with sweet chili sauce and crushed peanut.",
       "menuItemImage": "http://assets.bitesquad.com/media-thumbs/130/menu-item-images/SummerRolls.jpg",
@@ -572,7 +572,7 @@
       "menuItemName": "Combo Plate",
       "menuItemPrice": 14.19,
       "menuItemDescription": "Bar-b-q beef, chicken and fried man doo, with veg and rice",
-      "menuItemImage": "https://i.redd.it/iqs1igm8ldy21.jpg",
+      "menuItemImage": "https://recipetineats.com/wp-content/uploads/2016/03/Nasi-Goreng_3-1.jpg",
       "menuItemIngredients": [
         "Spinach",
         "Garlic",
@@ -585,7 +585,7 @@
     },
     {
       "_id": "41",
-      "menuItemName": "Big City Chili (Dinner)",
+      "menuItemName": "Big City Chili",
       "menuItemPrice": 9.99,
       "menuItemDescription": "Scoop of steamed rice and topped with shredded real cheddar cheese, diced onions and green onions.",
       "menuItemImage": "https://pinchofyum.com/wp-content/uploads/Sunday-Chili-Square.jpg",
@@ -601,10 +601,10 @@
     },
     {
       "_id": "42",
-      "menuItemName": "Super Soup of the Day (Dinner)",
+      "menuItemName": "Super Soup of the Day",
       "menuItemPrice": 4.49,
-      "menuItemDescription": "Super Soup of the Day (Dinner)",
-      "menuItemImage": "https://pinchofyum.com/wp-content/uploads/Sunday-Chili-Square.jpg",
+      "menuItemDescription": "Today's soup is bacon corn chowder with crackers",
+      "menuItemImage": "https://hips.hearstapps.com/delish/assets/17/26/1498851357-shot-4-328.jpg",
       "menuItemIngredients": [
         "Spinach",
         "Garlic",
@@ -619,7 +619,7 @@
       "_id": "43",
       "menuItemName": "Fried Wonton (12)",
       "menuItemPrice": 7.50,
-      "menuItemDescription": "Fried Wonton (12)",
+      "menuItemDescription": "a type of Chinese dumpling commonly found across regional styles of Chinese cuisine.",
       "menuItemImage": "https://www.jessicagavin.com/wp-content/uploads/2016/02/easy-chinese-wonton-soup-recipe-1200.jpg",
       "menuItemIngredients": [
         "Spinach",
@@ -635,8 +635,8 @@
       "_id": "44",
       "menuItemName": "Fried Gau Gee (8)",
       "menuItemPrice": 7.50,
-      "menuItemDescription": "Fried Gau Gee (8)",
-      "menuItemImage": "https://www.jessicagavin.com/wp-content/uploads/2016/02/easy-chinese-wonton-soup-recipe-1200.jpg",
+      "menuItemDescription": "A chinese wonton, usually served alongside gravy)",
+      "menuItemImage": "https://cookinghawaiianstyle.com/images/recipes/1326909594spam-crispy-gau-gee.jpg",
       "menuItemIngredients": [
         "Spinach",
         "Garlic",
@@ -649,11 +649,11 @@
     },
     {
       "_id": "45",
-      "menuItemName": "BBQ Chicken (Lunch)",
-      "menuItemPrice": 11.75,
-      "menuItemDescription": "BBQ Chicken (Lunch)",
-      "menuItemImage": "https://thestayathomechef.com/wp-content/uploads/2018/06/Baked-BBQ-Chicken-1-small-1.jpg",
-      "menuItemIngredients": [
+      "menuItemName": "Red Velvet Pancake",
+      "menuItemPrice": 7.75,
+      "menuItemDescription": "a flat cake, often thin and round, prepared from a starch-based batter that may contain eggs, milk and butter and cooked on a hot surface such as a griddle or frying pan, often frying with oil or butter, with vanilla and red dye",
+      "menuItemImage": "https://cdn.vox-cdn.com/thumbor/rThH8Jt1s7VzBLm6VKYjToeUMc4=/0x0:1000x600/1400x1400/filters:focal(420x220:580x380):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/52300701/Cinnamon_s_red_velvet_pancakes_12_14.0.jpeg",
+        "menuItemIngredients": [
         "Spinach",
         "Garlic",
         "Tomato"
@@ -665,10 +665,10 @@
     },
     {
       "_id": "46",
-      "menuItemName": "Vinha D'Alhos (Lunch)",
-      "menuItemPrice": 12.44,
-      "menuItemDescription": "https://www.justonecookbook.com/wp-content/uploads/2020/01/Sushi-Rolls-Maki-Sushi-%E2%80%93-Hosomaki-1117-I.jpg",
-      "menuItemImage": "Vinha D'Alhos (Lunch)",
+      "menuItemName": "Chocolate Chip Pancake",
+      "menuItemPrice": 7.44,
+      "menuItemDescription": "a flat cake, often thin and round, prepared from a starch-based batter that may contain eggs, milk and butter and cooked on a hot surface such as a griddle or frying pan, often frying with oil or butter, with chocolate chips",
+      "menuItemImage": "https://www.livewellbakeoften.com/wp-content/uploads/2018/01/Chocolate-Chip-Greek-Yogurt-Pancakes-copy.jpg",
       "menuItemIngredients": [
         "Spinach",
         "Garlic",
@@ -1617,7 +1617,7 @@
     },
     {
       "_id": "21",
-      "restaurantName": "Big City Diner - Kaimuki",
+      "restaurantName": "Big City Diner",
       "restaurantAddress": {
         "street": "3565 Waialae Ave St",
         "city": "Honolulu",
@@ -1643,7 +1643,7 @@
     },
     {
       "_id": "23",
-      "restaurantName": "Koa Pancake House - Kaimuki",
+      "restaurantName": "Koa Pancake House",
       "restaurantAddress": {
         "street": "1139 12th Ave",
         "city": "Honolulu",
@@ -1682,7 +1682,7 @@
     },
     {
       "_id": "26",
-      "restaurantName": "Himalayan Kitchen - Honolulu",
+      "restaurantName": "Himalayan Kitchen",
       "restaurantAddress": {
         "street": "1137 11th Ave",
         "city": "Honolulu",
