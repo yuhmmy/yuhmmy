@@ -88,7 +88,7 @@ class Images extends React.Component {
           <Grid container stackable centered columns={1}>
             <Grid.Column textAlign='center'>
               <Header inverted as='h2' textAlign='center'>
-                Top 5 take-out locations near UH Manoa during Covid-19:
+                Top 5 take-out locations at UH Manoa during Covid-19:
               </Header>
             </Grid.Column>
           </Grid>
@@ -104,7 +104,9 @@ class Images extends React.Component {
               <img className='ui tiny rounded centered image' src='images/ll.png' style={imageStyle} alt='food3'/>
             </div>
             <div className="new">
-              <img className='ui tiny rounded centered image' src='images/zip.png' style={imageStyle} alt='food4'/>
+              <img className='ui tiny rounded centered image'
+                   src='https://cdn.freebiesupply.com/images/large/2x/pizza-hut-logo-png-transparent.png'
+                   style={imageStyle} alt='food4'/>
             </div>
             <div className="new">
               <img className='ui tiny rounded centered image' src='images/panda.png' style={imageStyle} alt='food5'/>
