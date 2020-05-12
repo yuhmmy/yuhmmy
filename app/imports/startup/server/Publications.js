@@ -33,9 +33,10 @@ Meteor.publish('SubOrders', function publish() {
 Meteor.publish('Meteor.users.user', function publish() {
 
   if (!this.userId) {
+    console.log('No user signed in');
   } else {
-    return Meteor.users.find(this.userId, {
+    return (Meteor.users.find(this.userId, {
       fields: { preferences: 1, age: 1, name: 1, gender: 1, isAdmin: 1 },
-    });
+    }));
   }
 });

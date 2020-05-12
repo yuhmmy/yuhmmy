@@ -28,7 +28,7 @@ class RestaurantEdit extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
     if (this.props.doc.length < 1) {
-      return <Header as="h1" inverted>Forbidden</Header>
+      return <Header as="h1" inverted>Forbidden</Header>;
     } else {
     return (
         <Grid container centered>
