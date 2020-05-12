@@ -34,7 +34,7 @@ class App extends React.Component {
               <Route path="/order/:_id" component={Order}/>
               <Route path="/restaurantorder/:_id" component={RestaurantOrder}/>
               <Route path="/search" component={RestaurantSearch}/>
-              <ProtectedRoute path="/add" component={RestaurantAdd}/>
+              <AdminProtectedRoute path="/add" component={RestaurantAdd}/>
               <ProtectedRoute path="/edit/:_id" component={RestaurantEdit}/>
               <ProtectedRoute path="/profile" component={Profile}/>
               <ProtectedRoute path="/signout" component={Signout}/>
@@ -75,7 +75,7 @@ const AdminProtectedRoute = ({ component: Component, ...rest }) => (
         {...rest}
         render={(props) => {
           const isLogged = Meteor.userId() !== null;
-          const isAdmin = Roles.userIsInRole(Meteor.userId(), 'admin');
+          const isAdmin = Meteor.user().isAdmin == 1;
           return (isLogged && isAdmin) ?
               (<Component {...props} />) :
               (<Redirect to={{ pathname: '/signin', state: { from: props.location } }}/>

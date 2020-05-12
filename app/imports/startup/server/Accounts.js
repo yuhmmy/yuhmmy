@@ -3,19 +3,22 @@ import { Accounts } from 'meteor/accounts-base';
 
 /* eslint-disable no-console */
 
-function createUser(email, password, firstName, lastName, gender, pref, age) {
-  console.log(`  Creating user ${email}.`);
+function createUser(_id, email, password, firstName, lastName, gender, pref, age, isAdmin) {
+  console.log(`  Creating user ${email}. isAdmin ${isAdmin}`);
 
   // create account
-  const id = Accounts.createUser({
+  Meteor.users.insert({
+    _id: _id,
     username: email,
-    email: email,
-    password: password,
+    emails: [{ address: email, verified: false}],
   });
 
+  Accounts.setPassword(_id, password);
+
   // add custom fields of gender and preferences
-  Meteor.users.update(id, {
+  Meteor.users.update(_id, {
     $set: {
+      isAdmin: isAdmin,
       age: age,
       gender: gender,
       preferences: pref,
@@ -25,6 +28,7 @@ function createUser(email, password, firstName, lastName, gender, pref, age) {
       },
     },
   });
+
 }
 
 
@@ -33,7 +37,7 @@ if (Meteor.users.find().count() === 0) {
   if (Meteor.settings.defaultAccounts) {
     console.log('Creating the default user(s)');
     // eslint-disable-next-line max-len
-    Meteor.settings.defaultAccounts.map(({ email, password, firstName, lastName, gender, pref, age }) => createUser(email, password, firstName, lastName, gender, pref, age));
+    Meteor.settings.defaultAccounts.map(({ _id, email, password, firstName, lastName, gender, pref, age, isAdmin }) => createUser(_id, email, password, firstName, lastName, gender, pref, age, isAdmin));
   } else {
     console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');
   }

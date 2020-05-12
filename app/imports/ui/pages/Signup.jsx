@@ -67,6 +67,7 @@ class Signup extends React.Component {
             const id = Meteor.userId();
             Meteor.users.update({ _id: id }, {
               $set: {
+                isAdmin: 0,
                 age: age,
                 gender: gender,
                 preferences: pref,
@@ -119,7 +120,7 @@ class Signup extends React.Component {
                       type="email"
                       placeholder="E-mail address"
                       onChange={this.handleChange}
-                      className="textBox"
+                      inverted
                   />
                   <Form.Input
                       icon="lock"
@@ -128,15 +129,18 @@ class Signup extends React.Component {
                       placeholder="Password"
                       type="password"
                       onChange={this.handleChange}
+                      inverted
                   />
                   <Form.Group widths='equal'>
                     <Form.Input
+                        inverted
                         fluid
                         name="firstName"
                         placeholder="First"
                         onChange={this.handleChange}
                     />
                     <Form.Input
+                        inverted
                         fluid
                         name="lastName"
                         placeholder="Last"
@@ -145,6 +149,7 @@ class Signup extends React.Component {
                   </Form.Group>
                   <Form.Group widths='equal'>
                     <Form.Input
+                        inverted
                         fluid
                         name="gender"
                         placeholder="Gender"
@@ -153,6 +158,7 @@ class Signup extends React.Component {
                         onChange={this.handleChange}
                     />
                     <Form.Input
+                        inverted
                         fluid
                         name="age"
                         placeholder="Age"
@@ -160,6 +166,7 @@ class Signup extends React.Component {
                         onChange={this.handleChange}
                     />
                     <Form.Input
+                        inverted
                         fluid
                         name="dietary"
                         placeholder="Dietary"
@@ -168,6 +175,7 @@ class Signup extends React.Component {
                         onChange={this.handleChange}
                     />
                     <Form.Input
+                        inverted
                         fluid
                         multiple
                         name="ethnicity"

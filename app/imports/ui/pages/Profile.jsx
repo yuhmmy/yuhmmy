@@ -38,6 +38,11 @@ class Profile extends React.Component {
           meatCardImage: 1,
         },
     ).fetch();
+    
+
+    const ownerId = Meteor.userId();
+    console.log(ownerId);
+    const ownedRestaurants = Restaurants.find({ restaurantOwner: ownerId }).fetch();
 
     return (
         <Container className="order order-menu" style={{ padding: 20 }}>
@@ -66,7 +71,7 @@ class Profile extends React.Component {
           <Grid columns={3} padded>
             <Grid.Row>
               {
-                this.props.ownedRestaurants.map((restaurant) => (
+                ownedRestaurants.map((restaurant) => (
                     <Grid.Column key={restaurant._id}>
                       <RestaurantCard
                           id={restaurant._id}
@@ -85,7 +90,7 @@ class Profile extends React.Component {
               <br/>
               <br/>
               {/* {
-              this.props.ownedRestaurants.map((restaurant) => (
+              ownedRestaurants.map((restaurant) => (
                 <Grid.Column key={restaurant._id}>
                   <RestaurantCard
                     id={restaurant._id}
@@ -105,7 +110,6 @@ class Profile extends React.Component {
 }
 
 Profile.propTypes = {
-  ownedRestaurants: PropTypes.array.isRequired,
   meat: PropTypes.array.isRequired,
   ethnicity: PropTypes.array.isRequired,
   userData: PropTypes.array.isRequired,
@@ -119,7 +123,6 @@ export default withTracker(() => {
   const subscription4 = Meteor.subscribe('Meteor.users.user');
 
   return {
-    ownedRestaurants: Restaurants.find({ $where: () => this.restaurantOwner === Meteor.userId().str }).fetch(),
     meat: Meat.find({}).fetch(),
     ethnicity: Ethnicity.find().fetch(),
     userData: Meteor.users.find({}).fetch(),
