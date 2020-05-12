@@ -10,7 +10,7 @@ function createUser(_id, email, password, firstName, lastName, gender, pref, age
   Meteor.users.insert({
     _id: _id,
     username: email,
-    emails: [{ address: email, verified: false}],
+    emails: [{ address: email, verified: false }],
   });
 
   Accounts.setPassword(_id, password);

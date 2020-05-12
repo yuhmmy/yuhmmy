@@ -23,7 +23,7 @@ class RestaurantOrder extends React.Component {
     }).fetch();
     console.log(orderArray);
     if (this.props.restaurants.length < 1) {
-      return <Header as="h1" inverted>Forbidden</Header>
+      return <Header as="h1" inverted>Forbidden</Header>;
     } else {
       return (
           <div className="order">
@@ -52,6 +52,7 @@ RestaurantOrder.propTypes = {
   order: PropTypes.array,
   subOrders: PropTypes.array,
   ready: PropTypes.bool.isRequired,
+  restaurants: PropTypes.array,
 };
 
 export default withTracker(({ match }) => {

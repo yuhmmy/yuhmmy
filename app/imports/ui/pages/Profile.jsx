@@ -38,7 +38,6 @@ class Profile extends React.Component {
           meatCardImage: 1,
         },
     ).fetch();
-    
 
     const ownerId = Meteor.userId();
     console.log(ownerId);

@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { withTracker } from 'meteor/react-meteor-data';
 import { Grid, Segment, Header, Container, Loader } from 'semantic-ui-react';
 import { AutoForm, ErrorsField, SubmitField, TextField, LongTextField } from 'uniforms-semantic';
 import swal from 'sweetalert';
@@ -6,8 +8,6 @@ import { Meteor } from 'meteor/meteor';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import SimpleSchema from 'simpl-schema';
 import { Restaurants } from '../../api/restaurant/Restaurant';
-import PropTypes from 'prop-types';
-import { withTracker } from 'meteor/react-meteor-data';
 import '../../stylesheets/Signup.css';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
@@ -21,8 +21,6 @@ const formSchema = new SimpleSchema({
   restaurantImage: String,
   restaurantDesc: String,
 });
-
-const userSub = Meteor.subscribe('Meteor.users.user');
 
 /** Renders the Page for adding a document. */
 class RestaurantAdd extends React.Component {
@@ -67,7 +65,7 @@ class RestaurantAdd extends React.Component {
                   >
                     Add Your Restaurant
                   </Header>
-                  <TextField 
+                  <TextField
                     label='Restaurant Name:'
                     name='restaurantName'
                     placeholder='McDonald&apos;s'
@@ -92,9 +90,16 @@ class RestaurantAdd extends React.Component {
                     name='restaurantAddress.zipCode'
                     placeholder='96826'
                   />
-                  <TextField label='Restaurant Image:' name='restaurantImage' placeholder='McD.jpg'/>
-                  <LongTextField label='Restaurant Description:' name='restaurantDesc'
-                                placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'/>
+                  <TextField
+                    label='Restaurant Image:'
+                    name='restaurantImage'
+                    placeholder='McD.jpg'
+                  />
+                  <LongTextField
+                    label='Restaurant Description:'
+                    name='restaurantDesc'
+                    placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'
+                  />
                   <SubmitField value='Submit'/>
                   <ErrorsField/>
                 </Segment>
