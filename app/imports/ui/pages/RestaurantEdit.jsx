@@ -27,6 +27,9 @@ class RestaurantEdit extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
+    if (this.props.doc.length < 1) {
+      return <Header as="h1" inverted>Forbidden</Header>
+    } else {
     return (
         <Grid container centered>
           <Grid.Column>
@@ -50,6 +53,7 @@ class RestaurantEdit extends React.Component {
     );
   }
 }
+}
 
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
 RestaurantEdit.propTypes = {
@@ -64,8 +68,9 @@ export default withTracker(({ match }) => {
   const documentId = match.params._id;
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('Restaurants');
+  const ownerId = Meteor.userId();
   return {
-    doc: Restaurants.findOne(documentId),
+    doc: Restaurants.findOne({ _id: documentId, restaurantOwner: ownerId }),
     ready: subscription.ready(),
   };
 })(RestaurantEdit);

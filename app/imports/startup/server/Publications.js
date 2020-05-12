@@ -35,7 +35,7 @@ Meteor.publish('Meteor.users.user', function publish() {
   if (!this.userId) {
   } else {
     return Meteor.users.find(this.userId, {
-      fields: { preferences: 1, age: 1, name: 1, gender: 1 },
+      fields: { preferences: 1, age: 1, name: 1, gender: 1, isAdmin: 1 },
     });
   }
 });
