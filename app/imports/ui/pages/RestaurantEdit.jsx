@@ -15,7 +15,8 @@ class RestaurantEdit extends React.Component {
   submit(data) {
     const { restaurantName, restaurantAddress, restaurantImage, restaurantDesc, _id } = data;
     Restaurants.update(_id, {
-      $set: { restaurantName, restaurantAddress, restaurantImage, restaurantDesc } }, (error) => (error ?
+      $set: { restaurantName, restaurantAddress, restaurantImage, restaurantDesc },
+    }, (error) => (error ?
         swal('Error', error.message, 'error') :
         swal('Success', 'Item updated successfully', 'success')));
   }
@@ -27,8 +28,8 @@ class RestaurantEdit extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
-    if (this.props.doc.length < 1) {
-      return <Header as="h1" inverted>Forbidden</Header>;
+    if (!(this.props.userData[0].isAdmin)) {
+      return <Header as="h1" inverted>FORBIDDEN - Access for Admins Only</Header>;
     }
     return (
         <Grid container centered>
@@ -42,8 +43,8 @@ class RestaurantEdit extends React.Component {
                 <TextField label='Restaurant State:' name='restaurantAddress.state' placeholder='HI'/>
                 <TextField label='Restaurant Zip Code:' name='restaurantAddress.zipCode' placeholder='96826'/>
                 <TextField label='Restaurant Image:' name='restaurantImage' placeholder='McD.jpg'/>
-                <LongTextField label='Restaurant Description:' name='restaurantDesc'
-                               placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'/>
+                <LongTextField label='Restaurant Description:' name='restaurantDesc' placeholder='We have the finest
+                  nuggets that will make you say mmmmm I&apos;m lovin it'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
               </Segment>
@@ -51,8 +52,7 @@ class RestaurantEdit extends React.Component {
           </Grid.Column>
         </Grid>
     );
-
-}
+  }
 }
 
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
@@ -60,6 +60,7 @@ RestaurantEdit.propTypes = {
   doc: PropTypes.object,
   model: PropTypes.object,
   ready: PropTypes.bool.isRequired,
+  userData: PropTypes.array.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
@@ -68,9 +69,12 @@ export default withTracker(({ match }) => {
   const documentId = match.params._id;
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('Restaurants');
-  const ownerId = Meteor.userId();
+  const subscription1 = Meteor.subscribe('Meteor.users.user');
+  // const ownerId = Meteor.userId();
   return {
-    doc: Restaurants.findOne({ _id: documentId, restaurantOwner: ownerId }),
-    ready: subscription.ready(),
+    userData: Meteor.users.find({}).fetch(),
+    // doc: Restaurants.findOne({ _id: documentId, restaurantOwner: ownerId }),
+    doc: Restaurants.findOne(documentId),
+    ready: subscription.ready() && subscription1.ready(),
   };
 })(RestaurantEdit);
