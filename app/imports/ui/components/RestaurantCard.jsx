@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image, Button } from 'semantic-ui-react';
+import { Image, Button, Rating } from 'semantic-ui-react';
 import { withRouter, Link } from 'react-router-dom';
 
 class RestaurantCard extends React.Component {
@@ -23,6 +23,9 @@ class RestaurantCard extends React.Component {
             </div>
             <br/>
             <div>
+              <Rating maxRating={5} clearable defaultRating={4} />
+            </div>
+              <div>
               {this.props.description}
             </div>
             <br/>
@@ -39,6 +42,11 @@ class RestaurantCard extends React.Component {
             <Link to={`/restaurantorder/${this.props.id}`}>
               <Button basic compact inverted size="mini">
                 Queue
+              </Button>
+            </Link>
+            <Link to={`/review/${this.props.id}`}>
+              <Button basic compact inverted size="mini">
+                Review
               </Button>
             </Link>
           </div>
