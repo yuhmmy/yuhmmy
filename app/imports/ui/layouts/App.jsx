@@ -18,6 +18,7 @@ import RestaurantAdd from '../pages/RestaurantAdd';
 import RestaurantEdit from '../pages/RestaurantEdit';
 import Profile from '../pages/Profile';
 import RestaurantMap from '../pages/RestaurantMap';
+import RestaurantReview from '../pages/RestaurantReview';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -33,8 +34,9 @@ class App extends React.Component {
               <Route path="/menu/:_id" component={Menu}/>
               <Route path="/order/:_id" component={Order}/>
               <Route path="/map" component={RestaurantMap}/>
-              <Route path="/restaurantorder/:_id" component={RestaurantOrder}/>
               <Route path="/search" component={RestaurantSearch}/>
+              <Route path="/review/:id" component={RestaurantReview}/>
+              <ProtectedRoute path="/restaurantorder/:_id" component={RestaurantOrder}/>
               <ProtectedRoute path="/add" component={RestaurantAdd}/>
               <ProtectedRoute path="/edit/:_id" component={RestaurantEdit}/>
               <ProtectedRoute path="/profile" component={Profile}/>
@@ -76,7 +78,7 @@ const AdminProtectedRoute = ({ component: Component, ...rest }) => (
         {...rest}
         render={(props) => {
           const isLogged = Meteor.userId() !== null;
-          const isAdmin = Meteor.user().isAdmin == 1;
+          const isAdmin = Meteor.user().isAdmin === 1;
           return (isLogged && isAdmin) ?
               (<Component {...props} />) :
               (<Redirect to={{ pathname: '/signin', state: { from: props.location } }}/>

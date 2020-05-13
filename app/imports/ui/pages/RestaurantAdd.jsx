@@ -28,8 +28,8 @@ class RestaurantAdd extends React.Component {
   /** On submit, insert the data. */
   submit(data, formRef) {
     const { restaurantName, restaurantAddress, restaurantImage, restaurantDesc } = data;
-    const restaurantOwner = Meteor.userId().str;
-    Restaurants.insert({ restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner },
+    // const restaurantOwner = Meteor.userId().str;
+    Restaurants.insert({ restaurantName, restaurantAddress, restaurantImage, restaurantDesc },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
@@ -48,7 +48,7 @@ class RestaurantAdd extends React.Component {
   renderPage() {
     let fRef = null;
     if (!(this.props.userData[0].isAdmin)) {
-      return <Header as="h1" inverted>FORBIDDEN</Header>;
+      return <Header as="h1" inverted>FORBIDDEN - Access for Admins Only</Header>;
     }
     return (
         <Container id="bodyid">

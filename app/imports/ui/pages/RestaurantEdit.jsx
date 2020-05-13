@@ -29,7 +29,7 @@ class RestaurantEdit extends React.Component {
   renderPage() {
     if (this.props.doc.length < 1) {
       return <Header as="h1" inverted>Forbidden</Header>;
-    } else {
+    }
     return (
         <Grid container centered>
           <Grid.Column>
@@ -51,7 +51,7 @@ class RestaurantEdit extends React.Component {
           </Grid.Column>
         </Grid>
     );
-  }
+
 }
 }
 

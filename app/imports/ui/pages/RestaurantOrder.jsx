@@ -22,29 +22,28 @@ class RestaurantOrder extends React.Component {
       },
     }).fetch();
     console.log(orderArray);
-    if (this.props.restaurants[0].ownerId != this.props.ownerId) {
-      return <Header as="h1" inverted>Forbidden</Header>;
-    } else {
-      return (
-          <div className="order">
-            <div className="order-menu">
-              <Header as="h2" inverted>Kitchen Queue</Header>
-              <Grid columns={3} padded>
-                <Grid.Row>
-                  {
-                    orderArray.map(orders => (
-                        <OrderCard
-                            subOrder={orders}
-                            key={orders._id}
-                        />
-                    ))
-                  }
-                </Grid.Row>
-              </Grid>
-            </div>
-          </div>
-      );
+    if (!(this.props.userData[0].isAdmin)) {
+      return <Header as="h1" inverted>FORBIDDEN - Access for Admins Only</Header>;
     }
+    return (
+        <div className="order">
+          <div className="order-menu">
+            <Header as="h2" inverted>Kitchen Queue</Header>
+            <Grid columns={3} padded>
+              <Grid.Row>
+                {
+                  orderArray.map(orders => (
+                      <OrderCard
+                          subOrder={orders}
+                          key={orders._id}
+                      />
+                  ))
+                }
+              </Grid.Row>
+            </Grid>
+          </div>
+        </div>
+    );
   }
 }
 
@@ -53,6 +52,7 @@ RestaurantOrder.propTypes = {
   subOrders: PropTypes.array,
   ready: PropTypes.bool.isRequired,
   restaurants: PropTypes.array,
+  userData: PropTypes.array.isRequired,
 };
 
 export default withTracker(({ match }) => {
@@ -60,11 +60,13 @@ export default withTracker(({ match }) => {
   const subscription = Meteor.subscribe('SubOrders');
   const subscription2 = Meteor.subscribe('Orders');
   const subscription3 = Meteor.subscribe('Restaurants');
-  const ownerId = Meteor.userId().str;
+  const subscription4 = Meteor.subscribe('Meteor.users.user');
+
   return {
     restaurants: Restaurants.find({ _id: restaurantId }).fetch(),
     order: Orders.find({ orderRestaurantId: restaurantId }).fetch(),
     subOrders: SubOrders.find({}).fetch(),
-    ready: subscription.ready() && subscription2.ready() && subscription3.ready(),
+    userData: Meteor.users.find({}).fetch(),
+    ready: subscription.ready() && subscription2.ready() && subscription3.ready() && subscription4.ready(),
   };
 })(RestaurantOrder);

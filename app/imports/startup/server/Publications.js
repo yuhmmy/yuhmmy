@@ -30,8 +30,8 @@ Meteor.publish('SubOrders', function publish() {
   return SubOrders.find();
 });
 
+// eslint-disable-next-line consistent-return
 Meteor.publish('Meteor.users.user', function publish() {
-
   if (!this.userId) {
     console.log('No user signed in');
   } else {
