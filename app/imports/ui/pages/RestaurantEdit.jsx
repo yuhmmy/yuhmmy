@@ -28,7 +28,7 @@ class RestaurantEdit extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
-    if (this.props.doc.restaurantOwner !== Meteor.userId()) {
+    if (this.props.doc.restaurantOwner !== Meteor.userId() && Meteor.user().isAdmin !== 1) {
       return <Header as="h1" inverted>FORBIDDEN - Access for Admins Only</Header>;
     }
     return (
