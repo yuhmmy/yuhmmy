@@ -99,6 +99,12 @@ class RestaurantSearch extends React.Component {
 
   }
 
+  resetRestaurants() {
+    this.setState({
+      feelingHungry: null,
+    });
+  }
+
   render() {
     return (
         <Container className="order order-menu" style={{ padding: 20 }}>
@@ -108,12 +114,23 @@ class RestaurantSearch extends React.Component {
           <Grid>
             <Grid.Row columns={4}>
               <Grid.Column>
-                <Button.Group color='teal'>
+                <Button.Group>
                 <Button
                   onClick={() => this.feelingHungry()}
+                  color='teal'
                 >
                   I&apos;m feeling hungry!
                 </Button>
+                {
+                  this.state.feelingHungry !== null ? (
+                    <Button
+                      onClick={() => this.resetRestaurants()}
+                      color='red'
+                    >
+                      Reset
+                    </Button>
+                  ) : null
+                }
                 </Button.Group>
               </Grid.Column>
               <Grid.Column>
