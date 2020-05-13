@@ -20,12 +20,13 @@ class RestaurantOrder extends React.Component {
       orderId: {
         $in: orderIds,
       },
-      subOrderIsFinished: false
+      subOrderIsFinished: false,
     }).fetch();
-    console.log(orderArray);
+
     if (this.props.restaurants[0].restaurantOwner === this.props.userData[0]._id) {
       return <Header as="h1" inverted>FORBIDDEN - Access for Admins Only</Header>;
     }
+
     return (
         <div className="order">
           <div className="order-menu">
