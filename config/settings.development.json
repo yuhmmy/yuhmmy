@@ -50,6 +50,11 @@
       "ethnicityId": 3,
       "ethnicityDesc": "Thai",
       "ethnicityCardImage": "https://cdn.vox-cdn.com/thumbor/hhk6ECsLHiTMatINaVcVstR6Fys=/0x0:1020x680/1670x1253/filters:focal(429x259:591x421):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/65435920/immm_rice.0.jpg"
+    },
+    {
+      "ethnicityId": 4,
+      "ethnicityDesc": "Local",
+      "ethnicityCardImage": "https://cdn.vox-cdn.com/thumbor/hhk6ECsLHiTMatINaVcVstR6Fys=/0x0:1020x680/1670x1253/filters:focal(429x259:591x421):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/65435920/immm_rice.0.jpg"
     }
   ],
   "defaultMeat": [

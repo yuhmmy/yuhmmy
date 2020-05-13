@@ -6,8 +6,17 @@ import { withTracker } from 'meteor/react-meteor-data';
 
 import RestaurantCard from '../components/RestaurantCard';
 import { Restaurants } from '../../api/restaurant/Restaurant';
+import { Menu } from '../../api/menu/Menu';
 
 class RestaurantSearch extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      feelingHungry: null
+    }
+  }
+
   cuisines() {
     return ([
           {
@@ -71,6 +80,25 @@ class RestaurantSearch extends React.Component {
     );
   }
 
+  feelingHungry() {
+    const ethnicities = this.props.userData[0].preferences.ethnicity;
+    const meat = this.props.userData[0].preferences.meat;
+    
+    const feelingHungry = this.props.menus
+      .filter((m) => m.menuItemMeatId === meat && ethnicities.includes(m.menuItemEthnicityId))
+
+    const chosen = feelingHungry[Math.floor(Math.random() * Math.floor(feelingHungry.length - 1))].menuItemRestaurantId;
+
+    const restaurant = this.props.restaurants.filter((r) => {
+      return chosen === r._id;
+    });
+    
+    this.setState({
+      feelingHungry: restaurant[0]
+    });
+
+  }
+
   render() {
     return (
         <Container className="order order-menu" style={{ padding: 20 }}>
@@ -81,7 +109,11 @@ class RestaurantSearch extends React.Component {
             <Grid.Row columns={4}>
               <Grid.Column>
                 <Button.Group color='teal'>
-                <Button>I&apos;m feeling Hungry!</Button>
+                <Button
+                  onClick={() => this.feelingHungry()}
+                >
+                  I&apos;m feeling hungry!
+                </Button>
                 </Button.Group>
               </Grid.Column>
               <Grid.Column>
@@ -111,16 +143,28 @@ class RestaurantSearch extends React.Component {
           <Grid columns={3} padded>
             <Grid.Row>
               {
+                this.state.feelingHungry !== null ? (
+                  <Grid.Column key={this.state.feelingHungry._id}>
+                    <RestaurantCard
+                        id={this.state.feelingHungry._id}
+                        image={this.state.feelingHungry.restaurantImage}
+                        name={this.state.feelingHungry.restaurantName}
+                        address={this.state.feelingHungry.restaurantAddress.street}
+                        description={this.state.feelingHungry.restaurantDesc}
+                    />
+                  </Grid.Column>
+                )
+                :
                 this.props.restaurants.map((restaurant) => (
-                    <Grid.Column key={restaurant._id}>
-                      <RestaurantCard
-                          id={restaurant._id}
-                          image={restaurant.restaurantImage}
-                          name={restaurant.restaurantName}
-                          address={restaurant.restaurantAddress.street}
-                          description={restaurant.restaurantDesc}
-                      />
-                    </Grid.Column>
+                  <Grid.Column key={restaurant._id}>
+                    <RestaurantCard
+                        id={restaurant._id}
+                        image={restaurant.restaurantImage}
+                        name={restaurant.restaurantName}
+                        address={restaurant.restaurantAddress.street}
+                        description={restaurant.restaurantDesc}
+                    />
+                  </Grid.Column>
                 ))
               }
             </Grid.Row>
@@ -136,9 +180,13 @@ RestaurantSearch.propTypes = {
 
 export default withTracker(() => {
   const subscription = Meteor.subscribe('Restaurants');
-
+  const subscription2 = Meteor.subscribe('Meteor.users.user');
+  const subscription3 = Meteor.subscribe('Menu');
+  
   return {
     restaurants: Restaurants.find({}).fetch(),
-    ready: subscription.ready(),
+    menus: Menu.find({}).fetch(),
+    userData: Meteor.users.find({}).fetch(),
+    ready: subscription.ready() && subscription2.ready(),
   };
 })(RestaurantSearch);
