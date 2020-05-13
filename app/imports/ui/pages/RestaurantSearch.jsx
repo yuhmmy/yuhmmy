@@ -13,8 +13,8 @@ class RestaurantSearch extends React.Component {
     super();
 
     this.state = {
-      feelingHungry: null
-    }
+      feelingHungry: null,
+    };
   }
 
   cuisines() {
@@ -83,18 +83,16 @@ class RestaurantSearch extends React.Component {
   feelingHungry() {
     const ethnicities = this.props.userData[0].preferences.ethnicity;
     const meat = this.props.userData[0].preferences.meat;
-    
+
     const feelingHungry = this.props.menus
-      .filter((m) => m.menuItemMeatId === meat && ethnicities.includes(m.menuItemEthnicityId))
+      .filter((m) => m.menuItemMeatId === meat && ethnicities.includes(m.menuItemEthnicityId));
 
     const chosen = feelingHungry[Math.floor(Math.random() * Math.floor(feelingHungry.length - 1))].menuItemRestaurantId;
 
-    const restaurant = this.props.restaurants.filter((r) => {
-      return chosen === r._id;
-    });
-    
+    const restaurant = this.props.restaurants.filter((r) => chosen === r._id);
+
     this.setState({
-      feelingHungry: restaurant[0]
+      feelingHungry: restaurant[0],
     });
 
   }
@@ -193,17 +191,19 @@ class RestaurantSearch extends React.Component {
 
 RestaurantSearch.propTypes = {
   restaurants: PropTypes.array.isRequired,
+  userData: PropTypes.array.isRequired,
+  menus: PropTypes.array.isRequired,
 };
 
 export default withTracker(() => {
   const subscription = Meteor.subscribe('Restaurants');
   const subscription2 = Meteor.subscribe('Meteor.users.user');
   const subscription3 = Meteor.subscribe('Menu');
-  
+
   return {
     restaurants: Restaurants.find({}).fetch(),
     menus: Menu.find({}).fetch(),
     userData: Meteor.users.find({}).fetch(),
-    ready: subscription.ready() && subscription2.ready(),
+    ready: subscription.ready() && subscription2.ready() && subscription3.ready(),
   };
 })(RestaurantSearch);
