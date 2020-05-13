@@ -1783,7 +1783,7 @@
       },
       "restaurantImage": "https://www.hawaiianbarbecue.com/wp-content/uploads/2019/08/LLHawaii-Logo_Badge-CMYK.jpg",
       "restaurantDesc": "Hawaiian-themed plate lunch franchise",
-      "restaurantOwner": "3"
+      "restaurantOwner": "2"
     },
     {
       "_id": "4",
@@ -1796,7 +1796,7 @@
       },
       "restaurantImage": "https://www.frolichawaii.com/sites/default/files/articles/1612/unexpectedramen6.jpg",
       "restaurantDesc": "Japanese Food Truck",
-      "restaurantOwner": "4"
+      "restaurantOwner": "2"
     },
     {
       "_id": "5",
@@ -1822,7 +1822,7 @@
       },
       "restaurantImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR4g91D32-cZ27jWpSXJ2uh9QTaSnZ6BLYWk_Zekby3-ZHHMX8L&usqp=CAU",
       "restaurantDesc": "Organic Juices and Vegetarian Cuisine",
-      "restaurantOwner": "6"
+      "restaurantOwner": "2"
     },
     {
       "_id": "7",
