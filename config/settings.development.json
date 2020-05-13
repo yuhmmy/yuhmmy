@@ -35,7 +35,6 @@
       "age": 15
     }
   ],
-
   "defaultEthnicity": [
     {
       "ethnicityId": 1,
@@ -53,7 +52,6 @@
       "ethnicityCardImage": "https://cdn.vox-cdn.com/thumbor/hhk6ECsLHiTMatINaVcVstR6Fys=/0x0:1020x680/1670x1253/filters:focal(429x259:591x421):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/65435920/immm_rice.0.jpg"
     }
   ],
-
   "defaultMeat": [
     {
       "meatId": 1,
@@ -76,6 +74,15 @@
       "meatCardImage": "https://specials-images.forbesimg.com/imageserve/5d7fb0e718444200084d8f4f/960x0.jpg?fit=scale"
     }
   ],
-
-  "loadAssetsFile":  true
+  "defaultReviews": [
+    {
+      "title": "THE BEST",
+      "experience": "My favorite place to eat on campus! Located so close to the gym as well!",
+      "stars": "5",
+      "rating": "great",
+      "date": "2020-05-08",
+      "name": "foo"
+    }
+  ],
+  "loadAssetsFile": true
 }
