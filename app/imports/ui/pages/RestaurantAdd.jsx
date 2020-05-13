@@ -49,8 +49,8 @@ class RestaurantAdd extends React.Component {
     let fRef = null;
     if (!(this.props.userData[0].isAdmin)) {
       return <Header as="h1" inverted>FORBIDDEN</Header>;
-    } else {
-      return (
+    }
+    return (
         <Container id="bodyid">
           <Grid container centered>
             <Grid.Column>
@@ -58,47 +58,41 @@ class RestaurantAdd extends React.Component {
                 fRef = ref;
               }} schema={formSchema} inverted onSubmit={data => this.submit(data, fRef)}>
                 <Segment stacked padding="very" className="segment" inverted>
-                  <Header
-                    as='h2'
-                    textAlign='center'
-                    className='headerColor'
-                  >
-                    Add Your Restaurant
-                  </Header>
+                  <Header as='h2' textAlign='center' className='headerColor' color='teal'> Add Your Restaurant </Header>
                   <TextField
-                    label='Restaurant Name:'
-                    name='restaurantName'
-                    placeholder='McDonald&apos;s'
+                      label='Restaurant Name:'
+                      name='restaurantName'
+                      placeholder='McDonald&apos;s'
                   />
                   <TextField
-                    label='Restaurant Street:'
-                    name='restaurantAddress.street'
-                    placeholder='2121 S King St'
+                      label='Restaurant Street:'
+                      name='restaurantAddress.street'
+                      placeholder='2121 S King St'
                   />
                   <TextField
-                    label='Restaurant City:'
-                    name='restaurantAddress.city'
-                    placeholder='Honolulu'
+                      label='Restaurant City:'
+                      name='restaurantAddress.city'
+                      placeholder='Honolulu'
                   />
                   <TextField
-                    label='Restaurant State:'
-                    name='restaurantAddress.state'
-                    placeholder='HI'
+                      label='Restaurant State:'
+                      name='restaurantAddress.state'
+                      placeholder='HI'
                   />
                   <TextField
-                    label='Restaurant Zip Code:'
-                    name='restaurantAddress.zipCode'
-                    placeholder='96826'
+                      label='Restaurant Zip Code:'
+                      name='restaurantAddress.zipCode'
+                      placeholder='96826'
                   />
                   <TextField
-                    label='Restaurant Image:'
-                    name='restaurantImage'
-                    placeholder='McD.jpg'
+                      label='Restaurant Image:'
+                      name='restaurantImage'
+                      placeholder='McD.jpg'
                   />
                   <LongTextField
-                    label='Restaurant Description:'
-                    name='restaurantDesc'
-                    placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'
+                      label='Restaurant Description:'
+                      name='restaurantDesc'
+                      placeholder='We have the finest nuggets that will make you say mmmmm I&apos;m lovin it'
                   />
                   <SubmitField value='Submit'/>
                   <ErrorsField/>
@@ -107,8 +101,7 @@ class RestaurantAdd extends React.Component {
             </Grid.Column>
           </Grid>
         </Container>
-      );
-    }
+    );
   }
 }
 

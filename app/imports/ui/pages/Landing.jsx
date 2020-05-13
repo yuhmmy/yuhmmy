@@ -25,7 +25,7 @@ class Call extends React.Component {
             <Header inverted as="h1">Food ordering, simplified.</Header>
             <p style={{ color: '#999' }}>Never wait in line for your food order again!</p>
             <Link to="/signup">
-              <Button>
+              <Button color='teal'>
                 Sign up
               </Button>
             </Link>
@@ -87,7 +87,7 @@ class Images extends React.Component {
         <div className='landing-images'>
           <Grid container stackable centered columns={1}>
             <Grid.Column textAlign='center'>
-              <Header inverted as='h2' textAlign='center'>
+              <Header inverted as='h2' textAlign='center' color='teal'>
                 Top 5 take-out locations at UH Manoa during Covid-19:
               </Header>
             </Grid.Column>
