@@ -22,7 +22,7 @@ class RestaurantOrder extends React.Component {
       },
     }).fetch();
     console.log(orderArray);
-    if (this.props.restaurants.length < 1) {
+    if (this.props.restaurants[0].ownerId != this.props.ownerId) {
       return <Header as="h1" inverted>Forbidden</Header>;
     } else {
       return (
@@ -56,13 +56,13 @@ RestaurantOrder.propTypes = {
 };
 
 export default withTracker(({ match }) => {
-  const restaurantId = match.params._id;
+  const restaurantId = match.params._id.toString();
   const subscription = Meteor.subscribe('SubOrders');
   const subscription2 = Meteor.subscribe('Orders');
   const subscription3 = Meteor.subscribe('Restaurants');
-  const ownerId = Meteor.userId();
+  const ownerId = Meteor.userId().str;
   return {
-    restaurants: Restaurants.find({ restaurantOwner: ownerId, _id: restaurantId }).fetch(),
+    restaurants: Restaurants.find({ _id: restaurantId }).fetch(),
     order: Orders.find({ orderRestaurantId: restaurantId }).fetch(),
     subOrders: SubOrders.find({}).fetch(),
     ready: subscription.ready() && subscription2.ready() && subscription3.ready(),

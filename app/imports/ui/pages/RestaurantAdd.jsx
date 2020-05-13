@@ -28,7 +28,7 @@ class RestaurantAdd extends React.Component {
   /** On submit, insert the data. */
   submit(data, formRef) {
     const { restaurantName, restaurantAddress, restaurantImage, restaurantDesc } = data;
-    const restaurantOwner = Meteor.user().username;
+    const restaurantOwner = Meteor.userId().str;
     Restaurants.insert({ restaurantName, restaurantAddress, restaurantImage, restaurantDesc, restaurantOwner },
         (error) => {
           if (error) {
