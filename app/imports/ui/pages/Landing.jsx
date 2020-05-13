@@ -44,7 +44,7 @@ class Info extends React.Component {
         <div className="landing-info">
           <Grid container verticalAlign="middle" textAlign='center' columns={3}>
             <Grid.Column textAlign='center'>
-              <Icon size='huge' name='search' inverted/>
+              <Icon size='huge' name='search' inverted color='teal'/>
               <Header inverted as='h2' textAlign='center'>
                 Food Search
               </Header>
@@ -53,7 +53,7 @@ class Info extends React.Component {
               </p>
             </Grid.Column>
             <Grid.Column textAlign='center'>
-              <Icon size='huge' name='food' inverted/>
+              <Icon size='huge' name='food' inverted color='teal'/>
               <Header inverted as='h2' textAlign='center'>
                 Easy Ordering
               </Header>
@@ -62,7 +62,7 @@ class Info extends React.Component {
               </p>
             </Grid.Column>
             <Grid.Column textAlign='center'>
-              <Icon size='huge' name='money' inverted/>
+              <Icon size='huge' name='money' inverted color='teal'/>
               <Header inverted as='h2' textAlign='center'>
                 Payment Planning
               </Header>

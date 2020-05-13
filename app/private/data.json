@@ -1742,6 +1742,123 @@
       "menuItemEthnicityId": 1,
       "menuItemRestaurantId": "30",
       "menuItemIsDrink": 1
+    },
+    {
+      "_id": "127",
+      "menuItemName": "Chicken Alfredo Pasta Bowl",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Grilled chicken breast? Check. Creamy alfredo sauce? Check. Layer of cheese plus a side of breadsticks? Check and double check",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pasta_PanChickenAlfredo_Breadsticks.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "128",
+      "menuItemName": "Breaded Bone-Out Wings",
+      "menuItemPrice": 3.00,
+      "menuItemDescription": "Like your wings bone-out? Try these tasty, 100% all-white meat chicken wings covered in savory breading and your choice of sauce",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/wings_8BOWings.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "129",
+      "menuItemName": "Meaty Marinara Pasta Bowl",
+      "menuItemPrice": 5.00,
+      "menuItemDescription": "Nothing is better than a classic Italian-seasoned meat sauce pasta topped with cheese. Accompanied by an order of breadsticks",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pasta_PanMeatyMarinara_Breadsticks.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "130",
+      "menuItemName": "Pepperoni Pzone",
+      "menuItemPrice": 3.99,
+      "menuItemDescription": "Pepperoni and melted cheese sealed inside a folded, pizza crust. Finished with toasted parmesan and baked calzone style",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pzone_pepperoni_producttile_175x203.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "131",
+      "menuItemName": "Cheese Sticks",
+      "menuItemPrice": 2.00,
+      "menuItemDescription": "A side everyone can agree on for late night delivery—cheese sticks! They come sprinkled with flavorful Italian seasoning",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/sides_CheeseSticks_Marinara.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "132",
+      "menuItemName": "Supremo Pzone",
+      "menuItemPrice": 3.99,
+      "menuItemDescription": "Italian Sausage, Green Pepper, Red Onion and melted cheese inside a folded, pizza crust. Finished with toasted parmesan",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Backyard_BBQ_Chicken.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "133",
+      "menuItemName": "BBQ Chicken Pizza",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "A BBQ pizza topped with grilled chicken, bacon and red onion? Sign us up! This pissa is oven-hot.",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Backyard_BBQ_Chicken.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "134",
+      "menuItemName": "Veggie Lovers Pizza",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "Featuring all the classic vegetable toppings you know and love— mushrooms, red onions, tomatoes",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Veggie_Lovers.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
+    },
+    {
+      "_id": "135",
+      "menuItemName": "Hawaiian Pizza",
+      "menuItemPrice": 4.99,
+      "menuItemDescription": "What's better than your standard Hawaiian pizza? How about a Hawaiian pizza with chicken.",
+      "menuItemImage": "https://www.pizzahut.com/assets/w/tile/thor/pizza_Hawaiian_Chicken.png",
+      "menuItemIngredients": [
+      ],
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 1,
+      "menuItemRestaurantId": "9",
+      "menuItemIsDrink": 1
     }
   ],
 
