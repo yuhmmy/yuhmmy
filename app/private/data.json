@@ -26,7 +26,7 @@
         "Black Tea",
         "Sugar"
       ],
-      "menuItemMeatId": 1,
+      "menuItemMeatId": 0,
       "menuItemEthnicityId": 1,
       "menuItemRestaurantId": "1",
       "menuItemIsDrink": 1
@@ -83,7 +83,7 @@
         "Water"
       ],
       "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
+      "menuItemEthnicityId": 3,
       "menuItemRestaurantId": "3",
       "menuItemIsDrink": 1
     },
@@ -110,7 +110,7 @@
       "menuItemIngredients": [
         "Water"
       ],
-      "menuItemMeatId": 1,
+      "menuItemMeatId": 2,
       "menuItemEthnicityId": 1,
       "menuItemRestaurantId": "4",
       "menuItemIsDrink": 1
@@ -124,8 +124,8 @@
       "menuItemIngredients": [
         "Water"
       ],
-      "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 2,
       "menuItemRestaurantId": "5",
       "menuItemIsDrink": 1
     },
@@ -138,8 +138,8 @@
       "menuItemIngredients": [
         "Water"
       ],
-      "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 3,
       "menuItemRestaurantId": "5",
       "menuItemIsDrink": 1
     },
@@ -152,8 +152,8 @@
       "menuItemIngredients": [
         "Water"
       ],
-      "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 3,
       "menuItemRestaurantId": "6",
       "menuItemIsDrink": 1
     },
@@ -166,7 +166,7 @@
       "menuItemIngredients": [
         "Water"
       ],
-      "menuItemMeatId": 1,
+      "menuItemMeatId": 2,
       "menuItemEthnicityId": 1,
       "menuItemRestaurantId": "6",
       "menuItemIsDrink": 1
@@ -180,8 +180,8 @@
       "menuItemIngredients": [
         "Water"
       ],
-      "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
+      "menuItemMeatId": 2,
+      "menuItemEthnicityId": 4,
       "menuItemRestaurantId": "7",
       "menuItemIsDrink": 1
     },
@@ -195,7 +195,7 @@
         "Water"
       ],
       "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
+      "menuItemEthnicityId": 4,
       "menuItemRestaurantId": "7",
       "menuItemIsDrink": 1
     },
@@ -208,8 +208,8 @@
       "menuItemIngredients": [
         "Water"
       ],
-      "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
+      "menuItemMeatId": 4,
+      "menuItemEthnicityId": 3,
       "menuItemRestaurantId": "8",
       "menuItemIsDrink": 1
     },
@@ -222,8 +222,8 @@
       "menuItemIngredients": [
         "Water"
       ],
-      "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
+      "menuItemMeatId": 4,
+      "menuItemEthnicityId": 3,
       "menuItemRestaurantId": "8",
       "menuItemIsDrink": 1
     },
@@ -236,8 +236,8 @@
       "menuItemIngredients": [
         "Water"
       ],
-      "menuItemMeatId": 1,
-      "menuItemEthnicityId": 1,
+      "menuItemMeatId": 4,
+      "menuItemEthnicityId": 4,
       "menuItemRestaurantId": "9",
       "menuItemIsDrink": 1
     },
