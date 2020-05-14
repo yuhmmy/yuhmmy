@@ -9,14 +9,13 @@ const Menu = new Mongo.Collection('Menu');
 const MenuSchema = new SimpleSchema({
   menuItemName: String,
   menuItemPrice: Number,
-  menuItemImage: String,
   menuItemDescription: String,
+  menuItemImage: String,
   menuItemIngredients: { type: Array, required: false },
   'menuItemIngredients.$': String,
-  menuItemRestaurantId: String,
   menuItemMeatId: { type: SimpleSchema.Integer, required: false },
-  menuItemAllergyId: { type: SimpleSchema.Integer, required: false },
   menuItemEthnicityId: { type: SimpleSchema.Integer, required: false },
+  menuItemRestaurantId: String,
   menuItemIsDrink: SimpleSchema.Integer,
 
 }, { tracker: Tracker });
