@@ -6,10 +6,19 @@ import { withTracker } from 'meteor/react-meteor-data';
 
 import RestaurantCard from '../components/RestaurantCard';
 import { Restaurants } from '../../api/restaurant/Restaurant';
+import { Menu } from '../../api/menu/Menu';
 import { Meat } from '../../api/menu/Meat';
 import { Ethnicity } from '../../api/menu/Ethnicity';
 
 class Profile extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      recommendedRestaurants: [],
+    };
+  }
+
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
@@ -40,8 +49,20 @@ class Profile extends React.Component {
     ).fetch();
 
     const ownerId = Meteor.userId();
-    console.log(ownerId);
     const ownedRestaurants = Restaurants.find({ restaurantOwner: ownerId }).fetch();
+
+    const menuItemRec = Menu.find({
+      menuItemMeatId: this.props.userData[0].preferences.meat,
+      menuItemEthnicityId: {
+        $in: this.props.userData[0].preferences.ethnicity,
+      },
+    }).fetch().map(r => r.menuItemRestaurantId);
+
+    const recommendedRestaurants = Restaurants.find({
+      _id: {
+        $in: menuItemRec,
+      },
+    }).fetch();
 
     return (
         <Container className="order order-menu" style={{ padding: 20 }}>
@@ -71,36 +92,35 @@ class Profile extends React.Component {
             <Grid.Row>
               {
                 ownedRestaurants.map((restaurant) => (
-                    <Grid.Column key={restaurant._id}>
-                      <RestaurantCard
-                          id={restaurant._id}
-                          image={restaurant.restaurantImage}
-                          name={restaurant.restaurantName}
-                          address={restaurant.restaurantAddress.city}
-                          description={`${restaurant.restaurantDesc.slice(0, 40)}...`}
-                      />
-                    </Grid.Column>
+                  <Grid.Column key={restaurant._id}>
+                    <RestaurantCard
+                      id={restaurant._id}
+                      image={restaurant.restaurantImage}
+                      name={restaurant.restaurantName}
+                      address={restaurant.restaurantAddress.city}
+                      description={`${restaurant.restaurantDesc.slice(0, 40)}...`}
+                    />
+                  </Grid.Column>
                 ))
               }
             </Grid.Row>
+          </Grid>
+          <Header inverted as="h2">Recommended Restaurants For You</Header>
+          <Grid columns={3} padded>
             <Grid.Row>
-              <Header inverted as="h2">Recommended Restaurants For You</Header>
-              <br/>
-              <br/>
-              <br/>
-              {/* {
-              ownedRestaurants.map((restaurant) => (
-                <Grid.Column key={restaurant._id}>
-                  <RestaurantCard
-                    id={restaurant._id}
-                    image="https://react.semantic-ui.com/images/wireframe/square-image.png"
-                    name={restaurant.restaurantName}
-                    address={restaurant.restaurantAddress.city}
-                    description={restaurant.restaurantDesc}
-                  />
-                </Grid.Column>
-              ))
-            } */}
+              {
+                recommendedRestaurants.map((restaurant) => (
+                  <Grid.Column key={restaurant._id}>
+                    <RestaurantCard
+                      id={restaurant._id}
+                      image={restaurant.restaurantImage}
+                      name={restaurant.restaurantName}
+                      address={restaurant.restaurantAddress.city}
+                      description={restaurant.restaurantDesc}
+                    />
+                  </Grid.Column>
+                ))
+              }
             </Grid.Row>
           </Grid>
         </Container>
@@ -110,7 +130,9 @@ class Profile extends React.Component {
 
 Profile.propTypes = {
   meat: PropTypes.array.isRequired,
+  menu: PropTypes.array.isRequired,
   ethnicity: PropTypes.array.isRequired,
+  restaurants: PropTypes.array.isRequired,
   userData: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -120,11 +142,16 @@ export default withTracker(() => {
   const subscription2 = Meteor.subscribe('Ethnicity');
   const subscription3 = Meteor.subscribe('Meat');
   const subscription4 = Meteor.subscribe('Meteor.users.user');
+  const subscription5 = Meteor.subscribe('Menu');
+  const subscription6 = Meteor.subscribe('Restaurants');
 
   return {
     meat: Meat.find({}).fetch(),
     ethnicity: Ethnicity.find().fetch(),
+    menu: Menu.find().fetch(),
     userData: Meteor.users.find({}).fetch(),
-    ready: subscription1.ready() && subscription2.ready() && subscription3.ready() && subscription4.ready(),
+    ready: subscription1.ready()
+      && subscription2.ready()
+      && subscription3.ready() && subscription4.ready() && subscription5.ready() && subscription6.ready(),
   };
 })(Profile);

@@ -24,7 +24,8 @@ class RestaurantOrder extends React.Component {
     }).fetch();
 
     if (this.props.restaurants[0].restaurantOwner !== this.props.userData[0]._id
-      && this.props.userData[0].isAdmin !== 1) {
+        && this.props.userData[0].isAdmin !== 1
+    ) {
       return <Header as="h1" inverted>FORBIDDEN - Access for Admins Only</Header>;
     }
 
@@ -36,10 +37,10 @@ class RestaurantOrder extends React.Component {
               <Grid.Row>
                 {
                   orderArray.map(orders => (
-                      <OrderCard
-                          subOrder={orders}
-                          key={orders._id}
-                      />
+                    <OrderCard
+                      subOrder={orders}
+                      key={orders._id}
+                    />
                   ))
                 }
               </Grid.Row>
