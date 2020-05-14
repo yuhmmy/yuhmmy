@@ -62,14 +62,4 @@ if (Meteor.settings.loadAssetsFile) {
     console.log('creating default meat list');
     jsonData.defaultMeat.map(data => addMeat(data));
   }
-
-  if (Meteor.users.find().count() === 0) {
-    if (Meteor.settings.defaultAccounts) {
-      console.log('Creating the default user(s)');
-      // eslint-disable-next-line max-len
-      jsonData.defaultAccounts.map(({ _id, email, password, firstName, lastName, gender, pref, age, isAdmin }) => createUser(_id, email, password, firstName, lastName, gender, pref, age, isAdmin));
-    } else {
-      console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');
-    }
-  }
 }
