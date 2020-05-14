@@ -101,7 +101,7 @@ class Signup extends React.Component {
     }));
     console.log(ethnicityOptions);
 
-    const { from } = this.props.location.state || { from: { pathname: '/add' } };
+    const { from } = this.props.location.state || { from: { pathname: '/search' } };
     // if correct authentication, redirect to from: page instead of signup screen
     if (this.state.redirectToReferer) {
       return <Redirect to={from}/>;

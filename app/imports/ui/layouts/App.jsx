@@ -19,6 +19,8 @@ import RestaurantEdit from '../pages/RestaurantEdit';
 import Profile from '../pages/Profile';
 import RestaurantMap from '../pages/RestaurantMap';
 import RestaurantReview from '../pages/RestaurantReview';
+import MenuAdd from '../pages/MenuAdd';
+
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -36,8 +38,9 @@ class App extends React.Component {
               <Route path="/map" component={RestaurantMap}/>
               <Route path="/search" component={RestaurantSearch}/>
               <Route path="/review/:id" component={RestaurantReview}/>
+              <Route path="/add" component={RestaurantAdd}/>
               <ProtectedRoute path="/restaurantorder/:_id" component={RestaurantOrder}/>
-              <ProtectedRoute path="/add" component={RestaurantAdd}/>
+              <ProtectedRoute path="/menuAdd" component={MenuAdd}/>
               <ProtectedRoute path="/edit/:_id" component={RestaurantEdit}/>
               <ProtectedRoute path="/profile" component={Profile}/>
               <ProtectedRoute path="/signout" component={Signout}/>

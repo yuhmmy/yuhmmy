@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Header, Container, Input, Button, Dropdown, Grid } from 'semantic-ui-react';
+import { Header, Container, Button, Grid } from 'semantic-ui-react';
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 
@@ -106,10 +106,10 @@ class RestaurantSearch extends React.Component {
     return (
         <Container className="order order-menu" style={{ padding: 20 }}>
           <Header inverted as="h1">Search restaurants</Header>
-          <Input placeholder="Search by Name" fluid size='huge' action={{ icon: 'search' }}/>
+          {/* <Input placeholder="Search by Name" fluid size='huge' action={{ icon: 'search' }}/> */}
           <br/>
           <Grid>
-            <Grid.Row columns={4}>
+            <Grid.Row columns={1}>
               <Grid.Column>
                 <Button.Group>
                 <Button
@@ -130,7 +130,7 @@ class RestaurantSearch extends React.Component {
                 }
                 </Button.Group>
               </Grid.Column>
-              <Grid.Column>
+              {/* <Grid.Column>
                 <Dropdown
                     search
                     selection
@@ -150,7 +150,7 @@ class RestaurantSearch extends React.Component {
                     selection
                     options={this.locations()}
                     placeholder='Search by Locations'/>
-              </Grid.Column>
+              </Grid.Column> */}
             </Grid.Row>
           </Grid>
           <br/>
