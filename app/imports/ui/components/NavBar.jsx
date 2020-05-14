@@ -4,7 +4,6 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { withRouter, NavLink } from 'react-router-dom';
 import { Menu, Dropdown, Header, Icon } from 'semantic-ui-react';
-import { Roles } from 'meteor/alanning:roles';
 
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
@@ -26,20 +25,6 @@ class NavBar extends React.Component {
                 <Menu.Item as={NavLink} activeClassName="active" exact to="/restaurantorder/9"
                            key='/restaurantorder/9'>Orders</Menu.Item>,
               ]) : ''}
-          {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-              [<Menu.Item as={NavLink} activeClassName="active" exact to="/restaurantorder"
-                          key='admin'> Orders </Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/Order" key='Order'>Menu</Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/RestaurantOrder"
-                           key='order'>Orders</Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/AddRestaurant"
-                           key='AddRestaurant'>Add Your Restaurant</Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/menuAdd"
-                           key='menuAdd'>Add Menu Item</Menu.Item>,
-                <Menu.Item as={NavLink} activeClassName="active" exact to="/RestaurantSearch"
-                           key='RestaurantSearch'>Search</Menu.Item>,
-              ]
-          ) : ''}
           <Menu.Item position="right">
             {this.props.currentUser === '' ? (
                 [
