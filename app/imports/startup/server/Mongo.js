@@ -32,22 +32,6 @@ Meteor.users.allow({
   update: () => true,
 });
 
-/** Initialize the collection if empty. */
-if (
-    Meat.find().count() === 0 &&
-    Ethnicity.find().count() === 0
-) {
-  // Then, initialize indicator master collections
-  if (Meteor.settings.defaultEthnicity) {
-    console.log('creating default ethnicity list');
-    Meteor.settings.defaultEthnicity.map(data => addEthnicity(data));
-  }
-  if (Meteor.settings.defaultMeat) {
-    console.log('creating default meat list');
-    Meteor.settings.defaultMeat.map(data => addMeat(data));
-  }
-}
-
 /**
  * If the loadAssetsFile field in settings.development.json is true, then load the data in private/data.json.
  * This approach allows you to initialize your system with large amounts of data.
@@ -60,10 +44,32 @@ if (Meteor.settings.loadAssetsFile) {
   const assetsFileName = 'data.json';
   console.log(`Loading data from private/${assetsFileName}`);
   const jsonData = JSON.parse(Assets.getText(assetsFileName));
+
   if (Restaurants.find().count() === 0) {
     jsonData.defaultRestaurant.map(data => addRestaurant(data));
   }
+
   if (Menu.find().count() === 0) {
     jsonData.defaultMenu.map(data => addMenu(data));
+  }
+
+  if (Ethnicity.find().count() === 0) {
+    console.log('creating default ethnicity list');
+    jsonData.defaultEthnicity.map(data => addEthnicity(data));
+  }
+
+  if (Meat.find().count() === 0) {
+    console.log('creating default meat list');
+    jsonData.defaultMeat.map(data => addMeat(data));
+  }
+
+  if (Meteor.users.find().count() === 0) {
+    if (Meteor.settings.defaultAccounts) {
+      console.log('Creating the default user(s)');
+      // eslint-disable-next-line max-len
+      jsonData.defaultAccounts.map(({ _id, email, password, firstName, lastName, gender, pref, age, isAdmin }) => createUser(_id, email, password, firstName, lastName, gender, pref, age, isAdmin));
+    } else {
+      console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');
+    }
   }
 }

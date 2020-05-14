@@ -47,9 +47,6 @@ class RestaurantAdd extends React.Component {
 
   renderPage() {
     let fRef = null;
-    if (!(this.props.userData[0].isAdmin)) {
-      return <Header as="h1" inverted>FORBIDDEN - Access for Admins Only</Header>;
-    }
     return (
         <Container id="bodyid">
           <Grid container centered>
