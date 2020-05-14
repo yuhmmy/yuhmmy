@@ -94,7 +94,6 @@ class RestaurantSearch extends React.Component {
     this.setState({
       feelingHungry: restaurant[0],
     });
-
   }
 
   resetRestaurants() {
