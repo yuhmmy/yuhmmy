@@ -23,7 +23,8 @@ class RestaurantOrder extends React.Component {
       subOrderIsFinished: false,
     }).fetch();
 
-    if (this.props.restaurants[0].restaurantOwner !== this.props.userData[0]._id && this.props.userData[0].isAdmin !== 1) {
+    if (this.props.restaurants[0].restaurantOwner !== this.props.userData[0]._id
+      && this.props.userData[0].isAdmin !== 1) {
       return <Header as="h1" inverted>FORBIDDEN - Access for Admins Only</Header>;
     }
 
